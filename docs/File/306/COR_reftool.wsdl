@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ===================================================================================== -->
+<!-- RefTool (RDMS) Webservice interface WSDL. This WSDL contains the specification of the webservice -->
+<!-- interface (API) for the EU RIS Datamanagement Service (EU Reftool). -->
+<!-- -->
+<!-- Using the functionality of the webservice interface it is possible to: -->
+<!--    - request (find) information about a code or description (translate code to description etc). -->
+<!--    - request all records from one of the refdata tables for synchronising local databases. -->
+<!--    - request last updated records/mutations for synchronising local databases. -->
+<!--    - request and specify updates/mutations. -->
+<!-- Datastructures, datatypes (incl basictypes) and function parameters are defined in separate XSD file -->
+<!-- and are imported into the WSDL interface (see <types\xsd> section in this WSDL). -->
+<!-- -->
+<!-- The following interface functions are defined: -->
+<!--    - matchByCode(reftype,code,version): find refdata based on a code. -->
+<!--    - matchByName(reftype,name,version): find refdata based on a description. -->
+<!--    - getMutations(reftype,fromdat,todate): request list of mutations (complete data) in given period. -->
+<!--    - getDataXML(reftype,version): request all records of specified reftype (master dump). -->
+<!--    - getRisDataXML(subcode,funcode,version): request all Ris index data, based on country, subc or subfunction (master dump). -->
+<!--    - mutateDataXML(username,password,reftype,refdata): mutate specific record in reftool database, without human interaction (only Ris idx and eri_locations)  -->
+<!--    - requestMutationXML(username,password,refDataReqMut): request a mutation for specific record in reftool database, req will be validated = human interaction.  -->
+<!-- -->
+<!-- Journal, Releasenotes: -->
+<!-- -->
+<!-- v1.0 LS/BB mei 2010 Initial version -->
+<!-- V1.0e LS/BB okt 2010 Final version for impl of the WS version 1.0 (identified as v1) -->
+<!-- -->
+<!-- ===================================================================================== -->
+<definitions xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://rwsreftool/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://rwsreftool/" name="RefWebService">
+	<types>
+		<xsd:schema>
+			<!--=========================================================== -->
+			<!-- Specify the URL to the XSD (for docstyle wrapped) here!!! -->
+			<!-- (url's (endpoints) are different for different versions of the webservice) -->
+			<!--=========================================================== -->
+			<!--	<xsd:import namespace="http://rwsreftool/" schemaLocation="http://reftool.risexpertgroups.org:80/refws/v1/RefWebService.xsd"/> -->
+			<xsd:import namespace="http://rwsreftool/" schemaLocation="RefTool_WS_XSD_1.0e.xsd"/>
+		</xsd:schema>
+	</types>
+	<!-- message datatypes for the webservice operations are defined in separate XSD -->
+	<message name="exception">
+		<part name="fault" element="tns:exception"/>
+	</message>
+	<message name="matchByCode">
+		<part name="parameters" element="tns:matchByCode"/>
+	</message>
+	<message name="matchByCodeResponse">
+		<part name="parameters" element="tns:matchByCodeResponse"/>
+	</message>
+	<message name="matchByName">
+		<part name="parameters" element="tns:matchByName"/>
+	</message>
+	<message name="matchByNameResponse">
+		<part name="parameters" element="tns:matchByNameResponse"/>
+	</message>
+	<message name="getMutations">
+		<part name="parameters" element="tns:getMutations"/>
+	</message>
+	<message name="getMutationsResponse">
+		<part name="parameters" element="tns:getMutationsResponse"/>
+	</message>
+	<message name="getDataXML">
+		<part name="parameters" element="tns:getDataXML"/>
+	</message>
+	<message name="getDataXMLResponse">
+		<part name="parameters" element="tns:getDataXMLResponse"/>
+	</message>
+	<message name="getRisDataXML">
+		<part name="parameters" element="tns:getRisDataXML"/>
+	</message>
+	<message name="getRisDataXMLResponse">
+		<part name="parameters" element="tns:getRisDataXMLResponse"/>
+	</message>
+	<message name="mutateDataXML">
+		<part name="parameters" element="tns:mutateDataXML"/>
+	</message>
+	<message name="mutateDataXMLResponse">
+		<part name="parameters" element="tns:mutateDataXMLResponse"/>
+	</message>
+	<message name="requestMutationXML">
+		<part name="parameters" element="tns:requestMutationXML"/>
+	</message>
+	<message name="requestMutationXMLResponse">
+		<part name="parameters" element="tns:requestMutationXMLResponse"/>
+	</message>
+	<!-- the webservice operations (functions and parameters) are defined here -->
+	<portType name="RefWeb">
+		<operation name="matchByCode">
+			<input message="tns:matchByCode"/>
+			<output message="tns:matchByCodeResponse"/>
+			<fault message="tns:exception" name="exception"/>
+		</operation>
+		<operation name="matchByName">
+			<input message="tns:matchByName"/>
+			<output message="tns:matchByNameResponse"/>
+			<fault message="tns:exception" name="exception"/>
+		</operation>
+		<operation name="getMutations">
+			<input message="tns:getMutations"/>
+			<output message="tns:getMutationsResponse"/>
+			<fault message="tns:exception" name="exception"/>
+		</operation>
+		<operation name="getDataXML">
+			<input message="tns:getDataXML"/>
+			<output message="tns:getDataXMLResponse"/>
+			<fault message="tns:exception" name="exception"/>
+		</operation>
+		<operation name="getRisDataXML">
+			<input message="tns:getRisDataXML"/>
+			<output message="tns:getRisDataXMLResponse"/>
+			<fault message="tns:exception" name="exception"/>
+		</operation>
+		<operation name="mutateDataXML">
+			<input message="tns:mutateDataXML"/>
+			<output message="tns:mutateDataXMLResponse"/>
+			<fault message="tns:exception" name="exception"/>
+		</operation>
+		<operation name="requestMutationXML">
+			<input message="tns:requestMutationXML"/>
+			<output message="tns:requestMutationXMLResponse"/>
+			<fault message="tns:exception" name="exception"/>
+		</operation>
+	</portType>
+	<!-- the webservice function bindings are defined here -->
+	<binding name="RefWebPortBinding" type="tns:RefWeb">
+		<soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+		<operation name="getMutations">
+			<soap:operation soapAction=""/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="exception">
+				<soap:fault name="exception" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="matchByCode">
+			<soap:operation soapAction=""/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="exception">
+				<soap:fault name="exception" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="matchByName">
+			<soap:operation soapAction=""/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="exception">
+				<soap:fault name="exception" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="getDataXML">
+			<soap:operation soapAction=""/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="exception">
+				<soap:fault name="exception" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="getRisDataXML">
+			<soap:operation soapAction=""/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="exception">
+				<soap:fault name="exception" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="mutateDataXML">
+			<soap:operation soapAction=""/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="exception">
+				<soap:fault name="exception" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="requestMutationXML">
+			<soap:operation soapAction=""/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="exception">
+				<soap:fault name="exception" use="literal"/>
+			</fault>
+		</operation>
+	</binding>
+	<!-- the webservice port and address bindings (per webservice version) are defined here -->
+	<service name="v1/RefWebService">
+		<port name="RefWebPort" binding="tns:RefWebPortBinding">
+			<soap:address location="http://reftool.risexpertgroups.org:80/refws/v1/RefWebService"/>
+		</port>
+	</service>
+</definitions>
