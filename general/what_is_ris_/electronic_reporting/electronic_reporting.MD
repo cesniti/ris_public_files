@@ -2,39 +2,42 @@
 
 # Electronic Reporting
 
-, <a href="http://www.ris.eu/general" style="text-transform:lowercase;">General</a>, <a href="http://www.ris.eu/general/what_is_ris_" style="text-transform:lowercase;">What is RIS?</a>, <a href="http://www.ris.eu/general/what_is_ris_/electronic_reporting" style="text-transform:lowercase;">Electronic Reporting</a>,   
-,   
-, 
+<a href="/general" style="text-transform:lowercase;">General</a><a href="/general/what_is_ris_" style="text-transform:lowercase;">What is RIS?</a><a href="/general/what_is_ris_/electronic_reporting" style="text-transform:lowercase;">Electronic Reporting</a>  
+  
 
-__The objective of the electronic reporting standard for inland shipping navigation is:
+
+__The objective of the electronic reporting standard for inland shipping navigation is:
+
 
 *   To facilitate Electronic Data Interchange (EDI) between parties in inland shipping and parties in intermodal transportation which are involved in inland shipping
 *   To avoid having to report voyage data more than once to the various authorities and/or commercial parties
-*   To provide rules and standards for the exchange of electronic messages between parties in inland shipping. Public authorities and other stakeholders (ship owners, skippers, charterers, terminals, ports) must ensure that their data complies with these data exchange standards and rules.Electronic reporting software (BICS)&nbsp;
+*   To provide rules and standards for the exchange of electronic messages between parties in inland shipping. Public authorities and other stakeholders (ship ownersskipperscharterersterminalsports) must ensure that their data complies with these data exchange standards and rules.Electronic reporting software (BICS)&nbsp;
 
 __
 
-, __The objective of the electronic reporting standard for inland shipping navigation is:
+__The objective of the electronic reporting standard for inland shipping navigation is:
+
 
 *   To facilitate Electronic Data Interchange (EDI) between parties in inland shipping and parties in intermodal transportation which are involved in inland shipping
 *   To avoid having to report voyage data more than once to the various authorities and/or commercial parties
-*   To provide rules and standards for the exchange of electronic messages between parties in inland shipping. Public authorities and other stakeholders (ship owners, skippers, charterers, terminals, ports) must ensure that their data complies with these data exchange standards and rules.Electronic reporting software (BICS)&nbsp;
+*   To provide rules and standards for the exchange of electronic messages between parties in inland shipping. Public authorities and other stakeholders (ship ownersskipperscharterersterminalsports) must ensure that their data complies with these data exchange standards and rules.Electronic reporting software (BICS)&nbsp;
 
-__, 
+__
 
 *   To facilitate Electronic Data Interchange (EDI) between parties in inland shipping and parties in intermodal transportation which are involved in inland shipping
 *   To avoid having to report voyage data more than once to the various authorities and/or commercial parties
-*   To provide rules and standards for the exchange of electronic messages between parties in inland shipping. Public authorities and other stakeholders (ship owners, skippers, charterers, terminals, ports) must ensure that their data complies with these data exchange standards and rules.Electronic reporting software (BICS)&nbsp;
+*   To provide rules and standards for the exchange of electronic messages between parties in inland shipping. Public authorities and other stakeholders (ship ownersskipperscharterersterminalsports) must ensure that their data complies with these data exchange standards and rules.Electronic reporting software (BICS)&nbsp;
 
-, <li>To facilitate Electronic Data Interchange (EDI) between parties in inland shipping and parties in intermodal transportation which are involved in inland shipping</li>, <li>To avoid having to report voyage data more than once to the various authorities and/or commercial parties</li>, <li>To provide rules and standards for the exchange of electronic messages between parties in inland shipping. Public authorities and other stakeholders (ship owners, skippers, charterers, terminals, ports) must ensure that their data complies with these data exchange standards and rules.Electronic reporting software (BICS)&nbsp;</li>, ![](docs/Image/395/thumb_450x-_connectivity.png), [&nbsp;Expert Group on Electronic Reporting International (ERI)](http://www.ris.eu/expert_groups/eri), __  
+<li>To facilitate Electronic Data Interchange (EDI) between parties in inland shipping and parties in intermodal transportation which are involved in inland shipping</li><li>To avoid having to report voyage data more than once to the various authorities and/or commercial parties</li><li>To provide rules and standards for the exchange of electronic messages between parties in inland shipping. Public authorities and other stakeholders (ship ownersskipperscharterersterminalsports) must ensure that their data complies with these data exchange standards and rules.Electronic reporting software (BICS)&nbsp;</li>![](docs/Image/395/thumb_450x-_connectivity.png)[&nbsp;Expert Group on Electronic Reporting International (ERI)](/expert_groups/eri)__  
   
-Mandatory electronic reporting__,   
-,   
-,   
-,   
-,   
-, __Status of electronic reporting__,   
-, 
+
+Mandatory electronic reporting__  
+  
+  
+  
+  
+__Status of electronic reporting__  
+
 
 <table border="1" cellpadding="1" cellspacing="1" width="100%">
 <tbody>
@@ -44,11 +47,11 @@ __,
 </tr>
 <tr>
 <td>Austria</td>
-<td>No, only in pilot</td>
+<td>Noonly in pilot</td>
 </tr>
 <tr>
 <td>Belgium Flanders</td>
-<td>No, only in pilot</td>
+<td>Noonly in pilot</td>
 </tr>
 <tr>
 <td>Belgium Wallonia</td>
@@ -56,7 +59,7 @@ __,
 </tr>
 <tr>
 <td>Croatia</td>
-<td>No, only in pilot</td>
+<td>Noonly in pilot</td>
 </tr>
 <tr>
 <td>Czech Republic</td>
@@ -68,7 +71,7 @@ __,
 </tr>
 <tr>
 <td>Hungary</td>
-<td>No, only in pilot</td>
+<td>Noonly in pilot</td>
 </tr>
 <tr>
 <td>Netherlands</td>
@@ -80,7 +83,7 @@ __,
 </tr>
 <tr>
 <td>Slovakia</td>
-<td>No, only in pilot</td>
+<td>Noonly in pilot</td>
 </tr>
 <tr>
 <td>Switzerland</td>
@@ -89,7 +92,7 @@ __,
 </tbody>
 </table>
 
-, 
+
 
 <tbody>
 <tr>
@@ -98,11 +101,11 @@ __,
 </tr>
 <tr>
 <td>Austria</td>
-<td>No, only in pilot</td>
+<td>Noonly in pilot</td>
 </tr>
 <tr>
 <td>Belgium Flanders</td>
-<td>No, only in pilot</td>
+<td>Noonly in pilot</td>
 </tr>
 <tr>
 <td>Belgium Wallonia</td>
@@ -110,7 +113,7 @@ __,
 </tr>
 <tr>
 <td>Croatia</td>
-<td>No, only in pilot</td>
+<td>Noonly in pilot</td>
 </tr>
 <tr>
 <td>Czech Republic</td>
@@ -122,7 +125,7 @@ __,
 </tr>
 <tr>
 <td>Hungary</td>
-<td>No, only in pilot</td>
+<td>Noonly in pilot</td>
 </tr>
 <tr>
 <td>Netherlands</td>
@@ -134,7 +137,7 @@ __,
 </tr>
 <tr>
 <td>Slovakia</td>
-<td>No, only in pilot</td>
+<td>Noonly in pilot</td>
 </tr>
 <tr>
 <td>Switzerland</td>
@@ -142,193 +145,193 @@ __,
 </tr>
 </tbody>
 
-, 
+
 
 <tr>
 <td><strong>Country</strong></td>
 <td><strong>Operational</strong></td>
 </tr>
 
-, 
+
 
 <td><strong>Country</strong></td>
 
-, __Country__, 
+__Country__
 
 <td><strong>Operational</strong></td>
 
-, __Operational__, 
+__Operational__
 
 <tr>
 <td>Austria</td>
-<td>No, only in pilot</td>
+<td>Noonly in pilot</td>
 </tr>
 
-, 
+
 
 <td>Austria</td>
 
-, 
 
-<td>No, only in pilot</td>
 
-, 
+<td>Noonly in pilot</td>
+
+
 
 <tr>
 <td>Belgium Flanders</td>
-<td>No, only in pilot</td>
+<td>Noonly in pilot</td>
 </tr>
 
-, 
+
 
 <td>Belgium Flanders</td>
 
-, 
 
-<td>No, only in pilot</td>
 
-, 
+<td>Noonly in pilot</td>
+
+
 
 <tr>
 <td>Belgium Wallonia</td>
 <td>No</td>
 </tr>
 
-, 
+
 
 <td>Belgium Wallonia</td>
 
-, 
+
 
 <td>No</td>
 
-, 
+
 
 <tr>
 <td>Croatia</td>
-<td>No, only in pilot</td>
+<td>Noonly in pilot</td>
 </tr>
 
-, 
+
 
 <td>Croatia</td>
 
-, 
 
-<td>No, only in pilot</td>
 
-, 
+<td>Noonly in pilot</td>
+
+
 
 <tr>
 <td>Czech Republic</td>
 <td>No</td>
 </tr>
 
-, 
+
 
 <td>Czech Republic</td>
 
-, 
+
 
 <td>No</td>
 
-, 
+
 
 <tr>
 <td>Germany</td>
 <td>Yes</td>
 </tr>
 
-, 
+
 
 <td>Germany</td>
 
-, 
+
 
 <td>Yes</td>
 
-, 
+
 
 <tr>
 <td>Hungary</td>
-<td>No, only in pilot</td>
+<td>Noonly in pilot</td>
 </tr>
 
-, 
+
 
 <td>Hungary</td>
 
-, 
 
-<td>No, only in pilot</td>
 
-, 
+<td>Noonly in pilot</td>
+
+
 
 <tr>
 <td>Netherlands</td>
 <td>Yes</td>
 </tr>
 
-, 
+
 
 <td>Netherlands</td>
 
-, 
+
 
 <td>Yes</td>
 
-, 
+
 
 <tr>
 <td>Romania</td>
 <td>Yes</td>
 </tr>
 
-, 
+
 
 <td>Romania</td>
 
-, 
+
 
 <td>Yes</td>
 
-, 
+
 
 <tr>
 <td>Slovakia</td>
-<td>No, only in pilot</td>
+<td>Noonly in pilot</td>
 </tr>
 
-, 
+
 
 <td>Slovakia</td>
 
-, 
 
-<td>No, only in pilot</td>
 
-, 
+<td>Noonly in pilot</td>
+
+
 
 <tr>
 <td>Switzerland</td>
 <td>Yes</td>
 </tr>
 
-, 
+
 
 <td>Switzerland</td>
 
-, 
+
 
 <td>Yes</td>
 
-,   
-,   
-, __Electronic reporting software (BICS)__,   
-,   
-,   
-,   
-,   
-,   
-, [Online application form](http://www.bics.nl/?q=en/node/154),   
+  
+  
+__Electronic reporting software (BICS)__  
+  
+  
+  
+  
+  
+[Online application form](http://www.bics.nl/?q=en/node/154)  
 ]
