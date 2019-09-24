@@ -11,7 +11,7 @@ __
 
 __Join us for a Connecting Europe event and discover how the new CEF Building Blocks will help to build the next generation of cross-border European digital public services.   
 __  
-![](docs/Image/672/thumb_450x-_logo_ce_en_rvb_hr.jpg)  
+![](/docs/Image/672/thumb_450x-_logo_ce_en_rvb_hr.jpg)  
   
   
   

@@ -11,7 +11,7 @@ __
 
 __National and local fairway authorities have the obligation to inform users about issues regarding the waterway that might influence safety and accessibility. Notices to Skippers communicate for example the status of the inland waterway infrastructure (i.e. bridges and locks)failures of aids to navigationtemporarily blockages of waterway sections or other types of infrastructureworkswater level and water depth information ice information and weather messages. The international standard for Notices to Skippers provides a standardized data formatwhich can be used both for publishing Notices on the internet (pull-services) or for distribution by e-mail (push services).  
 __  
-![](docs/Image/342/thumb_450x-_nts.jpg)__  
+![](/docs/Image/342/thumb_450x-_nts.jpg)__  
 
 NtS Expert Group__  
   

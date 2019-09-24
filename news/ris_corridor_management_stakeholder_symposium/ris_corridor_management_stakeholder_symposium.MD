@@ -11,7 +11,7 @@ __
 
 __This Symposium aims at presenting the RIS COMEX project &amp; developing the roadmap for further digitalization of inland waterway transport.   
 __  
-![](docs/Image/668/thumb_450x-_ris_corridor_mngmt_invitation_banner.png)  
+![](/docs/Image/668/thumb_450x-_ris_corridor_mngmt_invitation_banner.png)  
   
 <u>Date and Venue:</u><sup>th</sup>  
   

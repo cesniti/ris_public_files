@@ -4,7 +4,7 @@
 
 <a href="/news" style="text-transform:lowercase;">News</a><a href="/news/digital_transport_days_conference_7_to_9_october_in_helsinki" style="text-transform:lowercase;">Digital Transport Days Conference 7 to 9 October in Helsinki</a>  
   
-![](docs/Image/684/thumb_450x-_dde06b9f_8619_480e_8517_1577a3859451.jpg)__Digital Transport Days Conference__  
+![](/docs/Image/684/thumb_450x-_dde06b9f_8619_480e_8517_1577a3859451.jpg)__Digital Transport Days Conference__  
   
   
   

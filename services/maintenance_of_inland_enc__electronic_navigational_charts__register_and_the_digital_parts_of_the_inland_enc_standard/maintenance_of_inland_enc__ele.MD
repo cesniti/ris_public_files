@@ -8,7 +8,7 @@
 
 __Inland ENC's have to provide up-to-date information and need to be compatible with maritime ECDIS. Within the PLATINA project the requirements for keeping the ENC Register up-to-date have been defined and agreed with the various EG's in 2009. Since 2010PLATINA supports the maintenance of the Register. The contributors to the production of Inland ENC and its applications are assisted in developing new entries for the IENC Feature Concept Dictionary.__
 
-__Inland ENC's have to provide up-to-date information and need to be compatible with maritime ECDIS. Within the PLATINA project the requirements for keeping the ENC Register up-to-date have been defined and agreed with the various EG's in 2009. Since 2010PLATINA supports the maintenance of the Register. The contributors to the production of Inland ENC and its applications are assisted in developing new entries for the IENC Feature Concept Dictionary.__![](docs/Image/484/thumb_450x-_inlandecdis.jpg)  
+__Inland ENC's have to provide up-to-date information and need to be compatible with maritime ECDIS. Within the PLATINA project the requirements for keeping the ENC Register up-to-date have been defined and agreed with the various EG's in 2009. Since 2010PLATINA supports the maintenance of the Register. The contributors to the production of Inland ENC and its applications are assisted in developing new entries for the IENC Feature Concept Dictionary.__![](/docs/Image/484/thumb_450x-_inlandecdis.jpg)  
   
 
 

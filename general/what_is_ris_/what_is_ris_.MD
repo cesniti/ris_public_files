@@ -12,7 +12,7 @@
 
 <br type="_moz"/>
 
-![](docs/Image/329/thumb_450x-_ris_directive_coverage.jpg)__Policy perspective__  
+![](/docs/Image/329/thumb_450x-_ris_directive_coverage.jpg)__Policy perspective__  
   
   
   

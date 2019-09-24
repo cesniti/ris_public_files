@@ -34,7 +34,7 @@ In its work it will include activities on the RIS index related to the activitie
 
 <br type="_moz"/>
 
-![](docs/Image/391/thumb_450x-_screen_capture_6.png)
+![](/docs/Image/391/thumb_450x-_screen_capture_6.png)
 
 *   waterway axis with kilometre indication,
 *   restrictions for vessels or convoys in terms of lengthwidthdraught and air draught,

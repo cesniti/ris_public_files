@@ -21,7 +21,7 @@ If you are not on the mailing list for the registrationplease contact the Event 
 __  
 <a href="/docs/File/669/2018_12_schedule_ris_week_vienna_v0p5_final.pdf" target="_blank">downloaded here</a>  
   
-![](docs/Image/669/thumb_450x-_201812_ris_week_vienna_signature.jpg)  
+![](/docs/Image/669/thumb_450x-_201812_ris_week_vienna_signature.jpg)  
   
   
   

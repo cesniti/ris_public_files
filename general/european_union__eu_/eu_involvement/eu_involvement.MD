@@ -31,7 +31,7 @@ __
   
   
   
-![](docs/Image/330/thumb_450x-_kompas.png)__Policy development  
+![](/docs/Image/330/thumb_450x-_kompas.png)__Policy development  
 __  
   
   

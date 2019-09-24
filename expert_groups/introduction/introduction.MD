@@ -4,7 +4,7 @@
 
 <a href="/expert_groups" style="text-transform:lowercase;">Expert Groups</a><a href="/expert_groups/introduction" style="text-transform:lowercase;">Introduction</a>  
   
-![](docs/Image/339/thumb_450x-_ris.jpg)  
+![](/docs/Image/339/thumb_450x-_ris.jpg)  
   
   
   

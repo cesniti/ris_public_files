@@ -8,7 +8,7 @@
 
 __The River Commissions coordinate the interest of the different basin states. Alsothey are responsible for improving collaboration of waterborne transport among states and relevant national ministries to create synergy on an international level.__
 
-__The River Commissions coordinate the interest of the different basin states. Alsothey are responsible for improving collaboration of waterborne transport among states and relevant national ministries to create synergy on an international level.__![](docs/Image/302/thumb_450x-_screen_capture_9.png)  
+__The River Commissions coordinate the interest of the different basin states. Alsothey are responsible for improving collaboration of waterborne transport among states and relevant national ministries to create synergy on an international level.__![](/docs/Image/302/thumb_450x-_screen_capture_9.png)  
   
   
 

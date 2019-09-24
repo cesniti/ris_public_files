@@ -4,7 +4,7 @@
 
 <a href="/library" style="text-transform:lowercase;">Library</a><a href="/library/links" style="text-transform:lowercase;">Links</a><a href="/library/links/countries" style="text-transform:lowercase;">Countries</a>  
   
-![](docs/Image/365/thumb_450x-_screen_capture_20.png)__Austria  
+![](/docs/Image/365/thumb_450x-_screen_capture_20.png)__Austria  
 __  
 <a href="http://via-donau.org" target="_blank">via donau - ÷sterreichische Wasserstraﬂen-Gesellschaft mbH</a>  
 <a href="http://www.doris.bmvit.gv.at/" target="_blank"> Donau River Information Services - DoRIS </a>  

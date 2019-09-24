@@ -11,7 +11,7 @@ __
 
 __Commission Implementing Regulation (EU) 2018/2032 of 20 November 2018 amending Commission Regulation (EC) No 416/2007 concerning the technical specifications for Notices to Skippers.  
 __  
-![](docs/Image/678/thumb_450x-_logo_ce_en_rvb_hr.jpg)  
+![](/docs/Image/678/thumb_450x-_logo_ce_en_rvb_hr.jpg)  
   
   
   

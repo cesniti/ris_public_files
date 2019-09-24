@@ -4,7 +4,7 @@
 
 <a href="/library" style="text-transform:lowercase;">Library</a><a href="/library/legislation" style="text-transform:lowercase;">Legislation</a><a href="/library/legislation/legislation" style="text-transform:lowercase;">Legislation</a>  
   
-![](docs/Image/385/thumb_450x-_screen_capture_22.png)
+![](/docs/Image/385/thumb_450x-_screen_capture_22.png)
 
 <div>European legislation:</div>
 

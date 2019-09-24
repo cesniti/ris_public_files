@@ -11,7 +11,7 @@ __
 
 __The upcoming RIS Week will be hosted by __Voies navigables de France (VNF)__ together with the Riverdating event __in Liège (Belgium)from 25th to 29th November 2019 at the Palais des Congrès.__  
 ____Voies navigables de France (VNF)____in Liège (Belgium)from 25th to 29th November 2019 at the Palais des Congrès.__  
-![](docs/Image/686/thumb_450x-_image001.png)  
+![](/docs/Image/686/thumb_450x-_image001.png)  
   
 __indicative schedule__  
   

@@ -14,7 +14,7 @@ __We are looking back to an exciting RIS Week from 11 to 15 June in Rotterdam! T
   
 __  
   
-![](docs/Image/664/thumb_450x-_p1040162_a.jpg)  
+![](/docs/Image/664/thumb_450x-_p1040162_a.jpg)  
   
   
   

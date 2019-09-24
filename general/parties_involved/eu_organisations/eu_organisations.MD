@@ -4,7 +4,7 @@
 
 <a href="/general" style="text-transform:lowercase;">General</a><a href="/general/parties_involved" style="text-transform:lowercase;">Parties involved</a><a href="/general/parties_involved/eu_organisations" style="text-transform:lowercase;">EU organisations</a>  
   
-![](docs/Image/301/thumb_450x-_screen_capture_6.png)__European Council__  
+![](/docs/Image/301/thumb_450x-_screen_capture_6.png)__European Council__  
   
   
   

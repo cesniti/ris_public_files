@@ -16,7 +16,7 @@ __&nbsp;Electronic reporting and electronic messaging is the way to a paperless 
 
 Information on vessel and cargo data over a large area is important for all those participating in transport operation: Authoritieslock operatorsemergency servicesport operatorsfleet operators. For that reasonelectronic ship reporting systems are set up. The Standard for Electronic Ship Reporting in Inland Navigation describes the messagesdata items and codes to be used in electronic ship reporting for the different services of RIS.__  
   
-![](docs/Image/340/thumb_450x-_erilogo.jpg)__ERI Expert Group__  
+![](/docs/Image/340/thumb_450x-_erilogo.jpg)__ERI Expert Group__  
   
   
   

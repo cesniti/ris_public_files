@@ -4,7 +4,7 @@
 
 <a href="/library" style="text-transform:lowercase;">Library</a><a href="/library/links" style="text-transform:lowercase;">Links</a><a href="/library/links/ris_authorities" style="text-transform:lowercase;">RIS Authorities</a>  
   
-![](docs/Image/367/thumb_450x-_screen_capture_21.png)__Austria  
+![](/docs/Image/367/thumb_450x-_screen_capture_21.png)__Austria  
 __  
 <a href="http://www.bmvit.gv.at/" target="_blank">Bundesministerium fur VerkehrInnovation und Technologie&nbsp;</a>  
 __  

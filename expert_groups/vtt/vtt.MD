@@ -13,7 +13,7 @@ It supports onboard navigationshore-based traffic monitoring as part of Vessel T
 __Tracking and tracing of inland navigation vessels is an important part of the “River Information Services” (RIS) for the improvement of safety and efficiency in the sector.   
 
 It supports onboard navigationshore-based traffic monitoring as part of Vessel Traffic Services (VTS) and other tasks such as calamity abatement. Inland AIS (Automatic Identification System) is a standardised procedure for the automatic exchange of nautical data between ships and between ships and shore installations.&nbsp;__  
-![](docs/Image/341/thumb_450x-_vtt.jpg)__VTT Expert Group__  
+![](/docs/Image/341/thumb_450x-_vtt.jpg)__VTT Expert Group__  
   
   
   

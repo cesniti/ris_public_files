@@ -12,7 +12,7 @@
 
 <br type="_moz"/>
 
-![](docs/Image/361/thumb_450x-_ecegsupport.png)  
+![](/docs/Image/361/thumb_450x-_ecegsupport.png)  
   
 [library](/library/expert_groups)  
   

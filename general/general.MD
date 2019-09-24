@@ -4,7 +4,7 @@
 
 <a href="/general" style="text-transform:lowercase;">General</a><a href="/general/contact_us" style="text-transform:lowercase;">Contact us</a>  
   
-![](docs/Image/466/thumb_450x-_screen_capture_24.png)  
+![](/docs/Image/466/thumb_450x-_screen_capture_24.png)  
 [ info@ris.eu](javascript:location.href='mailto:'+String.fromCharCode(105,110,102,111,64,114,105,115,46,101,117)+'?')  
   
   

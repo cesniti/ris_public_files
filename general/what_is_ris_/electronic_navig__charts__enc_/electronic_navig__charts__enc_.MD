@@ -11,7 +11,7 @@ __
 
 __Electronic Navigational Charts (ENC) are available for all countriesmany free of charge. The detail levels relate to Waterway Class V and higher. On some waterways ENC's on Waterway classes IV and lower are available. The PLATINA project will develop a tool to provide the ENC's through the RIS portal.  
 __  
-![](docs/Image/396/thumb_450x-_screen_capture_13.png)  
+![](/docs/Image/396/thumb_450x-_screen_capture_13.png)  
 <a href="http://www.doris.bmvit.gv.at/en/maps-charts/inland-encs/downloads/inland-encs-inland-ecdis-standard-23/" target="_blank">Austria</a>  
 <a href="http://ris.vlaanderen.be/IENC/" target="_blank">Belgium - Flanders</a>  
 <a href="http://www.appd-bg.org/siteen/page.php?27" target="_blank">Bulgaria</a>  

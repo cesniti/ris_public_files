@@ -11,8 +11,4 @@
 * <a href="http://ec.europa.eu/regional_policy/thefunds/regional/index_en.cfm" target="_blank">__European Regional Development Fund (ERDF)__</a>
 * <a href="http://ec.europa.eu/enlargement/instruments/overview/index_en.htm" target="_blank">__Pre-Accession Assistance (IPA II)__</a>
   
-<a href="http://ec.europa.eu/programmes/horizon2020/" target="_blank">__Horizon 2020__</a>__Horizon 2020__
-
-<br type="_moz"/>
-
-]
+<a href="http://ec.europa.eu/programmes/horizon2020/" target="_blank">__Horizon 2020__</a>
