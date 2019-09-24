@@ -5,18 +5,24 @@ The architecture of the www.ris.eu is presented here in the Master branch of the
 The new order branch proposes a new set up of the files and page description.
 
 
-The Goad is to obtain the following tree of information
+The Goal is to obtain the following tree of information in the dedicated page for CESNI/TI : 
 
 	.
 	├── docs
 	|	├── File								# all the files are stored in this folder for download
 	|	└── Image		
-	├── CESNI/TI
+	├── CESNI/TI								# wordpress page dedicated to CESNI/TI
 		├── mission
-		├── RIS
+		├── RIS directive 
+		├── Definition RIS
+		├── Temporary working group				# abstract problem analysis TI-1 to TI-4
+		├── ecdis Standard 						# ref vers EU-lex  ou pdf ?
+		├── nts Standard						# ref vers EU-lex  ou pdf ?
+		├── vtt standard 						# ref vers EU-lex  ou pdf ?
+		├── eri	standard 						# pdf 
 		└── reference data
-	├── Temporary working groups
-		├── ecdis
+	├── Temporary working groups				# subsite dedicated to working groups
+		├── ecdis 
 		├── nts
 		├── vtt
 		└── eri
