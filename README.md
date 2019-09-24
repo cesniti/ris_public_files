@@ -4,10 +4,28 @@ The architecture of the www.ris.eu is presented here in the Master branch of the
 
 The new order branch proposes a new set up of the files and page description.
 
-The current folder architecture is the following : 
+
+The Goad is to obtain the following tree of information
 
 	.
-	├── background								# Background information on EU
+	├── docs
+	|	├── File								# all the files are stored in this folder for download
+	|	└── Image		
+	├── CESNI/TI
+		├── mission
+		├── RIS
+		└── reference data
+	├── Temporary working groups
+		├── ecdis
+		├── nts
+		├── vtt
+		└── eri
+
+
+The current folder architecture is the following the tree : 
+
+	.
+	├── background							# Background information on EU
 	|	└── european_union__eu_
 	|		└── eu_support_programmes        
 	├── contact_us                    			# contact form (not in use)				
