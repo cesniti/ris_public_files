@@ -2,7 +2,7 @@
 
 [GENERAL](/general) | [What is RIS?](/general/what_is_ris_) | [Description](/general/what_is_ris_/description)
 
-River Information Services (RIS) are information services designed to enhance safety and efficiency of inland waterway transport (IWT) by optimising traffic and transport processes. Focal aspect is a swift demand oriented electronic data transfer between water and shore through real-time exchange of information. RIS therefore aim to streamline the exchange of information between all IWT stakeholders. Since 2005an [EU framework directive](/library/legislation) provides minimum requirements for RIS implementation and agreed RIS standards to enable cross-border compatibility of national systems. The European waterways affected by the RIS Directive are illustrated in the following picture:
+River Information Services (RIS) are information services designed to enhance safety and efficiency of inland waterway transport (IWT) by optimising traffic and transport processes. Focal aspect is a swift demand oriented electronic data transfer between water and shore through real-time exchange of information. RIS therefore aim to streamline the exchange of information between all IWT stakeholders. Since 2005, an [EU framework directive](/library/legislation) provides minimum requirements for RIS implementation and agreed RIS standards to enable cross-border compatibility of national systems. The European waterways affected by the RIS Directive are illustrated in the following picture:
 
 ![](/docs/Image/329/thumb_450x-_ris_directive_coverage.jpg)
   
