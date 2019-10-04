@@ -161,6 +161,18 @@ img {
 	font-size:14px;
 	text-align: justify;
 }
+#content h6
+{ 
+	margin-top: 6px;
+	font-weight:300;
+	margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	color:#005aab;
+	font-size:12px;
+	text-align: justify;
+}
 #content ol
 { 
 	font-size:13px;
