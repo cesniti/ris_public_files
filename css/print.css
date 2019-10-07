@@ -13,15 +13,15 @@ img {
 	}
 /*//////////////////////////////////////////////////*/
 #header {
-	width: 100%;
+	width: 95%;
 	height: 130px;
 	background-color: #000000;
 	filter:alpha(opacity=10);
 	background-color: rgba(32,32,32, 0.1);
 	}
 #header_content {
-	width: 980px;
-	height: 130px;
+	/*width: 980px;*/
+	height: 65px;
 	margin: 0 auto;
    	padding: 0px;
 	
@@ -30,6 +30,7 @@ img {
    	float: left;
 	margin-top: 30px;
 	margin-left: 0px;
+	width:25% !important;
 	}
 #header_lang {display: none;}
 #header_lang_content {display: none;}
@@ -37,15 +38,16 @@ img {
 
 /* ---------------------------------------------------*/
 #center {
-	width: 100%;
-	height: 615px;
+	width:95%;
+	/*width: 100%;
+	height: 615px;*/
 	background-color: #000000;
 	filter:alpha(opacity=80);
 	background-color: rgba(32,32,32, 0.8);
 	}
 #container_center {
-	width: 980px;
-	height: 615px;
+	/*width: 980px;*/
+	/*height: 615px;*/
 	margin: 0 auto;
    	padding: 0px;
 	
@@ -62,7 +64,7 @@ img {
 //////////////////////////////////////////////////////////////////////////*/
 #container_main {
 	float: left;
-	width: 900px;	
+	/*width: 900px;	*/
 }
 #content { 
 	margin: 30px 30px 30px 30px;
@@ -179,18 +181,18 @@ img {
 }
 #content p
 { 
-	font: 14px verdana, sans-serif;
+	font: 10px arial, sans-serif;
 	color: #000000;
 	text-align: justify;
 }
 #content p.date
 { 
-	font: 13px verdana, sans-serif;
+	font: 10px arial, sans-serif;
 	text-align: right;
 }
 #content p.fondgris
 { 
-	font: 14px verdana, sans-serif;
+	font: 10px arial, sans-serif;
 	color: #000000;
 	text-align: justify;
 	background-color: #c0c0c0;
@@ -203,7 +205,7 @@ img {
 }
 #content p td {
   	color: #000000;	
-	font: 11px verdana, sans-serif;	
+	font: 10px arial, sans-serif;	
 	border:1px solid black;
 	padding: 2px;
 	}
@@ -231,7 +233,7 @@ img {
    	margin-top: 30px;
    	padding: 0px;
    	text-align: center ;
-	font-size : 14px;
+	font-size : 10px;
 	width: 60%;
 }
 #monForm p
@@ -280,14 +282,14 @@ img {
 #monForm input[type="submit"]:hover
 {
 	background-color: #8b96a2;
-	font-size : 11px;
+	font-size : 10px;
 	font-family: Verdana, Arial, sans-serif;
     color: #000000;
 	cursor: pointer;
 }
 /* -------------  Recherche  ------------------*/
 #monSForm {
-	font: 14px verdana, sans-serif;
+	font: 10px verdana, sans-serif;
 	}
 #monSForm p{
 	margin: 0px;
@@ -322,7 +324,7 @@ img {
 	border: #677D92 1px solid;
 	/*width: 27%;*/
 	margin-top: 15px;
-	font-size : 11px;
+	font-size : 10px;
 	background-color: #677D92;
 	font-family: Verdana, Arial, sans-serif;
     color: #ffffff;
@@ -331,7 +333,7 @@ img {
 #monSForm input[type="submit"]:hover
 {
 	background-color: #8b96a2;
-	font-size : 11px;
+	font-size : 10px;
 	font-family: Verdana, Arial, sans-serif;
     color: #000000;
 	cursor: pointer;
@@ -372,7 +374,7 @@ img {
 	text-align: left;
 	margin: 15px 0;
 	color: #777777;
-	font-size : 14px;
+	font-size : 10px;
 }
 /* Label */
 #contactForm label
