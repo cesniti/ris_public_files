@@ -140,16 +140,26 @@ img {
 }
 #content { 
 	/*height: 611px;*/
+	font-family:arial;
 	margin: 15px 20px;
 	overflow: auto;
 	padding-right: 5px;
+}
+#content h3
+{ 
+	margin-top: 6px;
+	font-weight:300;
+	color:#005aab;
+	font-size:20px;
+	text-transform:uppercase;
+	text-align: justify;
 }
 #content h4
 { 
 	margin-top: 6px;
 	font-weight:300;
 	color:#005aab;
-	font-size:20px;
+	font-size:18px;
 	text-transform:uppercase;
 	text-align: justify;
 }
@@ -170,7 +180,7 @@ img {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 	color:#005aab;
-	font-size:12px;
+	font-size:13px;
 	text-align: justify;
 }
 #content ol
@@ -289,6 +299,34 @@ img {
 	color: #005aab;
 	font-size:11px;
 	text-align: justify;
+}
+#content ul p, a {
+  list-style: none;
+}
+
+#content ul li::before a {
+  content: "\2022";
+  color: #005aab;
+  font-weight: bold;
+  display: inline-block;
+  width: 2em;
+  margin-left: -2em;
+}
+
+#content ul li::before p {
+  content: "\2022";
+  color: #000000;
+  font-weight: bold;
+  display: inline-block;
+  width: 2em;
+  margin-left: -2em;
+}
+
+
+
+#content a
+{ 
+	font-size:13px;
 }
 #content p
 { 

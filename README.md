@@ -1,34 +1,37 @@
-# RIS public website
+# RIS public / members website
 
 The architecture of the www.ris.eu is presented here in the Master branch of the projet. The file have been extracted from the current web site in order to facilitate the transfer of the most important file to the new architecture.
 
-The new order branch proposes a new set up of the files and page description.
-
+The new set up of the files and website structure.
 
 The Goal is to obtain the following tree of information in the dedicated page for CESNI/TI : 
 
 	.
+	├── CESNI/TI								# Wordpress page dedicated to CESNI/TI (under activities/)
+		├── Mission
+		├── RIS Directive 
+		├── Work programme
+		└── Site Temporary working group		# Abstract work programme TI-1 to TI-4
+	├── Subsite Temporary working groups		# Sub website dedicated to working groups ie. ris.cesni.eu
+		├── home
+		├── RIS									# Definition of RIS / RIS objectives / Services / operational perspective
+			├── ecdis 							# Group definition / mandate / Standard editions
+			├── ecdis download area				# Done
+			├── eri
+			├── eri download area
+			├── nts
+			├── nts download area
+			├── vtt
+			├── vtt download area
+			└── reference data
 	├── docs
-	|	├── File								# all the files are stored in this folder for download
-	|	└── Image		
-	├── CESNI/TI								# wordpress page dedicated to CESNI/TI
-		├── mission
-		├── RIS directive 
-		├── Definition RIS
-		├── Temporary working group				# abstract problem analysis TI-1 to TI-4
-		├── ecdis Standard 						# ref vers EU-lex  ou pdf ?
-		├── nts Standard						# ref vers EU-lex  ou pdf ?
-		├── vtt standard 						# ref vers EU-lex  ou pdf ?
-		├── eri	standard 						# pdf 
-		└── reference data
-	├── Temporary working groups				# subsite dedicated to working groups
-		├── ecdis 
-		├── nts
-		├── vtt
-		└── eri
+		├── File								# All the files are stored in this folder for download
+		└── Image								# All image stored in this folder are related to the previous website
+	├── css										# Presentation files
+	├── images									# Images related to template
+	└── scripts									# Script related to template
 
-
-The current folder architecture is the following the tree : 
+The previous folder architecture is the following the tree : 
 
 	.
 	├── background							# Background information on EU
