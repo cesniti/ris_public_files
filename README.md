@@ -16,14 +16,14 @@ The Goal is to obtain the following tree of information in the dedicated page fo
 		├── home
 		├── RIS									# Definition of RIS / RIS objectives / Services / operational perspective
 			├── ecdis 							# Group definition / mandate / Standard editions
-			├── ecdis download area				# Done
-			├── eri
-			├── eri download area
-			├── nts
-			├── nts download area
-			├── vtt
-			├── vtt download area
-			└── reference data
+			├── ecdis download area				# ECDIS DOCUMENTATION
+			├── eri								# Group definition / mandate / Standard editions
+			├── eri download					# ERI DOCUMENTATION
+			├── nts								# Group definition / mandate / Standard editions
+			├── nts download 					# NtS DOCUMENTATION
+			├── vtt								# Group definition / mandate / Standard editions
+			├── vtt download area  				# VTT DOCUMENTATION
+			└── reference data 
 	├── docs
 		├── File								# All the files are stored in this folder for download
 		└── Image								# All image stored in this folder are related to the previous website

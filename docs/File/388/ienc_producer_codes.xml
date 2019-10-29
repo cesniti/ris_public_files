@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Producers title="IENC Producer Codes" edition="1.0" date="2006-04-29" xmlns="http://ienc.openecdis.org/producerCodes"
+  xsi:schemaLocation="http://ienc.openecdis.org/producerCodes IENC-PC-10.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Scope>Codes of official Producers of IENCs which are not mentioned in IHO S-62</Scope>
+  <Producer producerCode="1H" agencyCode="7969">
+    <Name>Vituki Water Resources Research Centre Hungary</Name>
+    <Country>Hungary</Country>
+    <CountryCode>HU</CountryCode>
+    <Url>http://www.vituki.hu</Url>
+  </Producer>
+  <Producer producerCode="1M" agencyCode="7974">
+    <Name>Channel of Moscow</Name>
+    <Country>Russian Federation</Country>
+    <CountryCode>RU</CountryCode>
+    <Url>http://www.fgup-kim.ru</Url>
+  </Producer>
+  <Producer producerCode="1R" agencyCode="7979">
+    <Name>Rijkswaterstaat</Name>
+    <Country>Netherlands</Country>
+    <CountryCode>NL</CountryCode>
+    <Url>http://www.rijkswaterstaat.nl</Url>
+  </Producer>
+  <Producer producerCode="1V" agencyCode="7983">
+    <Name>The Volga-Baltic State Territorial Department for Waterways</Name>
+    <Country>Russian Federation</Country>
+    <CountryCode>RU</CountryCode>
+    <Url>http://www.volgabaltic.spb.ru</Url>
+  </Producer>
+  <Producer producerCode="1W" agencyCode="7984">
+    <Name>Wasser- und Schifffahrtsverwaltung des Bundes, Direktion SW</Name>
+    <Country>Germany</Country>
+    <CountryCode>DE</CountryCode>
+    <Url>http://www.wsv.de/</Url>
+  </Producer>
+  <Producer producerCode="2B" agencyCode="11051">
+    <Name>Bundesanstalt für Wasserbau, Karlsruhe</Name>
+    <Country>Germany</Country>
+    <CountryCode>DE</CountryCode>
+    <Url>http://www.baw.de</Url>
+  </Producer>
+  <Producer producerCode="2D" agencyCode="11565">
+    <Name>SVP, s.p., OZ Bratislava</Name>
+    <Country>Slovakia</Country>
+    <CountryCode>SK</CountryCode>
+    <Url>http://www.svp.sk</Url>
+  </Producer>
+  <Producer producerCode="2H" agencyCode="12055">
+    <Name>CMER, Zagreb</Name>
+    <Country>Croatia</Country>
+    <CountryCode>HR</CountryCode>
+    <Url>http://www.irb.hr</Url>
+  </Producer>
+  <Producer producerCode="2P" agencyCode="12063">
+    <Name>PLOVPUT Beograd</Name>
+    <Country>Serbia and Montenegro</Country>
+    <CountryCode>CS</CountryCode>
+    <Url>http://www.plovput.co.yu</Url>
+  </Producer>
+  <Producer producerCode="2R" agencyCode="12065">
+    <Name>Port of Rotterdam</Name>
+    <Country>Netherlands</Country>
+    <CountryCode>NL</CountryCode>
+    <Url>http://www.port.rotterdam.nl</Url>
+  </Producer>
+  <Producer producerCode="2V" agencyCode="12095">
+    <Name>The Volga State Territorial Department for Waterways</Name>
+    <Country>Russian Federation</Country>
+    <CountryCode>RU</CountryCode>
+    <Url>http://www.volzhskoe.gbu.ru</Url>
+  </Producer>
+  <Producer producerCode="2W" agencyCode="12096">
+    <Name>via donau - Österreichische Wasserstraßen-Gesellschaft mbH</Name>
+    <Country>Austria</Country>
+    <CountryCode>AT</CountryCode>
+    <Url>http://www.via-donau.org</Url>
+  </Producer>
+  <Producer producerCode="3B" agencyCode="15163">
+    <Name>AEMDR, Rousse, Bulgaria</Name>
+    <Country>Bulgaria</Country>
+    <CountryCode>BG</CountryCode>
+    <Url>http://www.appd-bg.org</Url>
+  </Producer>
+  <Producer producerCode="3R" agencyCode="16203">
+    <Name>A.F.D.J. R.A. Galati</Name>
+    <Country>Romania</Country>
+    <CountryCode>RO</CountryCode>
+    <Url>http://www.afdj.ro</Url>
+  </Producer>
+  <Producer producerCode="3U" agencyCode="16206">
+    <Name>US Army Corps of Engineers</Name>
+    <Country>United States of America</Country>
+    <CountryCode>US</CountryCode>
+    <Url>http://www.erdc.usace.army.mil</Url>
+  </Producer>
+  <Producer producerCode="3V" agencyCode="16207">
+    <Name>The Volga-Don Waterways And Navigation Board</Name>
+    <Country>Russian Federation</Country>
+    <CountryCode>RU</CountryCode>
+    <Url/>
+  </Producer>
+  <Producer producerCode="4C" agencyCode="19532">
+    <Name>Rheinschifffahrtsdirektion (RSD) Basel</Name>
+    <Country>Switzerland</Country>
+    <CountryCode>CH</CountryCode>
+    <Url>http://www.portofbasel.ch/</Url>
+  </Producer>
+</Producers>

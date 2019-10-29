@@ -1,337 +1,39 @@
-[
-
 # Electronic Reporting
-
-<a href="/general" style="text-transform:lowercase;">General</a><a href="/general/what_is_ris_" style="text-transform:lowercase;">What is RIS?</a><a href="/general/what_is_ris_/electronic_reporting" style="text-transform:lowercase;">Electronic Reporting</a>  
-  
-
-
-__The objective of the electronic reporting standard for inland shipping navigation is:
-
-
-*   To facilitate Electronic Data Interchange (EDI) between parties in inland shipping and parties in intermodal transportation which are involved in inland shipping
-*   To avoid having to report voyage data more than once to the various authorities and/or commercial parties
-*   To provide rules and standards for the exchange of electronic messages between parties in inland shipping. Public authorities and other stakeholders (ship ownersskipperscharterersterminalsports) must ensure that their data complies with these data exchange standards and rules.Electronic reporting software (BICS)&nbsp;
-
-__
-
-__The objective of the electronic reporting standard for inland shipping navigation is:
-
-
-*   To facilitate Electronic Data Interchange (EDI) between parties in inland shipping and parties in intermodal transportation which are involved in inland shipping
-*   To avoid having to report voyage data more than once to the various authorities and/or commercial parties
-*   To provide rules and standards for the exchange of electronic messages between parties in inland shipping. Public authorities and other stakeholders (ship ownersskipperscharterersterminalsports) must ensure that their data complies with these data exchange standards and rules.Electronic reporting software (BICS)&nbsp;
-
-__
-
-*   To facilitate Electronic Data Interchange (EDI) between parties in inland shipping and parties in intermodal transportation which are involved in inland shipping
-*   To avoid having to report voyage data more than once to the various authorities and/or commercial parties
-*   To provide rules and standards for the exchange of electronic messages between parties in inland shipping. Public authorities and other stakeholders (ship ownersskipperscharterersterminalsports) must ensure that their data complies with these data exchange standards and rules.Electronic reporting software (BICS)&nbsp;
-
-<li>To facilitate Electronic Data Interchange (EDI) between parties in inland shipping and parties in intermodal transportation which are involved in inland shipping</li><li>To avoid having to report voyage data more than once to the various authorities and/or commercial parties</li><li>To provide rules and standards for the exchange of electronic messages between parties in inland shipping. Public authorities and other stakeholders (ship ownersskipperscharterersterminalsports) must ensure that their data complies with these data exchange standards and rules.Electronic reporting software (BICS)&nbsp;</li>![](/docs/Image/395/thumb_450x-_connectivity.png)[&nbsp;Expert Group on Electronic Reporting International (ERI)](/expert_groups/eri)__  
-  
-
-Mandatory electronic reporting__  
-  
-  
-  
-  
-__Status of electronic reporting__  
-
-
-<table border="1" cellpadding="1" cellspacing="1" width="100%">
-<tbody>
-<tr>
-<td><strong>Country</strong></td>
-<td><strong>Operational</strong></td>
-</tr>
-<tr>
-<td>Austria</td>
-<td>Noonly in pilot</td>
-</tr>
-<tr>
-<td>Belgium Flanders</td>
-<td>Noonly in pilot</td>
-</tr>
-<tr>
-<td>Belgium Wallonia</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Croatia</td>
-<td>Noonly in pilot</td>
-</tr>
-<tr>
-<td>Czech Republic</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Germany</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Hungary</td>
-<td>Noonly in pilot</td>
-</tr>
-<tr>
-<td>Netherlands</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Romania</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Slovakia</td>
-<td>Noonly in pilot</td>
-</tr>
-<tr>
-<td>Switzerland</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
-
-
-
-<tbody>
-<tr>
-<td><strong>Country</strong></td>
-<td><strong>Operational</strong></td>
-</tr>
-<tr>
-<td>Austria</td>
-<td>Noonly in pilot</td>
-</tr>
-<tr>
-<td>Belgium Flanders</td>
-<td>Noonly in pilot</td>
-</tr>
-<tr>
-<td>Belgium Wallonia</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Croatia</td>
-<td>Noonly in pilot</td>
-</tr>
-<tr>
-<td>Czech Republic</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Germany</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Hungary</td>
-<td>Noonly in pilot</td>
-</tr>
-<tr>
-<td>Netherlands</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Romania</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Slovakia</td>
-<td>Noonly in pilot</td>
-</tr>
-<tr>
-<td>Switzerland</td>
-<td>Yes</td>
-</tr>
-</tbody>
-
-
-
-<tr>
-<td><strong>Country</strong></td>
-<td><strong>Operational</strong></td>
-</tr>
-
-
-
-<td><strong>Country</strong></td>
-
-__Country__
-
-<td><strong>Operational</strong></td>
-
-__Operational__
-
-<tr>
-<td>Austria</td>
-<td>Noonly in pilot</td>
-</tr>
-
-
-
-<td>Austria</td>
-
-
-
-<td>Noonly in pilot</td>
-
-
-
-<tr>
-<td>Belgium Flanders</td>
-<td>Noonly in pilot</td>
-</tr>
-
-
-
-<td>Belgium Flanders</td>
-
-
-
-<td>Noonly in pilot</td>
-
-
-
-<tr>
-<td>Belgium Wallonia</td>
-<td>No</td>
-</tr>
-
-
-
-<td>Belgium Wallonia</td>
-
-
-
-<td>No</td>
-
-
-
-<tr>
-<td>Croatia</td>
-<td>Noonly in pilot</td>
-</tr>
-
-
-
-<td>Croatia</td>
-
-
-
-<td>Noonly in pilot</td>
-
-
-
-<tr>
-<td>Czech Republic</td>
-<td>No</td>
-</tr>
-
-
-
-<td>Czech Republic</td>
-
-
-
-<td>No</td>
-
-
-
-<tr>
-<td>Germany</td>
-<td>Yes</td>
-</tr>
-
-
-
-<td>Germany</td>
-
-
-
-<td>Yes</td>
-
-
-
-<tr>
-<td>Hungary</td>
-<td>Noonly in pilot</td>
-</tr>
-
-
-
-<td>Hungary</td>
-
-
-
-<td>Noonly in pilot</td>
-
-
-
-<tr>
-<td>Netherlands</td>
-<td>Yes</td>
-</tr>
-
-
-
-<td>Netherlands</td>
-
-
-
-<td>Yes</td>
-
-
-
-<tr>
-<td>Romania</td>
-<td>Yes</td>
-</tr>
-
-
-
-<td>Romania</td>
-
-
-
-<td>Yes</td>
-
-
-
-<tr>
-<td>Slovakia</td>
-<td>Noonly in pilot</td>
-</tr>
-
-
-
-<td>Slovakia</td>
-
-
-
-<td>Noonly in pilot</td>
-
-
-
-<tr>
-<td>Switzerland</td>
-<td>Yes</td>
-</tr>
-
-
-
-<td>Switzerland</td>
-
-
-
-<td>Yes</td>
-
-  
-  
-__Electronic reporting software (BICS)__  
-  
-  
-  
-  
-  
-[Online application form](http://www.bics.nl/?q=en/node/154)  
-]
+**The objective of the electronic reporting standard for inland shipping navigation is:**
+
+-   To facilitate Electronic Data Interchange (EDI) between parties in inland shipping and parties in intermodal transportation which are involved in inland shipping
+-   To avoid having to report voyage data more than once to the various authorities and/or commercial parties
+-   To provide rules and standards for the exchange of electronic messages between parties in inland shipping. Public authorities and other stakeholders (ship owners, skippers, charterers, terminals, ports) must ensure that their data complies with these data exchange standards and rules.Electronic reporting software (BICS) 
+
+![](docs/Image/395/thumb_450x-_connectivity.png) Preperatory work to develop a harmonized approach is being done in the [ Expert Group on Electronic Reporting International (ERI)](http://www.ris.eu/expert_groups/eri)**
+
+Mandatory electronic reporting**
+From 1 January 2010, ships carrying containers on the Rhine are obliged to report electronically to the traffic post in the area where they are to sail.
+
+**Status of electronic reporting**
+  ------------------ -------------------
+  **Country**        **Operational**
+  Austria            No, only in pilot
+  Belgium Flanders   No, only in pilot
+  Belgium Wallonia   No
+  Croatia            No, only in pilot
+  Czech Republic     No
+  Germany            Yes
+  Hungary            No, only in pilot
+  Netherlands        Yes
+  Romania            Yes
+  Slovakia           No, only in pilot
+  Switzerland        Yes
+  ------------------ -------------------
+
+
+
+**Electronic reporting software (BICS)**
+The program that is installed on board so that skippers can electronically report their cargo and voyage data is the inland shipping information and communication system called BICS (Barge Information and Communication System). BICS is a broad package of nautical software programs for various types of data exchange for inland shipping. BICS makes this exchange of information faster, more reliable and strictly confidential. No sensitive private or business information needs to be exchanged via open links; the VHF radio channels will soon return to being used for what they were intended. The BICS software is completely free and is provided by the Rijkswaterstaat (Dutch Ministry of Transport and Water Management).
+
+You can order via:
+Mail to info@bics.nl
+Phone ++31 10 288 63 90 (BICS-helpdesk)
+[Online application form](http://www.bics.nl/?q=en/node/154)
+
+</div>

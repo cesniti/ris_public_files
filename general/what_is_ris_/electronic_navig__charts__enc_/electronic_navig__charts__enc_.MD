@@ -1,51 +1,35 @@
-[
+# Electronic Navigational Charts (ENC)
+Electronic Navigational Charts (ENC) are available for all countries, many free of charge. The detail levels relate to Waterway Class V and higher. On some waterways ENC's on Waterway classes IV and lower are available. The PLATINA project will develop a tool to provide the ENC's through the RIS portal.
 
-# Electronic Navig. Charts (ENC)
+ The following countries allow to download the ENC's:
+*	[Austria](http://www.doris.bmvit.gv.at/en/maps-charts/inland-encs/downloads/inland-encs-inland-ecdis-standard-23/)
+- [Belgium - Flanders](http://ris.vlaanderen.be/IENC/)
+- [Bulgaria](http://www.appd-bg.org/siteen/page.php?27)
+- [Czech Republic](http://mapy.spspraha.cz/lpm/maps_S57.asp?lang=en)
+- [Croatia](http://vodniputovi.hr/en/navigation/enc-charts/)
+- [France](http://www.vnf.fr/ecdis/ecdis.html)
+- [Germany](https://www.elwis.de/Service/Inland-ENC-der-WSV/IENC-Dateien/index.php.html)
+- [Hungary](https://www.elwis.de/Service/Inland-ENC-der-WSV/IENC-Dateien/index.php.html)
+- [Netherlands](http://vaarweginformatie.nl/fdd/main/infra/enc)
+- [Poland](http://szczecin.uzs.gov.pl/itc3l_pobierz_mapy.htm)
+- [Romania](http://www.afdj.ro/en/content/inland-enc)
+- [Serbia](http://www.plovput.rs/electronic-navigational-charts)
+- [Slovakia](http://www.svp.sk/dunaj/default.asp?id=45&mnu=45)
+- [Switzerland](http://www.portof.ch/en/schifffahrt-behoerde/Inland-ENC.php) 
+- [Ukraine](http://www.charts.gov.ua/enc_cell_en.htm)
 
-<a href="/general" style="text-transform:lowercase;">General</a><a href="/general/what_is_ris_" style="text-transform:lowercase;">What is RIS?</a><a href="/general/what_is_ris_/electronic_navig__charts__enc_" style="text-transform:lowercase;">Electronic Navig. Charts (ENC)</a>  
-  
+Actually, to use the free ECDIS charts you need a ‘viewer’. You can download such an ENC viewer from the company SevenCs. This viewer is a software programme that displays the charts and all information contained within them, without any of the additional tools that commercial navigation software offers.
 
+You can find the viewer on the download pages of SevenCs:
+http://www.sevencs.com/service-products/download
+The application (software) that you must download is the Seemyenc 2.0 data viewer
+Click here to download software
+Then click on either ‘open’ to automatically start the installation process after the download, or ‘save’, after which you can start the installation procedure from the folder/directory where you saved the zip file.
 
-__Electronic Navigational Charts (ENC) are available for all countriesmany free of charge. The detail levels relate to Waterway Class V and higher. On some waterways ENC's on Waterway classes IV and lower are available. The PLATINA project will develop a tool to provide the ENC's through the RIS portal.  
-__
+In the folder where the application is installed (default C:SevenCs) you will also find a users guide under the subfolder SevenCsSeeMyENCdocuments, both in pdf format (under the name SeeMyENC.pdf) and in an html format which you can open in your browser
+(click [SevenCsSeeMyENCdocuWebHelpWelcome_Online_Help.htm](http://sevencsseemyencdocuwebhelpwelcome_online_help.htm/)).
 
-__Electronic Navigational Charts (ENC) are available for all countriesmany free of charge. The detail levels relate to Waterway Class V and higher. On some waterways ENC's on Waterway classes IV and lower are available. The PLATINA project will develop a tool to provide the ENC's through the RIS portal.  
-__  
-![](/docs/Image/396/thumb_450x-_screen_capture_13.png)  
-<a href="http://www.doris.bmvit.gv.at/en/maps-charts/inland-encs/downloads/inland-encs-inland-ecdis-standard-23/" target="_blank">Austria</a>  
-<a href="http://ris.vlaanderen.be/IENC/" target="_blank">Belgium - Flanders</a>  
-<a href="http://www.appd-bg.org/siteen/page.php?27" target="_blank">Bulgaria</a>  
-<a href="http://mapy.spspraha.cz/lpm/maps_S57.asp?lang=en" target="_blank">Czech Republic</a>  
-<a href="http://vodniputovi.hr/en/navigation/enc-charts/" target="_blank">Croatia</a>  
-<a href="http://www.vnf.fr/ecdis/ecdis.html" target="_blank">France</a>  
-<a href="https://www.elwis.de/Service/Inland-ENC-der-WSV/IENC-Dateien/index.php.html" target="_blank">Germany</a>  
-<a href="http://www.pannonris.hu/Maps" target="_blank">Hungary  
+# IENC Register Maintenance
+Within the PLATINA project the requirements for the Inland ENC Registry standards were developed in 2009 (see download). Technical support to the Inland ECDIS Expert Group and the IENC Harmonization Group and more specific the maintenance of the IENC Register und the digital parts of the IENC standard maintenance is required. In March 2011, at special request of the EC, PLATINA has taken up the responsibility to temporarily assist the EC to outsource this work for a limited time to 7C’s . After the end of PLATINA, the work is continued by Periskal until spring 2015 financed by the European Commission under a service contract concerning the Provision of support services. This work keeps featuring the RIS agenda for the next coming years.
 
-</a>  
-<a href="http://vaarweginformatie.nl/fdd/main/infra/enc" target="_blank">Netherlands</a>  
-<a href="http://szczecin.uzs.gov.pl/itc3l_pobierz_mapy.htm" target="_blank">Poland</a>  
-<a href="http://www.afdj.ro/en/content/inland-enc" target="_blank">Romania</a>  
-<a href="http://www.plovput.rs/electronic-navigational-charts" target="_blank">Serbia</a>  
-<a href="http://www.svp.sk/dunaj/default.asp?id=45&amp;mnu=45" target="_blank">Slovakia</a>  
-<a href="http://www.portof.ch/en/schifffahrt-behoerde/Inland-ENC.php" target="_blank">Switzerland&nbsp;</a>  
-<a href="http://www.charts.gov.ua/enc_cell_en.htm" target="_blank">Ukraine</a>  
-  
-  
-  
-  
-<http://www.sevencs.com/service-products/download>  
-  
-[Click here to download software](http://www.sevencs.com/files/download/software/SeeMyENC.20.zip)  
-  
-  
-  
-[SevenCsSeeMyENCdocuWebHelpWelcome\_Online\_Help.htm](http://SevenCsSeeMyENCdocuWebHelpWelcome_Online_Help.htm)  
-  
-__IENC Register Maintenance__  
-  
-  
-  
-  
-  
-  
-]
+More information check the pages on the Expert Group Inland ECDIS
