@@ -5,7 +5,6 @@ The architecture of the www.ris.eu is presented here in the Master branch of the
 The new set up of the files and website structure.
 
 The Goal is to obtain the following tree of information in the dedicated page for CESNI/TI : 
-
 	.
 	├── CESNI/TI								# Wordpress page dedicated to CESNI/TI (under activities/)
 		├── Mission
@@ -115,3 +114,4 @@ The previous folder architecture is the following the tree :
 	|	└── services_at_european_level
 	├── submit_your_project
 	└── README.md
+
