@@ -1,10 +1,37 @@
-# RIS public website
+# RIS public / members website
 
 The architecture of the www.ris.eu is presented here in the Master branch of the projet. The file have been extracted from the current web site in order to facilitate the transfer of the most important file to the new architecture.
 
-The new order branch proposes a new set up of the files and page description.
+The new set up of the files and website structure.
 
-The current folder architecture is the following : 
+The Goal is to obtain the following tree of information in the dedicated page for CESNI/TI : 
+
+	.
+	├── CESNI/TI								# Wordpress page dedicated to CESNI/TI (under activities/)
+		├── Mission
+		├── RIS Directive 
+		├── Work programme
+		└── Site Temporary working group		# Abstract work programme TI-1 to TI-4
+	├── Subsite Temporary working groups		# Sub website dedicated to working groups ie. ris.cesni.eu
+		├── home
+		├── RIS									# Definition of RIS / RIS objectives / Services / operational perspective
+			├── ecdis 							# Group definition / mandate / Standard editions
+			├── ecdis download area				# ECDIS DOCUMENTATION
+			├── eri								# Group definition / mandate / Standard editions
+			├── eri download					# ERI DOCUMENTATION
+			├── nts								# Group definition / mandate / Standard editions
+			├── nts download 					# NtS DOCUMENTATION
+			├── vtt								# Group definition / mandate / Standard editions
+			├── vtt download area  				# VTT DOCUMENTATION
+			└── reference data 
+	├── docs
+		├── File								# All the files are stored in this folder for download
+		└── Image								# All image stored in this folder are related to the previous website
+	├── css										# Presentation files
+	├── images									# Images related to template
+	└── scripts									# Script related to template
+
+The previous folder architecture is the following the tree : 
 
 	.
 	├── background							# Background information on EU
@@ -88,3 +115,4 @@ The current folder architecture is the following :
 	|	└── services_at_european_level
 	├── submit_your_project
 	└── README.md
+

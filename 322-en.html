@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>CESNI-TI | Electronic Ship Reporting (ERI) download area</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=980px, user-scalable=no">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="CESNI" />
+		<meta name="Identifier-URL" content="https://www.cesni.eu" />
+		<meta name="revisit-after" content="7 days" />
+		<meta name="robots" content="index, follow, noarchive" />
+		<meta name="Copyright" content="CESNI" /><link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+		<link rel="shortcut icon" href="http://cesni.eu/wp-content/themes/cesni/img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/vegas.min.css">
+		<script src="scripts/jquery-3.4.1.min.js"></script>
+		<script src="scripts/vegas.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$("body").vegas({
+				slides: [
+			        { src: "images/theme/bg_body01.jpg" },
+			        { src: "images/theme/bg_body02.jpg" },
+			        { src: "images/theme/bg_body03.jpg" },
+			        { src: "images/theme/bg_body04.jpg" }
+			    	],
+				delay: 6000,
+			    timer: false,
+			    shuffle: true,
+			    firstTransition: 'fade',
+			    firstTransitionDuration: 100,
+			    transition: 'fade',
+			    transitionDuration: 3000,
+				cover: true,
+				});
+		 });
+		</script>
+	</head>
+
+	<body>
+		<div id="header">
+		  <div id="header_content">
+		  	<a id="logo" href="https://www.cesni.eu"><img src="images/logo/logo.png" alt="logo" title="logo"/></a>
+		  </div>
+		</div>
+
+		<div id="header_lang">
+		  <div id="header_lang_content">
+		  	<nav>
+		      <ul id="menu_lg">
+		  	  	<!--<li><a  href="40-fr.html" title="Version fran&ccedil;aise" >FR</a></li>
+						<li><a  href="40-de.html" title="Deutsche Version" >DE</a></li>
+						<li><a  href="40-nl.html" title="Nederlandse versie" >NL</a></li>-->
+		    		<li><a class='active' href="322-en.html" title="English version" >EN</a></li>
+		  		</ul>
+				</nav>	
+		  </div>
+		</div>
+
+		<div id="center">
+			<div id="container_center">
+				
+		  		<div id="container_left">
+				  	<div id="menu">
+						<ul>
+							<li><a class="" href="index.html">Home</a></li>
+							<!--<li><a class="" href="20-en.html">Search</a></li>-->
+							<li><a class="" href="30-en.html">River Information Service (RIS)</a></li>
+								<li><a class="" href="31-en.html">&nbsp;&nbsp;&nbsp;Inland ECDIS</a></li>
+								<li><a class="" href="32-en.html">&nbsp;&nbsp;&nbsp;ERI</a></li>
+								<li><a class="" href="33-en.html">&nbsp;&nbsp;&nbsp;NtS</a></li>								
+								<li><a class="" href="34-en.html">&nbsp;&nbsp;&nbsp;VTT</a></li>
+							<li><a href="40-en.html">Newsletter subscription</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- #container main to modify -->
+				<div id="container_main">
+					<div id='content'>
+						<div href="#intro" style="float: right;display: block; margin: 0 20px;"><a href="32-en.html"><img src="docs/Image/340/thumb_450x-_erilogo.jpg" width= "150px" alt=""></a></div>
+						<h3>ELECTRONIC SHIP REPORTING (ERI) DOCUMENTATION</h3>
+						<h5>(update 7 October 2019)</h5>
+
+						<h4 id="general">General documents:</h4>
+						<ul>
+							<li><a target="_blank" href="docs/File/429/leaferi2015_e.pdf">ERI leaflet 2015</a></li>
+							<li><a target="_blank" href="http://www.ccr-zkr.org/13020700-en.html#04">leaflet is available in French, German, Dutch and English</a></li>
+							<!--<li><a href="docs/File/429/2010002_f_2__terms_of_reference_electronic_reporting_international_final___.doc">New Terms of Reference</a></li>-->
+						</ul>
+						<h4 id="standards">Standards:</h4>
+						<ul>
+							<li><p><a target="_blank" href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1571999687314&uri=CELEX:32019R1744">Commission's Implementing regulation (EC) n°2019/1744</a> of 17 September 2019 on technical specifications for electronic ship reporting in inland navigation and repealing Regulation (EU) No. 164/2010.</p></li>
+							<li><a target="_blank" href="http://www.ccr-zkr.org/13020700-en.html#04">The Standards Edition April 2013 and Edition 1.2 are available in FR, DE, NL, EN</a></li>
+							<li><a target="_blank" href="docs/File/418/erinot_srs_v1_2f_draft.xsd">ERINOT 1.2 XSD</a></li>
+							<li><a target="_blank" href="docs/File/418/2011_06_03_erinot_erirsp_elements_clarifications_v0p30.xls">XSD standard for ERINOT 1.2 message: encoding guidelines (xls file)</a></li>							
+						</ul>							
+						<h5 id="specifications">Specifications:</h5>
+						<ul>
+							<li><a target="_blank" href="docs/File/417/slots_3_2_english.pdf">Coding system for slots</a></li>
+						</ul>
+						
+						<h5 id="technical-clarifications">Technical clarifications:</h5>
+						<ul>
+							<li><a target="_blank" href="docs/File/417/eri_clarification_of_the_relation_between_the_iftmin_and_the_erinot.pdf">Clarification of the relationship between the IFTMIN and the ERINOT</a></li>
+							<li><a target="_blank" href="docs/File/417/eri_message__clarification_and_explanation_eri.pdf">ERI message clarification and explanation</a></li>
+						</ul>
+						<h5 id="definitions">Definitions:</h5>
+						<ul>
+							<li><a target="_blank" href="docs/File/417/Definition_ISRS_code.pdf">Definition of ISRS code</a></li>
+						</ul>
+						<h5 id="guides">Guides:</h5>
+						<ul> <!-- <li><a href="docs/File/417/eri_guide.zip">ERI Guide 2.0</a></li> -->
+							<li><a target="_blank" href="docs/File/417/ERI_GUIDE_2_0_PART_I_Final.pdf">ERI Guide Part I – General introduction and functional description of electronic reporting</a></li>
+							<li><a target="_blank" href="docs/File/417/ERI_GUIDE_2_0_PART_II_Final.pdf">ERI Guide Part II - Guidance for the protection of data and a Code of Conduct for Electronic Reporting</a></li>
+							<li><a target="_blank" href="docs/File/417/ERI_GUIDE_2_0_PART_II_Annex_I.pdf">ERI Guide Part II – Annex I – Overview of data and parties</a></li>
+							<li><a target="_blank" href="docs/File/417/ERI_GUIDE_2_0_PART_III_Final.pdf">ERI Guide Part III – Message Implementation manual Conventions, containing the technical specifications of the message standards</a></li>
+							<li><a target="_blank" href="docs/File/417/ERI_GUIDE_2.0_PART_III_Annex_I_final.pdf">ERI Guide Part III – Annex I – Message Implementation Guideline ERINOT 1.2</a></li>
+							<li><a target="_blank" href="docs/File/417/ERI_GUIDE_2.0_PART_III_MIG_Annex_II_E-Manifest.pdf">ERI Guide Part III – Annex II – Message Implementation Guideline E-Manifest version 1.0</a></li>
+							<li><a target="_blank" href="docs/File/417/ERI_GUIDE_2.0_PART_III_Annex_III_MIG_PAXLST.pdf">ERI Guide Part III – Annex III – Message Implementation Guideline Crew and Passenger List</a></li>
+							<li><a target="_blank" href="docs/File/417/ERI_GUIDE_2.0_PART_III_Annex_IV_MIG_Aperak_1.2.pdf">ERI Guide Part III – Annex IV – Message implementation Guideline ERIRPS 1.2 (APERAK)</a></li>
+							<li><a target="_blank"href="docs/File/417/ERI_GUIDE_2.0_PART_III_Annex_V_MIG_BERMAN_2.0.pdf">ERI Guide Part III – Annex V – Berman 2.0 - Message Implementation Guideline - Bert Management Message - Port Services Request version 2.0</a></li>
+							<li><a target="_blank" href="docs/File/417/ERI_GUIDE_2_0_PART_IV_Final.pdf">ERI Guide Part IV – Codes and References – Version 2</a></li>
+							<li><a target="_blank" href="docs/File/417/ERI_GUIDE_2.0_PART_IV_Annex_I.pdf">ERI Guide Part IV – Annex I – Model of the European Vessel Identification Number</a></li>
+							<li><a target="_blank" href="docs/File/417/ERI_GUIDE_2.0_PART_IV_Annex_II.pdf">ERI Guide Part IV – Annex II – Combination of elements in the location code</a></li>
+							<li><a target="_blank" href="docs/File/417/iftminbicsmigbtb_final.pdf">Message implementation guide for Inland Waterway Transport IFTMIN-BICS</a></li>
+						</ul>
+						<h5 id="others">Others:</h5>
+						<ul>
+						<li><a target="_blank" href="docs/File/417/eri_awareness_document.pdf">ERI awareness document</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- #END container main to modify -->
+
+			</div>
+		</div>
+
+		<div id="footer">
+			<div id="footer_content">
+				<div class="footer_text">
+					<a href="80-en.html">Disclaimer</a> | Copyright 2019 &copy; CESNI | <a id="key" href="https://secure.cesni.eu/"><img src="images/admin/picto-key.png" alt="Admin" title="Admin"/></a>
+				</div>
+				<div class="logos"><img src="images/logo/ccnr.png"> <img src="images/logo/european_commission.png"></div>
+			</div>
+		</div>
+	</body>
+</html>

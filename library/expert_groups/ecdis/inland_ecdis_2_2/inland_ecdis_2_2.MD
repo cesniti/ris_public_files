@@ -1,12 +1,3 @@
-[
+#### Inland ECDIS Edition 2.2 Download area
 
-# Inland ECDIS 2.2
-
-, <a href="http://www.ris.eu/library" style="text-transform:lowercase;">Library</a>, <a href="http://www.ris.eu/library/expert_groups" style="text-transform:lowercase;">Expert Groups</a>, <a href="http://www.ris.eu/library/expert_groups/ecdis" style="text-transform:lowercase;">ECDIS</a>, <a href="http://www.ris.eu/library/expert_groups/ecdis/inland_ecdis_2_2" style="text-transform:lowercase;">Inland ECDIS 2.2</a>,   
-,   
-,   
-,   
-, <http://ienc.openecdis.org/?q=node/31>,   
-,   
-,   
-]
+Inland ECDIS 2.2 is an edition of the Product Specification for Inland ENCs with amendments for South America. There is no edition 2.2 of the European Inland ECDIS Standard.

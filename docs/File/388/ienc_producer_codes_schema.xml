@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://ienc.openecdis.org/producerCodes"
+  targetNamespace="http://ienc.openecdis.org/producerCodes" elementFormDefault="qualified">
+
+  <!-- ROOT ELEMENT PRODUCERS -->
+  <!-- ********************** -->
+
+  <xsd:element name="Producers">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Scope" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        <xsd:element ref="Producer" minOccurs="1" maxOccurs="unbounded"/>
+      </xsd:sequence>
+      <xsd:attribute name="title" type="xsd:string" use="required"/>
+      <xsd:attribute name="edition" type="xsd:string" use="required"/>
+      <xsd:attribute name="date" type="xsd:date" use="required"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <!-- ELEMENT Producer -->
+  <!-- ************** -->
+
+  <xsd:element name="Producer">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        <xsd:element name="Country" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="CountryCode" type="typeCountryCode" minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="Url" type="xsd:anyURI" minOccurs="0" maxOccurs="1"/>
+      </xsd:sequence>
+      <xsd:attribute name="producerCode" type="typeAgencyCode" use="required"/>
+      <xsd:attribute name="agencyCode" type="xsd:unsignedShort" use="required"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:simpleType name="typeCountryCode">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[A-Z]{2}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="typeAgencyCode">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[0-9]{1}[A-Z]{1}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+</xsd:schema>

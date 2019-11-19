@@ -1,21 +1,9 @@
-[
+#### Official standards
 
-# Official standards
+*   [2010/164/EC Technical Specification Electronic Reporting ](docs/File/418/EC_2010_164_Technical_specificatio_Electronic_Reporting.pdf)
 
-, <a href="http://www.ris.eu/library" style="text-transform:lowercase;">Library</a>, <a href="http://www.ris.eu/library/expert_groups" style="text-transform:lowercase;">Expert Groups</a>, <a href="http://www.ris.eu/library/expert_groups/eri" style="text-transform:lowercase;">ERI</a>, <a href="http://www.ris.eu/library/expert_groups/eri/official_standards" style="text-transform:lowercase;">Official standards</a>,   
-,   
-,   
-,   
-, 
+#### Specifications :
 
-*   [2010/164/EC Technical Specification Electronic Reporting ](http://www.ris.eu/docs/File/418/EC_2010_164_Technical_specificatio_Electronic_Reporting.pdf)
-
-, <li><a href="http://www.ris.eu/docs/File/418/EC_2010_164_Technical_specificatio_Electronic_Reporting.pdf">2010/164/EC Technical Specification Electronic Reporting </a></li>, [2010/164/EC Technical Specification Electronic Reporting ](http://www.ris.eu/docs/File/418/EC_2010_164_Technical_specificatio_Electronic_Reporting.pdf),   
-, 
-
-*   [ERINOT 1.2 XSD](http://www.ris.eu/docs/File/418/erinot_srs_v1_2f_draft.xsd)
-*   [XSD standard for ERINOT 1.2 message: encoding guidelines](http://www.ris.eu/docs/File/418/2011_06_03_erinot_erirsp_elements_clarifications_v0p30.xls)
-*   <a href="http://www.ris.eu/docs/File/418/eri12_2013_e.pdf" target="_blank">CCNR Standard, Edition April 2013</a>&nbsp;(standard is available in FR, DE, NL, EN <a href="http://www.ccr-zkr.org/13020700-en.html#04" target="_blank">here</a>)
-
-, <li><a href="http://www.ris.eu/docs/File/418/erinot_srs_v1_2f_draft.xsd">ERINOT 1.2 XSD</a></li>, [ERINOT 1.2 XSD](http://www.ris.eu/docs/File/418/erinot_srs_v1_2f_draft.xsd), <li><a href="http://www.ris.eu/docs/File/418/2011_06_03_erinot_erirsp_elements_clarifications_v0p30.xls">XSD standard for ERINOT 1.2 message: encoding guidelines</a></li>, [XSD standard for ERINOT 1.2 message: encoding guidelines](http://www.ris.eu/docs/File/418/2011_06_03_erinot_erirsp_elements_clarifications_v0p30.xls), <li><a href="http://www.ris.eu/docs/File/418/eri12_2013_e.pdf" target="_blank">CCNR Standard, Edition April 2013</a>&nbsp;(standard is available in FR, DE, NL, EN <a href="http://www.ccr-zkr.org/13020700-en.html#04" target="_blank">here</a>)</li>, <a href="http://www.ris.eu/docs/File/418/eri12_2013_e.pdf" target="_blank">CCNR Standard, Edition April 2013</a>, <a href="http://www.ccr-zkr.org/13020700-en.html#04" target="_blank">here</a>,   
-]
+*   [ERINOT 1.2 XSD](docs/File/418/erinot_srs_v1_2f_draft.xsd)
+*   [XSD standard for ERINOT 1.2 message: encoding guidelines](docs/File/418/2011_06_03_erinot_erirsp_elements_clarifications_v0p30.xls)
+*	[standard is available in FR, DE, NL, EN](http://www.ccr-zkr.org/13020700-en.html#04)

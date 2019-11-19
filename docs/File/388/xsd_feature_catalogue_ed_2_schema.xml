@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://ienc.openecdis.org" 
+            targetNamespace="http://ienc.openecdis.org" 
+            elementFormDefault="qualified">
+		  
+<!-- ROOT ELEMENT CATALOGUE -->
+<!-- ********************** -->
+
+<xsd:element name="Catalogue">
+  <xsd:complexType>
+	 <xsd:sequence>
+      <xsd:element ref="Header" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="Scope" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="Source" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="Authority" type="contact" minOccurs="1" maxOccurs="1"/>
+      <xsd:element ref="DataDictionaries" minOccurs="1" maxOccurs="1"/>
+      <xsd:element ref="Attributes" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="Features" minOccurs="1" maxOccurs="1"/>
+	 </xsd:sequence>
+  </xsd:complexType>
+</xsd:element>
+
+
+<!-- ELEMENT HEADER -->
+<!-- ************** -->
+
+<xsd:element name="Header">
+  <xsd:complexType>
+    <xsd:attribute name="title" type="xsd:string" use="required"/>
+    <xsd:attribute name="product" type="xsd:string" use="required"/>
+    <xsd:attribute name="edition" type="xsd:string" use="required"/>
+    <xsd:attribute name="date" type="xsd:date" use="required"/>
+    <xsd:attribute name="language" type="xsd:language"/>
+  </xsd:complexType>
+</xsd:element>
+
+
+<!-- ELEMENT SOURCE -->
+<!-- ************* -->
+
+<xsd:element name="Source">
+  <xsd:complexType>
+    <xsd:attribute name="name" type="xsd:string" use="required"/>
+    <xsd:attribute name="edition" type="xsd:string" use="required"/>
+  </xsd:complexType>
+</xsd:element>
+
+
+<!-- ELEMENT DATADICTIONARIES WITH SUB-ELEMENTS DATADICTIONARY -->
+<!-- **************************************************** -->
+
+<xsd:element name="DataDictionaries">
+  <xsd:complexType>
+	 <xsd:sequence>
+	   <xsd:element ref="DataDictionary" minOccurs="1" maxOccurs="unbounded"/>
+	 </xsd:sequence>
+  </xsd:complexType>
+</xsd:element>
+
+<xsd:element name="DataDictionary">
+  <xsd:complexType>
+    <xsd:attribute name="token" type="xsd:string" use="required"/>
+    <xsd:attribute name="name" type="xsd:string" use="required"/>
+    <xsd:attribute name="owner" type="xsd:string" use="required"/>
+    <xsd:attribute name="publishWeb" type="xsd:anyURI"/>
+    <xsd:attribute name="remark" type="xsd:string"/>
+  </xsd:complexType>
+</xsd:element>
+
+
+<!-- ELEMENT ATTRIBUTES WITH SUB-ELEMENTS ATTRIBUTE -->
+<!-- ********************************************** -->
+
+<xsd:element name="Attributes">
+  <xsd:complexType>
+	 <xsd:sequence>
+	   <xsd:element ref="Attribute" minOccurs="1" maxOccurs="unbounded"/>
+	 </xsd:sequence>
+  </xsd:complexType>
+</xsd:element>
+
+<xsd:element name="Attribute">
+  <xsd:complexType>
+	 <xsd:sequence>
+          <xsd:element ref="DataDictionaryReference" minOccurs="1" maxOccurs="1"/>
+	   <xsd:element ref="Enumeration" minOccurs="0" maxOccurs="unbounded"/>
+	 </xsd:sequence>
+    <xsd:attribute name="acronym" type="typeAcronym" use="required"/>
+    <xsd:attribute name="code" type="xsd:positiveInteger" use="required"/>
+    <xsd:attribute name="useType" use="required">
+      <xsd:simpleType>
+        <xsd:restriction base ="xsd:string">
+          <xsd:enumeration value="F"/>
+          <xsd:enumeration value="N"/>
+          <xsd:enumeration value="S"/>
+          <xsd:enumeration value="F,S"/>
+          <xsd:enumeration value="C"/>
+          <!-- F= feature -->
+          <!-- N = national -->
+          <!-- S = spatial -->
+          <!-- C = cartographic -->
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:attribute>
+    <xsd:attribute name="valueType" use="required">
+      <xsd:simpleType>
+        <xsd:restriction base ="xsd:string">
+          <xsd:enumeration value="I"/>
+          <xsd:enumeration value="F"/>
+          <xsd:enumeration value="E"/>
+          <xsd:enumeration value="L"/>
+          <xsd:enumeration value="S"/>
+          <xsd:enumeration value="T"/>
+          <!-- I = integer -->
+          <!-- F = float -->
+          <!-- E = enumeration -->
+          <!-- L = list -->
+          <!-- S = structured text -->
+          <!-- T = text -->
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:attribute>
+  </xsd:complexType>
+</xsd:element>
+
+
+<xsd:element name="Enumeration">
+  <xsd:complexType>
+	 <xsd:sequence>
+      <xsd:element ref="DataDictionaryReference" minOccurs="1" maxOccurs="1"/>
+	 </xsd:sequence>
+    <xsd:attribute name="value" type="xsd:positiveInteger" use="required"/>
+  </xsd:complexType>
+</xsd:element>
+
+
+<!-- ELEMENT FEATURES WITH SUB-ELEMENTS FEATURE -->
+<!-- ****************************************** -->
+
+<xsd:element name="Features">
+  <xsd:complexType>
+	 <xsd:sequence>
+	   <xsd:element ref="Feature" minOccurs="1" maxOccurs="unbounded"/>
+	 </xsd:sequence>
+  </xsd:complexType>
+</xsd:element>
+
+<xsd:element name="Feature">
+  <xsd:complexType>
+	 <xsd:sequence>
+          <xsd:element ref="DataDictionaryReference" minOccurs="1" maxOccurs="1"/>
+	   <xsd:element ref="AttributeBinding" maxOccurs="unbounded"/>
+	 </xsd:sequence>
+    <xsd:attribute name="acronym" type="typeAcronym" use="required"/>
+    <xsd:attribute name="code" type="xsd:positiveInteger" use="required"/>
+    <xsd:attribute name="type" use="required">
+      <xsd:simpleType>
+        <xsd:restriction base ="xsd:string">
+          <xsd:enumeration value="G"/>
+          <xsd:enumeration value="M"/>
+          <xsd:enumeration value="C"/>
+          <xsd:enumeration value="O"/>
+          <xsd:enumeration value="I"/>
+          <!-- G = geo -->
+          <!-- M = meta -->
+          <!-- C = cartographic -->
+          <!-- O = collection -->
+          <!-- I = information -->
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:attribute>
+    <xsd:attribute name="primitive" use="required">
+      <xsd:simpleType>
+        <xsd:restriction base ="xsd:string">
+          <xsd:enumeration value="N"/>
+          <xsd:enumeration value="P"/>
+          <xsd:enumeration value="P,L"/>
+          <xsd:enumeration value="P,A"/>
+          <xsd:enumeration value="P,L,A"/>
+          <xsd:enumeration value="L"/>
+          <xsd:enumeration value="L,A"/>
+          <xsd:enumeration value="A"/>
+          <!-- N = no -->
+          <!-- P = point -->
+          <!-- L = line -->
+          <!-- A = area -->
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:attribute>    
+  </xsd:complexType>
+</xsd:element>
+
+<xsd:element name="AttributeBinding">
+  <xsd:complexType>
+    <xsd:attribute name="acronym" type="typeAcronym" use="required"/>
+    <xsd:attribute name="usage" use="required">
+      <xsd:simpleType>
+        <xsd:restriction base ="xsd:string">
+          <xsd:enumeration value="O"/>
+          <xsd:enumeration value="M"/>
+          <xsd:enumeration value="1"/>
+          <xsd:enumeration value="2"/>
+          <xsd:enumeration value="3"/>
+          <xsd:enumeration value="C"/>
+          <!-- O = optional -->
+          <!-- M = mandatory -->
+          <!-- 1 = at least one of A -->
+          <!-- 2 = at least one of B -->
+          <!-- 3 = at least one of C -->
+          <!-- C = conditional mandatory -->
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:attribute>
+    <xsd:attribute name="valueList" type="xsd:string"/>
+    <xsd:attribute name="unit">
+    <xsd:simpleType>
+      <xsd:restriction base ="xsd:string">
+        <xsd:enumeration value="m"/>
+        <xsd:enumeration value="nm"/>
+        <xsd:enumeration value="km/h"/>
+        <xsd:enumeration value="s"/>
+        <xsd:enumeration value="deg"/>
+        <xsd:enumeration value="Hz"/>
+        <!-- m = meters -->
+        <!-- nm = nautical miles -->
+        <!-- km/h = kilmeters per hour -->
+        <!-- s = seconds -->
+        <!-- Hz = hertz-->
+        <!-- deg = degrees-->
+      </xsd:restriction>
+    </xsd:simpleType>
+    </xsd:attribute>
+    <xsd:attribute name="format" type="xsd:string"/>
+    <xsd:attribute name="minimum" type="xsd:float"/>
+    <xsd:attribute name="maximum" type="xsd:float"/>
+    <xsd:attribute name="decimalDigits" type="xsd:float"/>
+  </xsd:complexType>
+</xsd:element>
+
+
+<!-- GENERAL ELEMENTS OR COMPLEX TYPE CONTACT FOR USE IN DIFFERENT ELEMENTS -->
+<!-- ********************************************************************** -->
+
+<xsd:simpleType name="typeAcronym">
+  <xsd:restriction base ="xsd:string">
+    <xsd:pattern value="[A-Za-z0-9_]{6}"/>
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:element name="DataDictionaryReference">
+  <xsd:complexType>
+	 <xsd:sequence>
+           <xsd:element name="Name" minOccurs="1" maxOccurs="1"/>
+           <xsd:element name="Definition" minOccurs="0" maxOccurs="1"/>
+	   <xsd:element name="Remark" minOccurs="0"/>
+	   <xsd:element name="Reference" minOccurs="0" maxOccurs="unbounded"/>
+	 </xsd:sequence>
+    <xsd:attribute name="token" type="xsd:string" use="required"/>
+    <xsd:attribute name="code" type="xsd:string"/>
+    <xsd:attribute name="dateAccepted" type="xsd:date" use="required"/>
+  </xsd:complexType>
+</xsd:element>
+
+<xsd:complexType name ="contact">
+  <xsd:sequence>
+    <xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+    <xsd:element name="Poc" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+    <xsd:element name="Street" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+    <xsd:element name="Zip" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+    <xsd:element name="City" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+    <xsd:element name="Country" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+    <xsd:element name="Www" type="xsd:anyURI" minOccurs="0" maxOccurs="1"/>
+    <xsd:element name="Phone" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+    <xsd:element name="Fax" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+    <xsd:element name="Email" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+  </xsd:sequence>
+  <xsd:attribute name="token" type="xsd:string" use="required"/>
+</xsd:complexType>
+
+</xsd:schema>

@@ -1,27 +1,25 @@
-[
-
 # Submit Your Project
 
-, <a href="http://www.ris.eu/projects" style="text-transform:lowercase;">Projects</a>, <a href="http://www.ris.eu/projects/submit_your_project" style="text-transform:lowercase;">Submit Your Project</a>,   
-,   
-,   
-,   
-,   
-,   
-,   
-,   
-,   
-,   
-,   
-,   
-,   
-,   
-,   
-,   
-,   
-,   
-,   
-, 
+<a href="/projects" style="text-transform:lowercase;">Projects</a><a href="/projects/submit_your_project" style="text-transform:lowercase;">Submit Your Project</a>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
 
 <form action="" class="checkform" id="thisForm" method="post">
 <input name="bedankt" type="hidden" value="Thank you for your contribution,&lt;br /&gt;&lt;br /&gt;Kind regards,&lt;br /&gt;Renata KadriÄ‡ and Alen Pokos&lt;br /&gt;webmasters www.ris.eu"/>
@@ -75,80 +73,104 @@
 <tr>
 <td style="width:33%" valign="top">
 <label>
-<input name="countries[]" type="checkbox" value="Austria"/>Austria
+<input name="countries[]" type="checkbox" value="Austria"/>Austria
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Belgium"/>Belgium
+<input name="countries[]" type="checkbox" value="Belgium"/>Belgium
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Bosnia-Herzegovina"/>Bosnia-Herzegovina
+<input name="countries[]" type="checkbox" value="Bosnia-Herzegovina"/>Bosnia-Herzegovina
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Bulgaria"/>Bulgaria
+<input name="countries[]" type="checkbox" value="Bulgaria"/>Bulgaria
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Bulgaria"/>Bulgaria
+<input name="countries[]" type="checkbox" value="Bulgaria"/>Bulgaria
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Croatia"/>Croatia
+<input name="countries[]" type="checkbox" value="Croatia"/>Croatia
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Czech Republic"/>Czech Republic
+<input name="countries[]" type="checkbox" value="Czech Republic"/>Czech Republic
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Finland"/>Finland
-													</label><br/>
-</td>
-<td style="width:33%" valign="top">
-<label>
-<input name="countries[]" type="checkbox" value="France"/>France
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Germany"/>Germany
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Hungary"/>Hungary
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Italy"/>Italy
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Luxumburg"/>Luxumburg
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Moldavia"/>Moldavia
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Netherlands"/>Netherlands
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Poland"/>Poland
+<input name="countries[]" type="checkbox" value="Finland"/>Finland
+
 													</label><br/>
 </td>
 <td style="width:33%" valign="top">
 <label>
-<input name="countries[]" type="checkbox" value="Romania"/>Romania
+<input name="countries[]" type="checkbox" value="France"/>France
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Serbia"/>Serbia
+<input name="countries[]" type="checkbox" value="Germany"/>Germany
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Slovakia"/>Slovakia
+<input name="countries[]" type="checkbox" value="Hungary"/>Hungary
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Slovenia"/>Slovenia
+<input name="countries[]" type="checkbox" value="Italy"/>Italy
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Sweden"/>Sweden
+<input name="countries[]" type="checkbox" value="Luxumburg"/>Luxumburg
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Switzerland"/>Switzerland
+<input name="countries[]" type="checkbox" value="Moldavia"/>Moldavia
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="UK"/>UK
+<input name="countries[]" type="checkbox" value="Netherlands"/>Netherlands
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Ukraine"/>Ukraine
+<input name="countries[]" type="checkbox" value="Poland"/>Poland
+
+													</label><br/>
+</td>
+<td style="width:33%" valign="top">
+<label>
+<input name="countries[]" type="checkbox" value="Romania"/>Romania
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="Serbia"/>Serbia
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="Slovakia"/>Slovakia
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="Slovenia"/>Slovenia
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="Sweden"/>Sweden
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="Switzerland"/>Switzerland
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="UK"/>UK
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="Ukraine"/>Ukraine
+
 													</label><br/>
 </td>
 </tr>
@@ -158,263 +180,348 @@
 <tr>
 <td style="width:33%" valign="top">
 <label>
-<input name="waterways[]" type="checkbox" value="Aire &amp; Calder Navigation"/>Aire &amp; Calder Navigation
+<input name="waterways[]" type="checkbox" value="Aire &amp; Calder Navigation"/>Aire &amp; Calder Navigation
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Albert Canal"/>Albert Canal
+<input name="waterways[]" type="checkbox" value="Albert Canal"/>Albert Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Amsterdam-Rijnkanaal"/>Amsterdam-Rijnkanaal
+<input name="waterways[]" type="checkbox" value="Amsterdam-Rijnkanaal"/>Amsterdam-Rijnkanaal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Bergsche Maas"/>Bergsche Maas
+<input name="waterways[]" type="checkbox" value="Bergsche Maas"/>Bergsche Maas
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Bucarest Canal"/>Bucarest Canal
+<input name="waterways[]" type="checkbox" value="Bucarest Canal"/>Bucarest Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Bydgoski Canal"/>Bydgoski Canal
+<input name="waterways[]" type="checkbox" value="Bydgoski Canal"/>Bydgoski Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Caledonian Canal"/>Caledonian Canal
+<input name="waterways[]" type="checkbox" value="Caledonian Canal"/>Caledonian Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canal Cremona-Pizzighettone "/>Canal Cremona-Pizzighettone 
+<input name="waterways[]" type="checkbox" value="Canal Cremona-Pizzighettone "/>Canal Cremona-Pizzighettone 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canal du Centre "/>Canal du Centre 
+<input name="waterways[]" type="checkbox" value="Canal du Centre "/>Canal du Centre 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canal du Rhin"/>Canal du Rhin
+<input name="waterways[]" type="checkbox" value="Canal du Rhin"/>Canal du Rhin
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canal Dunkerque"/>Canal Dunkerque
+<input name="waterways[]" type="checkbox" value="Canal Dunkerque"/>Canal Dunkerque
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canalbianco"/>Canalbianco
+<input name="waterways[]" type="checkbox" value="Canalbianco"/>Canalbianco
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Clyde"/>Clyde
+<input name="waterways[]" type="checkbox" value="Clyde"/>Clyde
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Danube"/>Danube
+<input name="waterways[]" type="checkbox" value="Danube"/>Danube
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Dniepr"/>Dniepr
+<input name="waterways[]" type="checkbox" value="Dniepr"/>Dniepr
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Dortmund-Ems-Kanal "/>Dortmund-Ems-Kanal 
+<input name="waterways[]" type="checkbox" value="Dortmund-Ems-Kanal "/>Dortmund-Ems-Kanal 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Drava"/>Drava
+<input name="waterways[]" type="checkbox" value="Drava"/>Drava
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Eemskanaal"/>Eemskanaal
+<input name="waterways[]" type="checkbox" value="Eemskanaal"/>Eemskanaal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Elbe"/>Elbe
+<input name="waterways[]" type="checkbox" value="Elbe"/>Elbe
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Elbe-Seiten-Kanal "/>Elbe-Seiten-Kanal 
+<input name="waterways[]" type="checkbox" value="Elbe-Seiten-Kanal "/>Elbe-Seiten-Kanal 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Ferrara Waterway "/>Ferrara Waterway 
+<input name="waterways[]" type="checkbox" value="Ferrara Waterway "/>Ferrara Waterway 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Forth"/>Forth
+<input name="waterways[]" type="checkbox" value="Forth"/>Forth
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Garonne "/>Garonne 
+<input name="waterways[]" type="checkbox" value="Garonne "/>Garonne 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Gelderse IJssel"/>Gelderse IJssel
+<input name="waterways[]" type="checkbox" value="Gelderse IJssel"/>Gelderse IJssel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Gent-Terneuzen kanaal"/>Gent-Terneuzen kanaal
+<input name="waterways[]" type="checkbox" value="Gent-Terneuzen kanaal"/>Gent-Terneuzen kanaal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Gliwicki Canal"/>Gliwicki Canal
-													</label><br/>
-</td>
-<td style="width:33%" valign="top">
-<label>
-<input name="waterways[]" type="checkbox" value="Gloucester &amp; Sharpness Ship Canal"/>Gloucester &amp; Sharpness Ship Canal
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Havel"/>Havel
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="IJssel"/>IJssel
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Juliana Canal"/>Juliana Canal
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Kanaal Brussel-Charleroi"/>Kanaal Brussel-Charleroi
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Körös"/>Körös
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Leie"/>Leie
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Lek"/>Lek
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Loire "/>Loire 
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Main "/>Main 
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Manchester City Channel"/>Manchester City Channel
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Merwede"/>Merwede
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Meuse"/>Meuse
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Mittellandkanal"/>Mittellandkanal
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Moldau"/>Moldau
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Morava"/>Morava
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Morava (CZ)"/>Morava (CZ)
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Mosel"/>Mosel
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Neckar"/>Neckar
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Neder-Rijn"/>Neder-Rijn
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Nieuwe Maas"/>Nieuwe Maas
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Nieuwe Waterweg"/>Nieuwe Waterweg
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Nistru"/>Nistru
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Nogat"/>Nogat
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Noordzeekanaal"/>Noordzeekanaal
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Notec"/>Notec
+<input name="waterways[]" type="checkbox" value="Gliwicki Canal"/>Gliwicki Canal
+
 													</label><br/>
 </td>
 <td style="width:33%" valign="top">
 <label>
-<input name="waterways[]" type="checkbox" value="Odra"/>Odra
+<input name="waterways[]" type="checkbox" value="Gloucester &amp; Sharpness Ship Canal"/>Gloucester &amp; Sharpness Ship Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Oise "/>Oise 
+<input name="waterways[]" type="checkbox" value="Havel"/>Havel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Oude Maas"/>Oude Maas
+<input name="waterways[]" type="checkbox" value="IJssel"/>IJssel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Po"/>Po
+<input name="waterways[]" type="checkbox" value="Juliana Canal"/>Juliana Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Poarta Alba"/>Poarta Alba
+<input name="waterways[]" type="checkbox" value="Kanaal Brussel-Charleroi"/>Kanaal Brussel-Charleroi
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Prinses Margriet"/>Prinses Margriet
+<input name="waterways[]" type="checkbox" value="Körös"/>Körös
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Prut"/>Prut
+<input name="waterways[]" type="checkbox" value="Leie"/>Leie
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Rhein-Herne-Kanal "/>Rhein-Herne-Kanal 
+<input name="waterways[]" type="checkbox" value="Lek"/>Lek
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Rhein-Main Danube Canal"/>Rhein-Main Danube Canal
+<input name="waterways[]" type="checkbox" value="Loire "/>Loire 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Rhine"/>Rhine
+<input name="waterways[]" type="checkbox" value="Main "/>Main 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Rhone"/>Rhone
+<input name="waterways[]" type="checkbox" value="Manchester City Channel"/>Manchester City Channel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Saar"/>Saar
+<input name="waterways[]" type="checkbox" value="Merwede"/>Merwede
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Saimaa Canal"/>Saimaa Canal
+<input name="waterways[]" type="checkbox" value="Meuse"/>Meuse
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Saimaa Deepwater Channels"/>Saimaa Deepwater Channels
+<input name="waterways[]" type="checkbox" value="Mittellandkanal"/>Mittellandkanal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Sambre"/>Sambre
+<input name="waterways[]" type="checkbox" value="Moldau"/>Moldau
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Saone"/>Saone
+<input name="waterways[]" type="checkbox" value="Morava"/>Morava
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Sava"/>Sava
+<input name="waterways[]" type="checkbox" value="Morava (CZ)"/>Morava (CZ)
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) "/>Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) 
+<input name="waterways[]" type="checkbox" value="Mosel"/>Mosel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Seine"/>Seine
+<input name="waterways[]" type="checkbox" value="Neckar"/>Neckar
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Seine-Nord"/>Seine-Nord
+<input name="waterways[]" type="checkbox" value="Neder-Rijn"/>Neder-Rijn
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Starkeborchkanaal"/>Starkeborchkanaal
+<input name="waterways[]" type="checkbox" value="Nieuwe Maas"/>Nieuwe Maas
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Thames"/>Thames
+<input name="waterways[]" type="checkbox" value="Nieuwe Waterweg"/>Nieuwe Waterweg
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Tisa (Serbia)"/>Tisa (Serbia)
+<input name="waterways[]" type="checkbox" value="Nistru"/>Nistru
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Tisza"/>Tisza
+<input name="waterways[]" type="checkbox" value="Nogat"/>Nogat
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Trent"/>Trent
+<input name="waterways[]" type="checkbox" value="Noordzeekanaal"/>Noordzeekanaal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Twentekanaal"/>Twentekanaal
+<input name="waterways[]" type="checkbox" value="Notec"/>Notec
+
+													</label><br/>
+</td>
+<td style="width:33%" valign="top">
+<label>
+<input name="waterways[]" type="checkbox" value="Odra"/>Odra
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Vah"/>Vah
+<input name="waterways[]" type="checkbox" value="Oise "/>Oise 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Visla"/>Visla
+<input name="waterways[]" type="checkbox" value="Oude Maas"/>Oude Maas
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Vltava"/>Vltava
+<input name="waterways[]" type="checkbox" value="Po"/>Po
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Waal"/>Waal
+<input name="waterways[]" type="checkbox" value="Poarta Alba"/>Poarta Alba
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Wesel-Datteln-Kanal "/>Wesel-Datteln-Kanal 
+<input name="waterways[]" type="checkbox" value="Prinses Margriet"/>Prinses Margriet
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Weser "/>Weser 
+<input name="waterways[]" type="checkbox" value="Prut"/>Prut
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Zeekanaal Brussel-Schelde"/>Zeekanaal Brussel-Schelde
+<input name="waterways[]" type="checkbox" value="Rhein-Herne-Kanal "/>Rhein-Herne-Kanal 
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Rhein-Main Danube Canal"/>Rhein-Main Danube Canal
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Rhine"/>Rhine
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Rhone"/>Rhone
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Saar"/>Saar
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Saimaa Canal"/>Saimaa Canal
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Saimaa Deepwater Channels"/>Saimaa Deepwater Channels
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Sambre"/>Sambre
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Saone"/>Saone
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Sava"/>Sava
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) "/>Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) 
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Seine"/>Seine
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Seine-Nord"/>Seine-Nord
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Starkeborchkanaal"/>Starkeborchkanaal
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Thames"/>Thames
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Tisa (Serbia)"/>Tisa (Serbia)
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Tisza"/>Tisza
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Trent"/>Trent
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Twentekanaal"/>Twentekanaal
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Vah"/>Vah
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Visla"/>Visla
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Vltava"/>Vltava
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Waal"/>Waal
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Wesel-Datteln-Kanal "/>Wesel-Datteln-Kanal 
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Weser "/>Weser 
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Zeekanaal Brussel-Schelde"/>Zeekanaal Brussel-Schelde
+
 													</label><br/> </td>
 </tr>
 </table>
@@ -449,19 +556,19 @@
 <p><input type="submit" value="Submit this project"/></p>
 </form>
 
-, 
+
 
 <input name="bedankt" type="hidden" value="Thank you for your contribution,&lt;br /&gt;&lt;br /&gt;Kind regards,&lt;br /&gt;Renata KadriÄ‡ and Alen Pokos&lt;br /&gt;webmasters www.ris.eu"/>
 
-, 
+
 
 <input name="formulier" type="hidden" value="submit_projects"/>
 
-, 
+
 
 ### Project details
 
-, 
+
 
 <table style="width:100%">
 <tr>
@@ -470,26 +577,26 @@
 </tr>
 </table>
 
-, 
+
 
 <tr>
 <td style="width:33%"> Project name: </td>
 <td><input class="required" name="projectname" type="text"/></td>
 </tr>
 
-, 
+
 
 <td style="width:33%"> Project name: </td>
 
-, 
+
 
 <td><input class="required" name="projectname" type="text"/></td>
 
-, 
+
 
 <input class="required" name="projectname" type="text"/>
 
-, 
+
 
 <table style="width:100%">
 <tr>
@@ -500,7 +607,7 @@
 </tr>
 </table>
 
-, 
+
 
 <tr>
 <td style="width:33%" valign="top"> Project description: </td>
@@ -509,17 +616,17 @@
 </td>
 </tr>
 
-, 
+
 
 <td style="width:33%" valign="top"> Project description: </td>
 
-, 
+
 
 <td style="width:67%" valign="top">
 <textarea cols="" name="description" rows=""></textarea>
 </td>
 
-, <textarea cols="" name="description" rows=""></textarea>, 
+<textarea cols="" name="description" rows=""></textarea>
 
 <table style="width:100%">
 <tr>
@@ -550,7 +657,7 @@
 </tr>
 </table>
 
-, 
+
 
 <tr>
 <td style="width:33%">Costs:</td>
@@ -563,11 +670,11 @@
 </select></td>
 </tr>
 
-, 
+
 
 <td style="width:33%">Costs:</td>
 
-, 
+
 
 <td><select name="cost">
 <option value="1">100.000-500.000</option>
@@ -577,7 +684,7 @@
 <option value="5">More than 5.000.000</option>
 </select></td>
 
-, <select name="cost">
+<select name="cost">
 
 <option value="1">100.000-500.000</option>
 
@@ -589,2261 +696,2697 @@
 
 <option value="5">More than 5.000.000</option>
 
-</select>, 
+</select>
 
 <option value="1">100.000-500.000</option>
 
-, 
+
 
 <option value="2">500.000-1.000.000</option>
 
-, 
+
 
 <option value="3">1.000.000-2.000.000</option>
 
-, 
+
 
 <option value="4">2.000.000-5.000.000</option>
 
-, 
+
 
 <option value="5">More than 5.000.000</option>
 
-, 
+
 
 <tr>
 <td style="width:33%">Organisation:</td>
 <td><input class="required" name="organisation" type="text" value=""/></td>
 </tr>
 
-, 
+
 
 <td style="width:33%">Organisation:</td>
 
-, 
+
 
 <td><input class="required" name="organisation" type="text" value=""/></td>
 
-, 
+
 
 <input class="required" name="organisation" type="text" value=""/>
 
-, 
+
 
 <tr>
 <td style="width:33%">Contactperson:</td>
 <td><input class="required" name="contactperson" type="text" value=""/></td>
 </tr>
 
-, 
+
 
 <td style="width:33%">Contactperson:</td>
 
-, 
+
 
 <td><input class="required" name="contactperson" type="text" value=""/></td>
 
-, 
+
 
 <input class="required" name="contactperson" type="text" value=""/>
 
-, 
+
 
 <tr>
 <td style="width:33%">Email:</td>
 <td><input class="required email" name="email" type="text" value=""/></td>
 </tr>
 
-, 
+
 
 <td style="width:33%">Email:</td>
 
-, 
+
 
 <td><input class="required email" name="email" type="text" value=""/></td>
 
-, 
+
 
 <input class="required email" name="email" type="text" value=""/>
 
-, 
+
 
 <tr>
 <td style="width:33%">URL:</td>
 <td><input name="url" type="text" value=""/></td>
 </tr>
 
-, 
+
 
 <td style="width:33%">URL:</td>
 
-, 
+
 
 <td><input name="url" type="text" value=""/></td>
 
-, 
+
 
 <input name="url" type="text" value=""/>
 
-, 
+
 ---
-, 
+
 
 ### Countries
 
-, 
+
 
 <table style="width:100%">
 <tr>
 <td style="width:33%" valign="top">
 <label>
-<input name="countries[]" type="checkbox" value="Austria"/>Austria
+<input name="countries[]" type="checkbox" value="Austria"/>Austria
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Belgium"/>Belgium
+<input name="countries[]" type="checkbox" value="Belgium"/>Belgium
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Bosnia-Herzegovina"/>Bosnia-Herzegovina
+<input name="countries[]" type="checkbox" value="Bosnia-Herzegovina"/>Bosnia-Herzegovina
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Bulgaria"/>Bulgaria
+<input name="countries[]" type="checkbox" value="Bulgaria"/>Bulgaria
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Bulgaria"/>Bulgaria
+<input name="countries[]" type="checkbox" value="Bulgaria"/>Bulgaria
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Croatia"/>Croatia
+<input name="countries[]" type="checkbox" value="Croatia"/>Croatia
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Czech Republic"/>Czech Republic
+<input name="countries[]" type="checkbox" value="Czech Republic"/>Czech Republic
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Finland"/>Finland
-													</label><br/>
-</td>
-<td style="width:33%" valign="top">
-<label>
-<input name="countries[]" type="checkbox" value="France"/>France
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Germany"/>Germany
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Hungary"/>Hungary
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Italy"/>Italy
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Luxumburg"/>Luxumburg
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Moldavia"/>Moldavia
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Netherlands"/>Netherlands
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Poland"/>Poland
+<input name="countries[]" type="checkbox" value="Finland"/>Finland
+
 													</label><br/>
 </td>
 <td style="width:33%" valign="top">
 <label>
-<input name="countries[]" type="checkbox" value="Romania"/>Romania
+<input name="countries[]" type="checkbox" value="France"/>France
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Serbia"/>Serbia
+<input name="countries[]" type="checkbox" value="Germany"/>Germany
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Slovakia"/>Slovakia
+<input name="countries[]" type="checkbox" value="Hungary"/>Hungary
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Slovenia"/>Slovenia
+<input name="countries[]" type="checkbox" value="Italy"/>Italy
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Sweden"/>Sweden
+<input name="countries[]" type="checkbox" value="Luxumburg"/>Luxumburg
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Switzerland"/>Switzerland
+<input name="countries[]" type="checkbox" value="Moldavia"/>Moldavia
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="UK"/>UK
+<input name="countries[]" type="checkbox" value="Netherlands"/>Netherlands
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Ukraine"/>Ukraine
+<input name="countries[]" type="checkbox" value="Poland"/>Poland
+
+													</label><br/>
+</td>
+<td style="width:33%" valign="top">
+<label>
+<input name="countries[]" type="checkbox" value="Romania"/>Romania
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="Serbia"/>Serbia
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="Slovakia"/>Slovakia
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="Slovenia"/>Slovenia
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="Sweden"/>Sweden
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="Switzerland"/>Switzerland
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="UK"/>UK
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="Ukraine"/>Ukraine
+
 													</label><br/>
 </td>
 </tr>
 </table>
 
-, 
+
 
 <tr>
 <td style="width:33%" valign="top">
 <label>
-<input name="countries[]" type="checkbox" value="Austria"/>Austria
+<input name="countries[]" type="checkbox" value="Austria"/>Austria
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Belgium"/>Belgium
+<input name="countries[]" type="checkbox" value="Belgium"/>Belgium
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Bosnia-Herzegovina"/>Bosnia-Herzegovina
+<input name="countries[]" type="checkbox" value="Bosnia-Herzegovina"/>Bosnia-Herzegovina
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Bulgaria"/>Bulgaria
+<input name="countries[]" type="checkbox" value="Bulgaria"/>Bulgaria
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Bulgaria"/>Bulgaria
+<input name="countries[]" type="checkbox" value="Bulgaria"/>Bulgaria
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Croatia"/>Croatia
+<input name="countries[]" type="checkbox" value="Croatia"/>Croatia
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Czech Republic"/>Czech Republic
+<input name="countries[]" type="checkbox" value="Czech Republic"/>Czech Republic
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Finland"/>Finland
-													</label><br/>
-</td>
-<td style="width:33%" valign="top">
-<label>
-<input name="countries[]" type="checkbox" value="France"/>France
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Germany"/>Germany
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Hungary"/>Hungary
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Italy"/>Italy
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Luxumburg"/>Luxumburg
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Moldavia"/>Moldavia
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Netherlands"/>Netherlands
-													</label><br/>
-<label>
-<input name="countries[]" type="checkbox" value="Poland"/>Poland
+<input name="countries[]" type="checkbox" value="Finland"/>Finland
+
 													</label><br/>
 </td>
 <td style="width:33%" valign="top">
 <label>
-<input name="countries[]" type="checkbox" value="Romania"/>Romania
+<input name="countries[]" type="checkbox" value="France"/>France
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Serbia"/>Serbia
+<input name="countries[]" type="checkbox" value="Germany"/>Germany
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Slovakia"/>Slovakia
+<input name="countries[]" type="checkbox" value="Hungary"/>Hungary
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Slovenia"/>Slovenia
+<input name="countries[]" type="checkbox" value="Italy"/>Italy
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Sweden"/>Sweden
+<input name="countries[]" type="checkbox" value="Luxumburg"/>Luxumburg
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Switzerland"/>Switzerland
+<input name="countries[]" type="checkbox" value="Moldavia"/>Moldavia
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="UK"/>UK
+<input name="countries[]" type="checkbox" value="Netherlands"/>Netherlands
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Ukraine"/>Ukraine
+<input name="countries[]" type="checkbox" value="Poland"/>Poland
+
+													</label><br/>
+</td>
+<td style="width:33%" valign="top">
+<label>
+<input name="countries[]" type="checkbox" value="Romania"/>Romania
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="Serbia"/>Serbia
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="Slovakia"/>Slovakia
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="Slovenia"/>Slovenia
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="Sweden"/>Sweden
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="Switzerland"/>Switzerland
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="UK"/>UK
+
+													</label><br/>
+<label>
+<input name="countries[]" type="checkbox" value="Ukraine"/>Ukraine
+
 													</label><br/>
 </td>
 </tr>
 
-, 
+
 
 <td style="width:33%" valign="top">
 <label>
-<input name="countries[]" type="checkbox" value="Austria"/>Austria
+<input name="countries[]" type="checkbox" value="Austria"/>Austria
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Belgium"/>Belgium
+<input name="countries[]" type="checkbox" value="Belgium"/>Belgium
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Bosnia-Herzegovina"/>Bosnia-Herzegovina
+<input name="countries[]" type="checkbox" value="Bosnia-Herzegovina"/>Bosnia-Herzegovina
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Bulgaria"/>Bulgaria
+<input name="countries[]" type="checkbox" value="Bulgaria"/>Bulgaria
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Bulgaria"/>Bulgaria
+<input name="countries[]" type="checkbox" value="Bulgaria"/>Bulgaria
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Croatia"/>Croatia
+<input name="countries[]" type="checkbox" value="Croatia"/>Croatia
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Czech Republic"/>Czech Republic
+<input name="countries[]" type="checkbox" value="Czech Republic"/>Czech Republic
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Finland"/>Finland
+<input name="countries[]" type="checkbox" value="Finland"/>Finland
+
 													</label><br/>
 </td>
 
-, <label>
+<label>
 
 <input name="countries[]" type="checkbox" value="Austria"/>
 
-Austria
-													</label>, 
+Austria
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Austria"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Belgium"/>
 
-Belgium
-													</label>, 
+Belgium
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Belgium"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Bosnia-Herzegovina"/>
 
-Bosnia-Herzegovina
-													</label>, 
+Bosnia-Herzegovina
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Bosnia-Herzegovina"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Bulgaria"/>
 
-Bulgaria
-													</label>, 
+Bulgaria
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Bulgaria"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Bulgaria"/>
 
-Bulgaria
-													</label>, 
+Bulgaria
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Bulgaria"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Croatia"/>
 
-Croatia
-													</label>, 
+Croatia
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Croatia"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Czech Republic"/>
 
-Czech Republic
-													</label>, 
+Czech Republic
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Czech Republic"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Finland"/>
 
-Finland
-													</label>, 
+Finland
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Finland"/>
 
-,   
-, 
+  
+
 
 <td style="width:33%" valign="top">
 <label>
-<input name="countries[]" type="checkbox" value="France"/>France
+<input name="countries[]" type="checkbox" value="France"/>France
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Germany"/>Germany
+<input name="countries[]" type="checkbox" value="Germany"/>Germany
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Hungary"/>Hungary
+<input name="countries[]" type="checkbox" value="Hungary"/>Hungary
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Italy"/>Italy
+<input name="countries[]" type="checkbox" value="Italy"/>Italy
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Luxumburg"/>Luxumburg
+<input name="countries[]" type="checkbox" value="Luxumburg"/>Luxumburg
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Moldavia"/>Moldavia
+<input name="countries[]" type="checkbox" value="Moldavia"/>Moldavia
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Netherlands"/>Netherlands
+<input name="countries[]" type="checkbox" value="Netherlands"/>Netherlands
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Poland"/>Poland
+<input name="countries[]" type="checkbox" value="Poland"/>Poland
+
 													</label><br/>
 </td>
 
-, <label>
+<label>
 
 <input name="countries[]" type="checkbox" value="France"/>
 
-France
-													</label>, 
+France
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="France"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Germany"/>
 
-Germany
-													</label>, 
+Germany
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Germany"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Hungary"/>
 
-Hungary
-													</label>, 
+Hungary
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Hungary"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Italy"/>
 
-Italy
-													</label>, 
+Italy
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Italy"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Luxumburg"/>
 
-Luxumburg
-													</label>, 
+Luxumburg
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Luxumburg"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Moldavia"/>
 
-Moldavia
-													</label>, 
+Moldavia
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Moldavia"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Netherlands"/>
 
-Netherlands
-													</label>, 
+Netherlands
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Netherlands"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Poland"/>
 
-Poland
-													</label>, 
+Poland
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Poland"/>
 
-,   
-, 
+  
+
 
 <td style="width:33%" valign="top">
 <label>
-<input name="countries[]" type="checkbox" value="Romania"/>Romania
+<input name="countries[]" type="checkbox" value="Romania"/>Romania
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Serbia"/>Serbia
+<input name="countries[]" type="checkbox" value="Serbia"/>Serbia
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Slovakia"/>Slovakia
+<input name="countries[]" type="checkbox" value="Slovakia"/>Slovakia
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Slovenia"/>Slovenia
+<input name="countries[]" type="checkbox" value="Slovenia"/>Slovenia
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Sweden"/>Sweden
+<input name="countries[]" type="checkbox" value="Sweden"/>Sweden
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Switzerland"/>Switzerland
+<input name="countries[]" type="checkbox" value="Switzerland"/>Switzerland
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="UK"/>UK
+<input name="countries[]" type="checkbox" value="UK"/>UK
+
 													</label><br/>
 <label>
-<input name="countries[]" type="checkbox" value="Ukraine"/>Ukraine
+<input name="countries[]" type="checkbox" value="Ukraine"/>Ukraine
+
 													</label><br/>
 </td>
 
-, <label>
+<label>
 
 <input name="countries[]" type="checkbox" value="Romania"/>
 
-Romania
-													</label>, 
+Romania
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Romania"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Serbia"/>
 
-Serbia
-													</label>, 
+Serbia
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Serbia"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Slovakia"/>
 
-Slovakia
-													</label>, 
+Slovakia
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Slovakia"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Slovenia"/>
 
-Slovenia
-													</label>, 
+Slovenia
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Slovenia"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Sweden"/>
 
-Sweden
-													</label>, 
+Sweden
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Sweden"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Switzerland"/>
 
-Switzerland
-													</label>, 
+Switzerland
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Switzerland"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="UK"/>
 
-UK
-													</label>, 
+UK
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="UK"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="countries[]" type="checkbox" value="Ukraine"/>
 
-Ukraine
-													</label>, 
+Ukraine
+
+													</label>
 
 <input name="countries[]" type="checkbox" value="Ukraine"/>
 
-,   
-, 
+  
+
 ---
-, 
+
 
 ### Waterways
 
-, 
+
 
 <table style="width:100%">
 <tr>
 <td style="width:33%" valign="top">
 <label>
-<input name="waterways[]" type="checkbox" value="Aire &amp; Calder Navigation"/>Aire &amp; Calder Navigation
+<input name="waterways[]" type="checkbox" value="Aire &amp; Calder Navigation"/>Aire &amp; Calder Navigation
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Albert Canal"/>Albert Canal
+<input name="waterways[]" type="checkbox" value="Albert Canal"/>Albert Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Amsterdam-Rijnkanaal"/>Amsterdam-Rijnkanaal
+<input name="waterways[]" type="checkbox" value="Amsterdam-Rijnkanaal"/>Amsterdam-Rijnkanaal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Bergsche Maas"/>Bergsche Maas
+<input name="waterways[]" type="checkbox" value="Bergsche Maas"/>Bergsche Maas
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Bucarest Canal"/>Bucarest Canal
+<input name="waterways[]" type="checkbox" value="Bucarest Canal"/>Bucarest Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Bydgoski Canal"/>Bydgoski Canal
+<input name="waterways[]" type="checkbox" value="Bydgoski Canal"/>Bydgoski Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Caledonian Canal"/>Caledonian Canal
+<input name="waterways[]" type="checkbox" value="Caledonian Canal"/>Caledonian Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canal Cremona-Pizzighettone "/>Canal Cremona-Pizzighettone 
+<input name="waterways[]" type="checkbox" value="Canal Cremona-Pizzighettone "/>Canal Cremona-Pizzighettone 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canal du Centre "/>Canal du Centre 
+<input name="waterways[]" type="checkbox" value="Canal du Centre "/>Canal du Centre 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canal du Rhin"/>Canal du Rhin
+<input name="waterways[]" type="checkbox" value="Canal du Rhin"/>Canal du Rhin
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canal Dunkerque"/>Canal Dunkerque
+<input name="waterways[]" type="checkbox" value="Canal Dunkerque"/>Canal Dunkerque
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canalbianco"/>Canalbianco
+<input name="waterways[]" type="checkbox" value="Canalbianco"/>Canalbianco
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Clyde"/>Clyde
+<input name="waterways[]" type="checkbox" value="Clyde"/>Clyde
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Danube"/>Danube
+<input name="waterways[]" type="checkbox" value="Danube"/>Danube
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Dniepr"/>Dniepr
+<input name="waterways[]" type="checkbox" value="Dniepr"/>Dniepr
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Dortmund-Ems-Kanal "/>Dortmund-Ems-Kanal 
+<input name="waterways[]" type="checkbox" value="Dortmund-Ems-Kanal "/>Dortmund-Ems-Kanal 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Drava"/>Drava
+<input name="waterways[]" type="checkbox" value="Drava"/>Drava
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Eemskanaal"/>Eemskanaal
+<input name="waterways[]" type="checkbox" value="Eemskanaal"/>Eemskanaal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Elbe"/>Elbe
+<input name="waterways[]" type="checkbox" value="Elbe"/>Elbe
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Elbe-Seiten-Kanal "/>Elbe-Seiten-Kanal 
+<input name="waterways[]" type="checkbox" value="Elbe-Seiten-Kanal "/>Elbe-Seiten-Kanal 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Ferrara Waterway "/>Ferrara Waterway 
+<input name="waterways[]" type="checkbox" value="Ferrara Waterway "/>Ferrara Waterway 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Forth"/>Forth
+<input name="waterways[]" type="checkbox" value="Forth"/>Forth
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Garonne "/>Garonne 
+<input name="waterways[]" type="checkbox" value="Garonne "/>Garonne 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Gelderse IJssel"/>Gelderse IJssel
+<input name="waterways[]" type="checkbox" value="Gelderse IJssel"/>Gelderse IJssel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Gent-Terneuzen kanaal"/>Gent-Terneuzen kanaal
+<input name="waterways[]" type="checkbox" value="Gent-Terneuzen kanaal"/>Gent-Terneuzen kanaal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Gliwicki Canal"/>Gliwicki Canal
-													</label><br/>
-</td>
-<td style="width:33%" valign="top">
-<label>
-<input name="waterways[]" type="checkbox" value="Gloucester &amp; Sharpness Ship Canal"/>Gloucester &amp; Sharpness Ship Canal
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Havel"/>Havel
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="IJssel"/>IJssel
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Juliana Canal"/>Juliana Canal
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Kanaal Brussel-Charleroi"/>Kanaal Brussel-Charleroi
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Körös"/>Körös
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Leie"/>Leie
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Lek"/>Lek
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Loire "/>Loire 
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Main "/>Main 
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Manchester City Channel"/>Manchester City Channel
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Merwede"/>Merwede
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Meuse"/>Meuse
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Mittellandkanal"/>Mittellandkanal
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Moldau"/>Moldau
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Morava"/>Morava
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Morava (CZ)"/>Morava (CZ)
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Mosel"/>Mosel
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Neckar"/>Neckar
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Neder-Rijn"/>Neder-Rijn
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Nieuwe Maas"/>Nieuwe Maas
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Nieuwe Waterweg"/>Nieuwe Waterweg
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Nistru"/>Nistru
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Nogat"/>Nogat
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Noordzeekanaal"/>Noordzeekanaal
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Notec"/>Notec
+<input name="waterways[]" type="checkbox" value="Gliwicki Canal"/>Gliwicki Canal
+
 													</label><br/>
 </td>
 <td style="width:33%" valign="top">
 <label>
-<input name="waterways[]" type="checkbox" value="Odra"/>Odra
+<input name="waterways[]" type="checkbox" value="Gloucester &amp; Sharpness Ship Canal"/>Gloucester &amp; Sharpness Ship Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Oise "/>Oise 
+<input name="waterways[]" type="checkbox" value="Havel"/>Havel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Oude Maas"/>Oude Maas
+<input name="waterways[]" type="checkbox" value="IJssel"/>IJssel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Po"/>Po
+<input name="waterways[]" type="checkbox" value="Juliana Canal"/>Juliana Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Poarta Alba"/>Poarta Alba
+<input name="waterways[]" type="checkbox" value="Kanaal Brussel-Charleroi"/>Kanaal Brussel-Charleroi
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Prinses Margriet"/>Prinses Margriet
+<input name="waterways[]" type="checkbox" value="Körös"/>Körös
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Prut"/>Prut
+<input name="waterways[]" type="checkbox" value="Leie"/>Leie
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Rhein-Herne-Kanal "/>Rhein-Herne-Kanal 
+<input name="waterways[]" type="checkbox" value="Lek"/>Lek
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Rhein-Main Danube Canal"/>Rhein-Main Danube Canal
+<input name="waterways[]" type="checkbox" value="Loire "/>Loire 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Rhine"/>Rhine
+<input name="waterways[]" type="checkbox" value="Main "/>Main 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Rhone"/>Rhone
+<input name="waterways[]" type="checkbox" value="Manchester City Channel"/>Manchester City Channel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Saar"/>Saar
+<input name="waterways[]" type="checkbox" value="Merwede"/>Merwede
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Saimaa Canal"/>Saimaa Canal
+<input name="waterways[]" type="checkbox" value="Meuse"/>Meuse
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Saimaa Deepwater Channels"/>Saimaa Deepwater Channels
+<input name="waterways[]" type="checkbox" value="Mittellandkanal"/>Mittellandkanal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Sambre"/>Sambre
+<input name="waterways[]" type="checkbox" value="Moldau"/>Moldau
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Saone"/>Saone
+<input name="waterways[]" type="checkbox" value="Morava"/>Morava
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Sava"/>Sava
+<input name="waterways[]" type="checkbox" value="Morava (CZ)"/>Morava (CZ)
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) "/>Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) 
+<input name="waterways[]" type="checkbox" value="Mosel"/>Mosel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Seine"/>Seine
+<input name="waterways[]" type="checkbox" value="Neckar"/>Neckar
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Seine-Nord"/>Seine-Nord
+<input name="waterways[]" type="checkbox" value="Neder-Rijn"/>Neder-Rijn
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Starkeborchkanaal"/>Starkeborchkanaal
+<input name="waterways[]" type="checkbox" value="Nieuwe Maas"/>Nieuwe Maas
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Thames"/>Thames
+<input name="waterways[]" type="checkbox" value="Nieuwe Waterweg"/>Nieuwe Waterweg
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Tisa (Serbia)"/>Tisa (Serbia)
+<input name="waterways[]" type="checkbox" value="Nistru"/>Nistru
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Tisza"/>Tisza
+<input name="waterways[]" type="checkbox" value="Nogat"/>Nogat
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Trent"/>Trent
+<input name="waterways[]" type="checkbox" value="Noordzeekanaal"/>Noordzeekanaal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Twentekanaal"/>Twentekanaal
+<input name="waterways[]" type="checkbox" value="Notec"/>Notec
+
+													</label><br/>
+</td>
+<td style="width:33%" valign="top">
+<label>
+<input name="waterways[]" type="checkbox" value="Odra"/>Odra
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Vah"/>Vah
+<input name="waterways[]" type="checkbox" value="Oise "/>Oise 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Visla"/>Visla
+<input name="waterways[]" type="checkbox" value="Oude Maas"/>Oude Maas
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Vltava"/>Vltava
+<input name="waterways[]" type="checkbox" value="Po"/>Po
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Waal"/>Waal
+<input name="waterways[]" type="checkbox" value="Poarta Alba"/>Poarta Alba
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Wesel-Datteln-Kanal "/>Wesel-Datteln-Kanal 
+<input name="waterways[]" type="checkbox" value="Prinses Margriet"/>Prinses Margriet
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Weser "/>Weser 
+<input name="waterways[]" type="checkbox" value="Prut"/>Prut
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Zeekanaal Brussel-Schelde"/>Zeekanaal Brussel-Schelde
+<input name="waterways[]" type="checkbox" value="Rhein-Herne-Kanal "/>Rhein-Herne-Kanal 
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Rhein-Main Danube Canal"/>Rhein-Main Danube Canal
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Rhine"/>Rhine
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Rhone"/>Rhone
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Saar"/>Saar
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Saimaa Canal"/>Saimaa Canal
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Saimaa Deepwater Channels"/>Saimaa Deepwater Channels
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Sambre"/>Sambre
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Saone"/>Saone
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Sava"/>Sava
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) "/>Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) 
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Seine"/>Seine
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Seine-Nord"/>Seine-Nord
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Starkeborchkanaal"/>Starkeborchkanaal
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Thames"/>Thames
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Tisa (Serbia)"/>Tisa (Serbia)
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Tisza"/>Tisza
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Trent"/>Trent
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Twentekanaal"/>Twentekanaal
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Vah"/>Vah
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Visla"/>Visla
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Vltava"/>Vltava
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Waal"/>Waal
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Wesel-Datteln-Kanal "/>Wesel-Datteln-Kanal 
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Weser "/>Weser 
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Zeekanaal Brussel-Schelde"/>Zeekanaal Brussel-Schelde
+
 													</label><br/> </td>
 </tr>
 </table>
 
-, 
+
 
 <tr>
 <td style="width:33%" valign="top">
 <label>
-<input name="waterways[]" type="checkbox" value="Aire &amp; Calder Navigation"/>Aire &amp; Calder Navigation
+<input name="waterways[]" type="checkbox" value="Aire &amp; Calder Navigation"/>Aire &amp; Calder Navigation
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Albert Canal"/>Albert Canal
+<input name="waterways[]" type="checkbox" value="Albert Canal"/>Albert Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Amsterdam-Rijnkanaal"/>Amsterdam-Rijnkanaal
+<input name="waterways[]" type="checkbox" value="Amsterdam-Rijnkanaal"/>Amsterdam-Rijnkanaal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Bergsche Maas"/>Bergsche Maas
+<input name="waterways[]" type="checkbox" value="Bergsche Maas"/>Bergsche Maas
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Bucarest Canal"/>Bucarest Canal
+<input name="waterways[]" type="checkbox" value="Bucarest Canal"/>Bucarest Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Bydgoski Canal"/>Bydgoski Canal
+<input name="waterways[]" type="checkbox" value="Bydgoski Canal"/>Bydgoski Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Caledonian Canal"/>Caledonian Canal
+<input name="waterways[]" type="checkbox" value="Caledonian Canal"/>Caledonian Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canal Cremona-Pizzighettone "/>Canal Cremona-Pizzighettone 
+<input name="waterways[]" type="checkbox" value="Canal Cremona-Pizzighettone "/>Canal Cremona-Pizzighettone 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canal du Centre "/>Canal du Centre 
+<input name="waterways[]" type="checkbox" value="Canal du Centre "/>Canal du Centre 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canal du Rhin"/>Canal du Rhin
+<input name="waterways[]" type="checkbox" value="Canal du Rhin"/>Canal du Rhin
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canal Dunkerque"/>Canal Dunkerque
+<input name="waterways[]" type="checkbox" value="Canal Dunkerque"/>Canal Dunkerque
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canalbianco"/>Canalbianco
+<input name="waterways[]" type="checkbox" value="Canalbianco"/>Canalbianco
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Clyde"/>Clyde
+<input name="waterways[]" type="checkbox" value="Clyde"/>Clyde
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Danube"/>Danube
+<input name="waterways[]" type="checkbox" value="Danube"/>Danube
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Dniepr"/>Dniepr
+<input name="waterways[]" type="checkbox" value="Dniepr"/>Dniepr
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Dortmund-Ems-Kanal "/>Dortmund-Ems-Kanal 
+<input name="waterways[]" type="checkbox" value="Dortmund-Ems-Kanal "/>Dortmund-Ems-Kanal 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Drava"/>Drava
+<input name="waterways[]" type="checkbox" value="Drava"/>Drava
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Eemskanaal"/>Eemskanaal
+<input name="waterways[]" type="checkbox" value="Eemskanaal"/>Eemskanaal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Elbe"/>Elbe
+<input name="waterways[]" type="checkbox" value="Elbe"/>Elbe
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Elbe-Seiten-Kanal "/>Elbe-Seiten-Kanal 
+<input name="waterways[]" type="checkbox" value="Elbe-Seiten-Kanal "/>Elbe-Seiten-Kanal 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Ferrara Waterway "/>Ferrara Waterway 
+<input name="waterways[]" type="checkbox" value="Ferrara Waterway "/>Ferrara Waterway 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Forth"/>Forth
+<input name="waterways[]" type="checkbox" value="Forth"/>Forth
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Garonne "/>Garonne 
+<input name="waterways[]" type="checkbox" value="Garonne "/>Garonne 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Gelderse IJssel"/>Gelderse IJssel
+<input name="waterways[]" type="checkbox" value="Gelderse IJssel"/>Gelderse IJssel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Gent-Terneuzen kanaal"/>Gent-Terneuzen kanaal
+<input name="waterways[]" type="checkbox" value="Gent-Terneuzen kanaal"/>Gent-Terneuzen kanaal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Gliwicki Canal"/>Gliwicki Canal
-													</label><br/>
-</td>
-<td style="width:33%" valign="top">
-<label>
-<input name="waterways[]" type="checkbox" value="Gloucester &amp; Sharpness Ship Canal"/>Gloucester &amp; Sharpness Ship Canal
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Havel"/>Havel
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="IJssel"/>IJssel
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Juliana Canal"/>Juliana Canal
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Kanaal Brussel-Charleroi"/>Kanaal Brussel-Charleroi
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Körös"/>Körös
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Leie"/>Leie
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Lek"/>Lek
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Loire "/>Loire 
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Main "/>Main 
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Manchester City Channel"/>Manchester City Channel
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Merwede"/>Merwede
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Meuse"/>Meuse
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Mittellandkanal"/>Mittellandkanal
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Moldau"/>Moldau
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Morava"/>Morava
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Morava (CZ)"/>Morava (CZ)
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Mosel"/>Mosel
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Neckar"/>Neckar
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Neder-Rijn"/>Neder-Rijn
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Nieuwe Maas"/>Nieuwe Maas
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Nieuwe Waterweg"/>Nieuwe Waterweg
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Nistru"/>Nistru
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Nogat"/>Nogat
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Noordzeekanaal"/>Noordzeekanaal
-													</label><br/>
-<label>
-<input name="waterways[]" type="checkbox" value="Notec"/>Notec
+<input name="waterways[]" type="checkbox" value="Gliwicki Canal"/>Gliwicki Canal
+
 													</label><br/>
 </td>
 <td style="width:33%" valign="top">
 <label>
-<input name="waterways[]" type="checkbox" value="Odra"/>Odra
+<input name="waterways[]" type="checkbox" value="Gloucester &amp; Sharpness Ship Canal"/>Gloucester &amp; Sharpness Ship Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Oise "/>Oise 
+<input name="waterways[]" type="checkbox" value="Havel"/>Havel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Oude Maas"/>Oude Maas
+<input name="waterways[]" type="checkbox" value="IJssel"/>IJssel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Po"/>Po
+<input name="waterways[]" type="checkbox" value="Juliana Canal"/>Juliana Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Poarta Alba"/>Poarta Alba
+<input name="waterways[]" type="checkbox" value="Kanaal Brussel-Charleroi"/>Kanaal Brussel-Charleroi
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Prinses Margriet"/>Prinses Margriet
+<input name="waterways[]" type="checkbox" value="Körös"/>Körös
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Prut"/>Prut
+<input name="waterways[]" type="checkbox" value="Leie"/>Leie
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Rhein-Herne-Kanal "/>Rhein-Herne-Kanal 
+<input name="waterways[]" type="checkbox" value="Lek"/>Lek
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Rhein-Main Danube Canal"/>Rhein-Main Danube Canal
+<input name="waterways[]" type="checkbox" value="Loire "/>Loire 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Rhine"/>Rhine
+<input name="waterways[]" type="checkbox" value="Main "/>Main 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Rhone"/>Rhone
+<input name="waterways[]" type="checkbox" value="Manchester City Channel"/>Manchester City Channel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Saar"/>Saar
+<input name="waterways[]" type="checkbox" value="Merwede"/>Merwede
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Saimaa Canal"/>Saimaa Canal
+<input name="waterways[]" type="checkbox" value="Meuse"/>Meuse
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Saimaa Deepwater Channels"/>Saimaa Deepwater Channels
+<input name="waterways[]" type="checkbox" value="Mittellandkanal"/>Mittellandkanal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Sambre"/>Sambre
+<input name="waterways[]" type="checkbox" value="Moldau"/>Moldau
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Saone"/>Saone
+<input name="waterways[]" type="checkbox" value="Morava"/>Morava
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Sava"/>Sava
+<input name="waterways[]" type="checkbox" value="Morava (CZ)"/>Morava (CZ)
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) "/>Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) 
+<input name="waterways[]" type="checkbox" value="Mosel"/>Mosel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Seine"/>Seine
+<input name="waterways[]" type="checkbox" value="Neckar"/>Neckar
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Seine-Nord"/>Seine-Nord
+<input name="waterways[]" type="checkbox" value="Neder-Rijn"/>Neder-Rijn
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Starkeborchkanaal"/>Starkeborchkanaal
+<input name="waterways[]" type="checkbox" value="Nieuwe Maas"/>Nieuwe Maas
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Thames"/>Thames
+<input name="waterways[]" type="checkbox" value="Nieuwe Waterweg"/>Nieuwe Waterweg
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Tisa (Serbia)"/>Tisa (Serbia)
+<input name="waterways[]" type="checkbox" value="Nistru"/>Nistru
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Tisza"/>Tisza
+<input name="waterways[]" type="checkbox" value="Nogat"/>Nogat
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Trent"/>Trent
+<input name="waterways[]" type="checkbox" value="Noordzeekanaal"/>Noordzeekanaal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Twentekanaal"/>Twentekanaal
+<input name="waterways[]" type="checkbox" value="Notec"/>Notec
+
+													</label><br/>
+</td>
+<td style="width:33%" valign="top">
+<label>
+<input name="waterways[]" type="checkbox" value="Odra"/>Odra
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Vah"/>Vah
+<input name="waterways[]" type="checkbox" value="Oise "/>Oise 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Visla"/>Visla
+<input name="waterways[]" type="checkbox" value="Oude Maas"/>Oude Maas
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Vltava"/>Vltava
+<input name="waterways[]" type="checkbox" value="Po"/>Po
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Waal"/>Waal
+<input name="waterways[]" type="checkbox" value="Poarta Alba"/>Poarta Alba
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Wesel-Datteln-Kanal "/>Wesel-Datteln-Kanal 
+<input name="waterways[]" type="checkbox" value="Prinses Margriet"/>Prinses Margriet
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Weser "/>Weser 
+<input name="waterways[]" type="checkbox" value="Prut"/>Prut
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Zeekanaal Brussel-Schelde"/>Zeekanaal Brussel-Schelde
+<input name="waterways[]" type="checkbox" value="Rhein-Herne-Kanal "/>Rhein-Herne-Kanal 
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Rhein-Main Danube Canal"/>Rhein-Main Danube Canal
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Rhine"/>Rhine
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Rhone"/>Rhone
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Saar"/>Saar
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Saimaa Canal"/>Saimaa Canal
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Saimaa Deepwater Channels"/>Saimaa Deepwater Channels
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Sambre"/>Sambre
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Saone"/>Saone
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Sava"/>Sava
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) "/>Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) 
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Seine"/>Seine
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Seine-Nord"/>Seine-Nord
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Starkeborchkanaal"/>Starkeborchkanaal
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Thames"/>Thames
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Tisa (Serbia)"/>Tisa (Serbia)
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Tisza"/>Tisza
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Trent"/>Trent
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Twentekanaal"/>Twentekanaal
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Vah"/>Vah
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Visla"/>Visla
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Vltava"/>Vltava
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Waal"/>Waal
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Wesel-Datteln-Kanal "/>Wesel-Datteln-Kanal 
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Weser "/>Weser 
+
+													</label><br/>
+<label>
+<input name="waterways[]" type="checkbox" value="Zeekanaal Brussel-Schelde"/>Zeekanaal Brussel-Schelde
+
 													</label><br/> </td>
 </tr>
 
-, 
+
 
 <td style="width:33%" valign="top">
 <label>
-<input name="waterways[]" type="checkbox" value="Aire &amp; Calder Navigation"/>Aire &amp; Calder Navigation
+<input name="waterways[]" type="checkbox" value="Aire &amp; Calder Navigation"/>Aire &amp; Calder Navigation
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Albert Canal"/>Albert Canal
+<input name="waterways[]" type="checkbox" value="Albert Canal"/>Albert Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Amsterdam-Rijnkanaal"/>Amsterdam-Rijnkanaal
+<input name="waterways[]" type="checkbox" value="Amsterdam-Rijnkanaal"/>Amsterdam-Rijnkanaal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Bergsche Maas"/>Bergsche Maas
+<input name="waterways[]" type="checkbox" value="Bergsche Maas"/>Bergsche Maas
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Bucarest Canal"/>Bucarest Canal
+<input name="waterways[]" type="checkbox" value="Bucarest Canal"/>Bucarest Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Bydgoski Canal"/>Bydgoski Canal
+<input name="waterways[]" type="checkbox" value="Bydgoski Canal"/>Bydgoski Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Caledonian Canal"/>Caledonian Canal
+<input name="waterways[]" type="checkbox" value="Caledonian Canal"/>Caledonian Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canal Cremona-Pizzighettone "/>Canal Cremona-Pizzighettone 
+<input name="waterways[]" type="checkbox" value="Canal Cremona-Pizzighettone "/>Canal Cremona-Pizzighettone 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canal du Centre "/>Canal du Centre 
+<input name="waterways[]" type="checkbox" value="Canal du Centre "/>Canal du Centre 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canal du Rhin"/>Canal du Rhin
+<input name="waterways[]" type="checkbox" value="Canal du Rhin"/>Canal du Rhin
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canal Dunkerque"/>Canal Dunkerque
+<input name="waterways[]" type="checkbox" value="Canal Dunkerque"/>Canal Dunkerque
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Canalbianco"/>Canalbianco
+<input name="waterways[]" type="checkbox" value="Canalbianco"/>Canalbianco
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Clyde"/>Clyde
+<input name="waterways[]" type="checkbox" value="Clyde"/>Clyde
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Danube"/>Danube
+<input name="waterways[]" type="checkbox" value="Danube"/>Danube
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Dniepr"/>Dniepr
+<input name="waterways[]" type="checkbox" value="Dniepr"/>Dniepr
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Dortmund-Ems-Kanal "/>Dortmund-Ems-Kanal 
+<input name="waterways[]" type="checkbox" value="Dortmund-Ems-Kanal "/>Dortmund-Ems-Kanal 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Drava"/>Drava
+<input name="waterways[]" type="checkbox" value="Drava"/>Drava
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Eemskanaal"/>Eemskanaal
+<input name="waterways[]" type="checkbox" value="Eemskanaal"/>Eemskanaal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Elbe"/>Elbe
+<input name="waterways[]" type="checkbox" value="Elbe"/>Elbe
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Elbe-Seiten-Kanal "/>Elbe-Seiten-Kanal 
+<input name="waterways[]" type="checkbox" value="Elbe-Seiten-Kanal "/>Elbe-Seiten-Kanal 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Ferrara Waterway "/>Ferrara Waterway 
+<input name="waterways[]" type="checkbox" value="Ferrara Waterway "/>Ferrara Waterway 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Forth"/>Forth
+<input name="waterways[]" type="checkbox" value="Forth"/>Forth
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Garonne "/>Garonne 
+<input name="waterways[]" type="checkbox" value="Garonne "/>Garonne 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Gelderse IJssel"/>Gelderse IJssel
+<input name="waterways[]" type="checkbox" value="Gelderse IJssel"/>Gelderse IJssel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Gent-Terneuzen kanaal"/>Gent-Terneuzen kanaal
+<input name="waterways[]" type="checkbox" value="Gent-Terneuzen kanaal"/>Gent-Terneuzen kanaal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Gliwicki Canal"/>Gliwicki Canal
+<input name="waterways[]" type="checkbox" value="Gliwicki Canal"/>Gliwicki Canal
+
 													</label><br/>
 </td>
 
-, <label>
+<label>
 
 <input name="waterways[]" type="checkbox" value="Aire &amp; Calder Navigation"/>
 
-Aire &amp; Calder Navigation
-													</label>, 
+Aire &amp; Calder Navigation
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Aire &amp; Calder Navigation"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Albert Canal"/>
 
-Albert Canal
-													</label>, 
+Albert Canal
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Albert Canal"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Amsterdam-Rijnkanaal"/>
 
-Amsterdam-Rijnkanaal
-													</label>, 
+Amsterdam-Rijnkanaal
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Amsterdam-Rijnkanaal"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Bergsche Maas"/>
 
-Bergsche Maas
-													</label>, 
+Bergsche Maas
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Bergsche Maas"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Bucarest Canal"/>
 
-Bucarest Canal
-													</label>, 
+Bucarest Canal
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Bucarest Canal"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Bydgoski Canal"/>
 
-Bydgoski Canal
-													</label>, 
+Bydgoski Canal
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Bydgoski Canal"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Caledonian Canal"/>
 
-Caledonian Canal
-													</label>, 
+Caledonian Canal
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Caledonian Canal"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Canal Cremona-Pizzighettone "/>
 
-Canal Cremona-Pizzighettone 
-													</label>, 
+Canal Cremona-Pizzighettone 
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Canal Cremona-Pizzighettone "/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Canal du Centre "/>
 
-Canal du Centre 
-													</label>, 
+Canal du Centre 
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Canal du Centre "/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Canal du Rhin"/>
 
-Canal du Rhin
-													</label>, 
+Canal du Rhin
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Canal du Rhin"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Canal Dunkerque"/>
 
-Canal Dunkerque
-													</label>, 
+Canal Dunkerque
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Canal Dunkerque"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Canalbianco"/>
 
-Canalbianco
-													</label>, 
+Canalbianco
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Canalbianco"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Clyde"/>
 
-Clyde
-													</label>, 
+Clyde
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Clyde"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Danube"/>
 
-Danube
-													</label>, 
+Danube
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Danube"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Dniepr"/>
 
-Dniepr
-													</label>, 
+Dniepr
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Dniepr"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Dortmund-Ems-Kanal "/>
 
-Dortmund-Ems-Kanal 
-													</label>, 
+Dortmund-Ems-Kanal 
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Dortmund-Ems-Kanal "/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Drava"/>
 
-Drava
-													</label>, 
+Drava
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Drava"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Eemskanaal"/>
 
-Eemskanaal
-													</label>, 
+Eemskanaal
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Eemskanaal"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Elbe"/>
 
-Elbe
-													</label>, 
+Elbe
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Elbe"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Elbe-Seiten-Kanal "/>
 
-Elbe-Seiten-Kanal 
-													</label>, 
+Elbe-Seiten-Kanal 
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Elbe-Seiten-Kanal "/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Ferrara Waterway "/>
 
-Ferrara Waterway 
-													</label>, 
+Ferrara Waterway 
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Ferrara Waterway "/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Forth"/>
 
-Forth
-													</label>, 
+Forth
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Forth"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Garonne "/>
 
-Garonne 
-													</label>, 
+Garonne 
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Garonne "/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Gelderse IJssel"/>
 
-Gelderse IJssel
-													</label>, 
+Gelderse IJssel
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Gelderse IJssel"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Gent-Terneuzen kanaal"/>
 
-Gent-Terneuzen kanaal
-													</label>, 
+Gent-Terneuzen kanaal
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Gent-Terneuzen kanaal"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Gliwicki Canal"/>
 
-Gliwicki Canal
-													</label>, 
+Gliwicki Canal
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Gliwicki Canal"/>
 
-,   
-, 
+  
+
 
 <td style="width:33%" valign="top">
 <label>
-<input name="waterways[]" type="checkbox" value="Gloucester &amp; Sharpness Ship Canal"/>Gloucester &amp; Sharpness Ship Canal
+<input name="waterways[]" type="checkbox" value="Gloucester &amp; Sharpness Ship Canal"/>Gloucester &amp; Sharpness Ship Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Havel"/>Havel
+<input name="waterways[]" type="checkbox" value="Havel"/>Havel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="IJssel"/>IJssel
+<input name="waterways[]" type="checkbox" value="IJssel"/>IJssel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Juliana Canal"/>Juliana Canal
+<input name="waterways[]" type="checkbox" value="Juliana Canal"/>Juliana Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Kanaal Brussel-Charleroi"/>Kanaal Brussel-Charleroi
+<input name="waterways[]" type="checkbox" value="Kanaal Brussel-Charleroi"/>Kanaal Brussel-Charleroi
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Körös"/>Körös
+<input name="waterways[]" type="checkbox" value="Körös"/>Körös
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Leie"/>Leie
+<input name="waterways[]" type="checkbox" value="Leie"/>Leie
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Lek"/>Lek
+<input name="waterways[]" type="checkbox" value="Lek"/>Lek
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Loire "/>Loire 
+<input name="waterways[]" type="checkbox" value="Loire "/>Loire 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Main "/>Main 
+<input name="waterways[]" type="checkbox" value="Main "/>Main 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Manchester City Channel"/>Manchester City Channel
+<input name="waterways[]" type="checkbox" value="Manchester City Channel"/>Manchester City Channel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Merwede"/>Merwede
+<input name="waterways[]" type="checkbox" value="Merwede"/>Merwede
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Meuse"/>Meuse
+<input name="waterways[]" type="checkbox" value="Meuse"/>Meuse
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Mittellandkanal"/>Mittellandkanal
+<input name="waterways[]" type="checkbox" value="Mittellandkanal"/>Mittellandkanal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Moldau"/>Moldau
+<input name="waterways[]" type="checkbox" value="Moldau"/>Moldau
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Morava"/>Morava
+<input name="waterways[]" type="checkbox" value="Morava"/>Morava
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Morava (CZ)"/>Morava (CZ)
+<input name="waterways[]" type="checkbox" value="Morava (CZ)"/>Morava (CZ)
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Mosel"/>Mosel
+<input name="waterways[]" type="checkbox" value="Mosel"/>Mosel
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Neckar"/>Neckar
+<input name="waterways[]" type="checkbox" value="Neckar"/>Neckar
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Neder-Rijn"/>Neder-Rijn
+<input name="waterways[]" type="checkbox" value="Neder-Rijn"/>Neder-Rijn
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Nieuwe Maas"/>Nieuwe Maas
+<input name="waterways[]" type="checkbox" value="Nieuwe Maas"/>Nieuwe Maas
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Nieuwe Waterweg"/>Nieuwe Waterweg
+<input name="waterways[]" type="checkbox" value="Nieuwe Waterweg"/>Nieuwe Waterweg
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Nistru"/>Nistru
+<input name="waterways[]" type="checkbox" value="Nistru"/>Nistru
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Nogat"/>Nogat
+<input name="waterways[]" type="checkbox" value="Nogat"/>Nogat
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Noordzeekanaal"/>Noordzeekanaal
+<input name="waterways[]" type="checkbox" value="Noordzeekanaal"/>Noordzeekanaal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Notec"/>Notec
+<input name="waterways[]" type="checkbox" value="Notec"/>Notec
+
 													</label><br/>
 </td>
 
-, <label>
+<label>
 
 <input name="waterways[]" type="checkbox" value="Gloucester &amp; Sharpness Ship Canal"/>
 
-Gloucester &amp; Sharpness Ship Canal
-													</label>, 
+Gloucester &amp; Sharpness Ship Canal
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Gloucester &amp; Sharpness Ship Canal"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Havel"/>
 
-Havel
-													</label>, 
+Havel
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Havel"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="IJssel"/>
 
-IJssel
-													</label>, 
+IJssel
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="IJssel"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Juliana Canal"/>
 
-Juliana Canal
-													</label>, 
+Juliana Canal
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Juliana Canal"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Kanaal Brussel-Charleroi"/>
 
-Kanaal Brussel-Charleroi
-													</label>, 
+Kanaal Brussel-Charleroi
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Kanaal Brussel-Charleroi"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Körös"/>
 
-Körös
-													</label>, 
+Körös
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Körös"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Leie"/>
 
-Leie
-													</label>, 
+Leie
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Leie"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Lek"/>
 
-Lek
-													</label>, 
+Lek
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Lek"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Loire "/>
 
-Loire 
-													</label>, 
+Loire 
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Loire "/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Main "/>
 
-Main 
-													</label>, 
+Main 
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Main "/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Manchester City Channel"/>
 
-Manchester City Channel
-													</label>, 
+Manchester City Channel
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Manchester City Channel"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Merwede"/>
 
-Merwede
-													</label>, 
+Merwede
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Merwede"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Meuse"/>
 
-Meuse
-													</label>, 
+Meuse
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Meuse"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Mittellandkanal"/>
 
-Mittellandkanal
-													</label>, 
+Mittellandkanal
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Mittellandkanal"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Moldau"/>
 
-Moldau
-													</label>, 
+Moldau
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Moldau"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Morava"/>
 
-Morava
-													</label>, 
+Morava
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Morava"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Morava (CZ)"/>
 
-Morava (CZ)
-													</label>, 
+Morava (CZ)
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Morava (CZ)"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Mosel"/>
 
-Mosel
-													</label>, 
+Mosel
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Mosel"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Neckar"/>
 
-Neckar
-													</label>, 
+Neckar
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Neckar"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Neder-Rijn"/>
 
-Neder-Rijn
-													</label>, 
+Neder-Rijn
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Neder-Rijn"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Nieuwe Maas"/>
 
-Nieuwe Maas
-													</label>, 
+Nieuwe Maas
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Nieuwe Maas"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Nieuwe Waterweg"/>
 
-Nieuwe Waterweg
-													</label>, 
+Nieuwe Waterweg
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Nieuwe Waterweg"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Nistru"/>
 
-Nistru
-													</label>, 
+Nistru
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Nistru"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Nogat"/>
 
-Nogat
-													</label>, 
+Nogat
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Nogat"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Noordzeekanaal"/>
 
-Noordzeekanaal
-													</label>, 
+Noordzeekanaal
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Noordzeekanaal"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Notec"/>
 
-Notec
-													</label>, 
+Notec
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Notec"/>
 
-,   
-, 
+  
+
 
 <td style="width:33%" valign="top">
 <label>
-<input name="waterways[]" type="checkbox" value="Odra"/>Odra
+<input name="waterways[]" type="checkbox" value="Odra"/>Odra
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Oise "/>Oise 
+<input name="waterways[]" type="checkbox" value="Oise "/>Oise 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Oude Maas"/>Oude Maas
+<input name="waterways[]" type="checkbox" value="Oude Maas"/>Oude Maas
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Po"/>Po
+<input name="waterways[]" type="checkbox" value="Po"/>Po
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Poarta Alba"/>Poarta Alba
+<input name="waterways[]" type="checkbox" value="Poarta Alba"/>Poarta Alba
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Prinses Margriet"/>Prinses Margriet
+<input name="waterways[]" type="checkbox" value="Prinses Margriet"/>Prinses Margriet
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Prut"/>Prut
+<input name="waterways[]" type="checkbox" value="Prut"/>Prut
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Rhein-Herne-Kanal "/>Rhein-Herne-Kanal 
+<input name="waterways[]" type="checkbox" value="Rhein-Herne-Kanal "/>Rhein-Herne-Kanal 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Rhein-Main Danube Canal"/>Rhein-Main Danube Canal
+<input name="waterways[]" type="checkbox" value="Rhein-Main Danube Canal"/>Rhein-Main Danube Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Rhine"/>Rhine
+<input name="waterways[]" type="checkbox" value="Rhine"/>Rhine
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Rhone"/>Rhone
+<input name="waterways[]" type="checkbox" value="Rhone"/>Rhone
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Saar"/>Saar
+<input name="waterways[]" type="checkbox" value="Saar"/>Saar
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Saimaa Canal"/>Saimaa Canal
+<input name="waterways[]" type="checkbox" value="Saimaa Canal"/>Saimaa Canal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Saimaa Deepwater Channels"/>Saimaa Deepwater Channels
+<input name="waterways[]" type="checkbox" value="Saimaa Deepwater Channels"/>Saimaa Deepwater Channels
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Sambre"/>Sambre
+<input name="waterways[]" type="checkbox" value="Sambre"/>Sambre
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Saone"/>Saone
+<input name="waterways[]" type="checkbox" value="Saone"/>Saone
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Sava"/>Sava
+<input name="waterways[]" type="checkbox" value="Sava"/>Sava
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) "/>Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) 
+<input name="waterways[]" type="checkbox" value="Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) "/>Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Seine"/>Seine
+<input name="waterways[]" type="checkbox" value="Seine"/>Seine
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Seine-Nord"/>Seine-Nord
+<input name="waterways[]" type="checkbox" value="Seine-Nord"/>Seine-Nord
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Starkeborchkanaal"/>Starkeborchkanaal
+<input name="waterways[]" type="checkbox" value="Starkeborchkanaal"/>Starkeborchkanaal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Thames"/>Thames
+<input name="waterways[]" type="checkbox" value="Thames"/>Thames
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Tisa (Serbia)"/>Tisa (Serbia)
+<input name="waterways[]" type="checkbox" value="Tisa (Serbia)"/>Tisa (Serbia)
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Tisza"/>Tisza
+<input name="waterways[]" type="checkbox" value="Tisza"/>Tisza
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Trent"/>Trent
+<input name="waterways[]" type="checkbox" value="Trent"/>Trent
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Twentekanaal"/>Twentekanaal
+<input name="waterways[]" type="checkbox" value="Twentekanaal"/>Twentekanaal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Vah"/>Vah
+<input name="waterways[]" type="checkbox" value="Vah"/>Vah
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Visla"/>Visla
+<input name="waterways[]" type="checkbox" value="Visla"/>Visla
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Vltava"/>Vltava
+<input name="waterways[]" type="checkbox" value="Vltava"/>Vltava
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Waal"/>Waal
+<input name="waterways[]" type="checkbox" value="Waal"/>Waal
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Wesel-Datteln-Kanal "/>Wesel-Datteln-Kanal 
+<input name="waterways[]" type="checkbox" value="Wesel-Datteln-Kanal "/>Wesel-Datteln-Kanal 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Weser "/>Weser 
+<input name="waterways[]" type="checkbox" value="Weser "/>Weser 
+
 													</label><br/>
 <label>
-<input name="waterways[]" type="checkbox" value="Zeekanaal Brussel-Schelde"/>Zeekanaal Brussel-Schelde
+<input name="waterways[]" type="checkbox" value="Zeekanaal Brussel-Schelde"/>Zeekanaal Brussel-Schelde
+
 													</label><br/> </td>
 
-, <label>
+<label>
 
 <input name="waterways[]" type="checkbox" value="Odra"/>
 
-Odra
-													</label>, 
+Odra
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Odra"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Oise "/>
 
-Oise 
-													</label>, 
+Oise 
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Oise "/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Oude Maas"/>
 
-Oude Maas
-													</label>, 
+Oude Maas
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Oude Maas"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Po"/>
 
-Po
-													</label>, 
+Po
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Po"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Poarta Alba"/>
 
-Poarta Alba
-													</label>, 
+Poarta Alba
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Poarta Alba"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Prinses Margriet"/>
 
-Prinses Margriet
-													</label>, 
+Prinses Margriet
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Prinses Margriet"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Prut"/>
 
-Prut
-													</label>, 
+Prut
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Prut"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Rhein-Herne-Kanal "/>
 
-Rhein-Herne-Kanal 
-													</label>, 
+Rhein-Herne-Kanal 
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Rhein-Herne-Kanal "/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Rhein-Main Danube Canal"/>
 
-Rhein-Main Danube Canal
-													</label>, 
+Rhein-Main Danube Canal
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Rhein-Main Danube Canal"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Rhine"/>
 
-Rhine
-													</label>, 
+Rhine
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Rhine"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Rhone"/>
 
-Rhone
-													</label>, 
+Rhone
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Rhone"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Saar"/>
 
-Saar
-													</label>, 
+Saar
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Saar"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Saimaa Canal"/>
 
-Saimaa Canal
-													</label>, 
+Saimaa Canal
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Saimaa Canal"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Saimaa Deepwater Channels"/>
 
-Saimaa Deepwater Channels
-													</label>, 
+Saimaa Deepwater Channels
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Saimaa Deepwater Channels"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Sambre"/>
 
-Sambre
-													</label>, 
+Sambre
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Sambre"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Saone"/>
 
-Saone
-													</label>, 
+Saone
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Saone"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Sava"/>
 
-Sava
-													</label>, 
+Sava
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Sava"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) "/>
 
-Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) 
-													</label>, 
+Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) 
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Scheldt (Westerschelde / Oosterschelde / Schelde-Rijnverbinding) "/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Seine"/>
 
-Seine
-													</label>, 
+Seine
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Seine"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Seine-Nord"/>
 
-Seine-Nord
-													</label>, 
+Seine-Nord
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Seine-Nord"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Starkeborchkanaal"/>
 
-Starkeborchkanaal
-													</label>, 
+Starkeborchkanaal
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Starkeborchkanaal"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Thames"/>
 
-Thames
-													</label>, 
+Thames
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Thames"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Tisa (Serbia)"/>
 
-Tisa (Serbia)
-													</label>, 
+Tisa (Serbia)
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Tisa (Serbia)"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Tisza"/>
 
-Tisza
-													</label>, 
+Tisza
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Tisza"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Trent"/>
 
-Trent
-													</label>, 
+Trent
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Trent"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Twentekanaal"/>
 
-Twentekanaal
-													</label>, 
+Twentekanaal
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Twentekanaal"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Vah"/>
 
-Vah
-													</label>, 
+Vah
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Vah"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Visla"/>
 
-Visla
-													</label>, 
+Visla
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Visla"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Vltava"/>
 
-Vltava
-													</label>, 
+Vltava
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Vltava"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Waal"/>
 
-Waal
-													</label>, 
+Waal
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Waal"/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Wesel-Datteln-Kanal "/>
 
-Wesel-Datteln-Kanal 
-													</label>, 
+Wesel-Datteln-Kanal 
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Wesel-Datteln-Kanal "/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Weser "/>
 
-Weser 
-													</label>, 
+Weser 
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Weser "/>
 
-,   
-, <label>
+  
+<label>
 
 <input name="waterways[]" type="checkbox" value="Zeekanaal Brussel-Schelde"/>
 
-Zeekanaal Brussel-Schelde
-													</label>, 
+Zeekanaal Brussel-Schelde
+
+													</label>
 
 <input name="waterways[]" type="checkbox" value="Zeekanaal Brussel-Schelde"/>
 
-,   
-, 
+  
+
 
 <table style="width:100%">
 <tr>
@@ -2857,7 +3400,7 @@ Zeekanaal Brussel-Schelde
 </tr>
 </table>
 
-, 
+
 
 <tr>
 <td style="width:33%" valign="top">
@@ -2869,42 +3412,42 @@ Zeekanaal Brussel-Schelde
 <td style="width:33%" valign="top"></td>
 </tr>
 
-, 
+
 
 <td style="width:33%" valign="top">
 <label><input name="waterways[]" type="checkbox" value="Other"/>Other waterway</label><br/>
 </td>
 
-, <label>
+<label>
 
 <input name="waterways[]" type="checkbox" value="Other"/>
 
-Other waterway</label>, 
+Other waterway</label>
 
 <input name="waterways[]" type="checkbox" value="Other"/>
 
-,   
-, 
+  
+
 
 <td style="width:33%" valign="top">
 <input name="other_waterways" type="text"/>
 </td>
 
-, 
+
 
 <input name="other_waterways" type="text"/>
 
-, 
+
 
 <td style="width:33%" valign="top"></td>
 
-, 
+
 ---
-, 
+
 
 ### Service
 
-, 
+
 
 <label>
 
@@ -2940,77 +3483,77 @@ Waterway charges and port dues</label><label>
 
 Information for law enforcement  </label> 
 
-, <label>
+<label>
 
 <input name="service[]" type="checkbox" value="fairway information "/>
 
-Fairway information </label>, 
+Fairway information </label>
 
 <input name="service[]" type="checkbox" value="fairway information "/>
 
-, <label>
+<label>
 
 <input name="service[]" type="checkbox" value="traffic information "/>
 
-Traffic information </label>, 
+Traffic information </label>
 
 <input name="service[]" type="checkbox" value="traffic information "/>
 
-, <label>
+<label>
 
 <input name="service[]" type="checkbox" value="traffic management "/>
 
-Traffic management </label>, 
+Traffic management </label>
 
 <input name="service[]" type="checkbox" value="traffic management "/>
 
-, <label>
+<label>
 
 <input name="service[]" type="checkbox" value="calamity abatement support "/>
 
-Calamity abatement support </label>, 
+Calamity abatement support </label>
 
 <input name="service[]" type="checkbox" value="calamity abatement support "/>
 
-, <label>
+<label>
 
 <input name="service[]" type="checkbox" value="information for transport management "/>
 
-Information for transport management </label>, 
+Information for transport management </label>
 
 <input name="service[]" type="checkbox" value="information for transport management "/>
 
-, <label>
+<label>
 
 <input name="service[]" type="checkbox" value="statistics and customs services "/>
 
-Statistics and customs services </label>, 
+Statistics and customs services </label>
 
 <input name="service[]" type="checkbox" value="statistics and customs services "/>
 
-, <label>
+<label>
 
 <input name="service[]" type="checkbox" value="waterway charges and port dues"/>
 
-Waterway charges and port dues</label>, 
+Waterway charges and port dues</label>
 
 <input name="service[]" type="checkbox" value="waterway charges and port dues"/>
 
-, <label>
+<label>
 
 <input name="service[]" type="checkbox" value="Information for law enforcement  "/>
 
-Information for law enforcement  </label>, 
+Information for law enforcement  </label>
 
 <input name="service[]" type="checkbox" value="Information for law enforcement  "/>
 
-, 
+
 ---
-, 
+
 
 ### Technology
 
-, 
+
 
 <label>
 
@@ -3030,99 +3573,99 @@ Inland ECDIS</label><label>
 
 NtS Notice to Skippers</label> 
 
-, <label>
+<label>
 
 <input name="technology[]" type="checkbox" value="Electronic Reporting International ERI"/>
 
-Electronic Reporting International ERI</label>, 
+Electronic Reporting International ERI</label>
 
 <input name="technology[]" type="checkbox" value="Electronic Reporting International ERI"/>
 
-, <label>
+<label>
 
 <input name="technology[]" type="checkbox" value="Inland AIS and/or infrastructure"/>
 
-Inland AIS and/or infrastructure</label>, 
+Inland AIS and/or infrastructure</label>
 
 <input name="technology[]" type="checkbox" value="Inland AIS and/or infrastructure"/>
 
-, <label>
+<label>
 
 <input name="technology[]" type="checkbox" value="Inland ECDIS"/>
 
-Inland ECDIS</label>, 
+Inland ECDIS</label>
 
 <input name="technology[]" type="checkbox" value="Inland ECDIS"/>
 
-, <label>
+<label>
 
 <input name="technology[]" type="checkbox" value="NtS Notice to Skippers"/>
 
-NtS Notice to Skippers</label>, 
+NtS Notice to Skippers</label>
 
 <input name="technology[]" type="checkbox" value="NtS Notice to Skippers"/>
 
-, 
+
 ---
-, 
+
 
 ### Project status
 
-, <label>
+<label>
 
 <input name="status[]" type="checkbox" value="Policy objective"/>
 
-Policy objective</label>, 
+Policy objective</label>
 
 <input name="status[]" type="checkbox" value="Policy objective"/>
 
-, <label>
+<label>
 
 <input name="status[]" type="checkbox" value="Project finalized"/>
 
-Project finalized</label>, 
+Project finalized</label>
 
 <input name="status[]" type="checkbox" value="Project finalized"/>
 
-, <label>
+<label>
 
 <input name="status[]" type="checkbox" value="Project ongoing"/>
 
-Project ongoing</label>, 
+Project ongoing</label>
 
 <input name="status[]" type="checkbox" value="Project ongoing"/>
 
-, <label>
+<label>
 
 <input name="status[]" type="checkbox" value="Project planned"/>
 
-Project planned</label>, 
+Project planned</label>
 
 <input name="status[]" type="checkbox" value="Project planned"/>
 
-, <label>
+<label>
 
 <input name="status[]" type="checkbox" value="Ready"/>
 
-Ready</label>, 
+Ready</label>
 
 <input name="status[]" type="checkbox" value="Ready"/>
 
-, <label>
+<label>
 
 <input name="status[]" type="checkbox" value="Ready before 2015"/>
 
-Ready before 2015</label>, 
+Ready before 2015</label>
 
 <input name="status[]" type="checkbox" value="Ready before 2015"/>
 
-, 
+
 ---
-, 
+
 
 ### Project funding
 
-, 
+
 
 <label>
 
@@ -3138,37 +3681,37 @@ National</label><label>
 
 None</label> 
 
-, <label>
+<label>
 
 <input name="funding[]" type="checkbox" value="EU"/>
 
-EU</label>, 
+EU</label>
 
 <input name="funding[]" type="checkbox" value="EU"/>
 
-, <label>
+<label>
 
 <input name="funding[]" type="checkbox" value="National"/>
 
-National</label>, 
+National</label>
 
 <input name="funding[]" type="checkbox" value="National"/>
 
-, <label>
+<label>
 
 <input name="funding[]" type="checkbox" value="None"/>
 
-None</label>, 
+None</label>
 
 <input name="funding[]" type="checkbox" value="None"/>
 
-, 
+
 ---
-, 
+
 
 ### Project type
 
-, 
+
 
 <label>
 
@@ -3180,27 +3723,27 @@ Deployment</label><label>
 
 Research and development</label> 
 
-, <label>
+<label>
 
 <input name="type[]" type="checkbox" value="Deployment"/>
 
-Deployment</label>, 
+Deployment</label>
 
 <input name="type[]" type="checkbox" value="Deployment"/>
 
-, <label>
+<label>
 
 <input name="type[]" type="checkbox" value="Research and development"/>
 
-Research and development</label>, 
+Research and development</label>
 
 <input name="type[]" type="checkbox" value="Research and development"/>
 
-, 
+
 
 <input type="submit" value="Submit this project"/>
 
-, 
+
 
 <input type="submit" value="Submit this project"/>
 
