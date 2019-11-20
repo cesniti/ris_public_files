@@ -191,6 +191,12 @@ img {
 	text-align: justify;
 	line-height: 20px;
 }
+#documentation_btn {
+	height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .minimenu a
 {
 	font-size:11px;
