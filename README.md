@@ -3,6 +3,7 @@
 The architecture of the www.ris.eu is presented here in the Master branch of the projet. The file have been extracted from the current web site in order to facilitate the transfer of the most important file to the new architecture.
 
 The new set up of the files and website structure.
+The content docs/File structure has been maintained to avoid duplication. 
 
 The Goal is to obtain the following tree of information in the dedicated page for CESNI/TI : 
 
