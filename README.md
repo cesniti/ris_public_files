@@ -3,7 +3,7 @@
 The architecture of the www.ris.eu is presented here in the Master branch of the projet. The file have been extracted from the current web site in order to facilitate the transfer of the most important file to the new architecture.
 
 The new set up of the files and website structure.
-The content docs/File structure has been maintained to avoid duplication. 
+The content docs/File structure has been maintained to avoid duplication and simplify the usage of file links. 
 
 The Goal is to obtain the following tree of information in the dedicated page for CESNI/TI : 
 
@@ -25,14 +25,14 @@ The Goal is to obtain the following tree of information in the dedicated page fo
 			├── vtt								# Group definition / mandate / Standard editions
 			├── vtt download area  				# VTT DOCUMENTATION
 			└── reference data 
-	├── docs
-		├── File								# All the files are stored in this folder for download
-		└── Image								# All image stored in this folder are related to the previous website
-	├── css										# Presentation files
-	├── images									# Images related to template
-	└── scripts									# Script related to template
+		├── docs
+			├── File								# All the files are stored in this folder for download
+			└── Image								# All image stored in this folder are related to the previous website
+		├── css										# Presentation files
+		├── images									# Images related to template
+		└── scripts									# Script related to template
 
-The previous folder architecture is the following the tree : 
+The previous permalinks architecture is the following the tree : 
 
 	.
 	├── background							# Background information on EU
@@ -115,5 +115,5 @@ The previous folder architecture is the following the tree :
 	|	├── maintenance_of_inland_enc__electronic_navigational_charts__register_and_the_digital_parts_of_the_inland_enc_standard
 	|	└── services_at_european_level
 	├── submit_your_project
-	└── README.md
+
 
