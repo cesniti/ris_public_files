@@ -142,6 +142,7 @@ img {
 #content { 
 	/*height: 611px;*/
 	font-family:arial;
+	font-size: 13px;
 	margin: 15px 20px;
 	overflow: auto;
 	padding-right: 5px;
