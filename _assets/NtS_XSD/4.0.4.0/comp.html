@@ -1,0 +1,1522 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Schema documentation for NtS_XSD_V.4.0.4.0.xsd</title>
+      <link rel="stylesheet" href="docHtml.css" type="text/css" /><script type="text/javascript">
+         <!--
+        var propertiesBoxes= new Array('properties_NtS_XSD_V.4.0.4.0.xsd', 
+				'properties_RIS_Message', 
+				'properties_RIS_Message_Type_identification', 
+				'properties_identification_type_internal_id', 
+				'properties_identification_type_from', 
+				'properties_identification_type_originator', 
+				'properties_identification_type_country_code', 
+				'properties_identification_type_language_code', 
+				'properties_identification_type_district', 
+				'properties_identification_type_date_issue', 
+				'properties_RIS_Message_Type_ftm', 
+				'properties_ftm_type_internal_id', 
+				'properties_ftm_type_nts_number', 
+				'properties_nts_number_type_organisation', 
+				'properties_nts_number_type_year', 
+				'properties_nts_number_type_number', 
+				'properties_nts_number_type_serial_number', 
+				'properties_ftm_type_target_group', 
+				'properties_target_group_type_target_group_code', 
+				'properties_target_group_type_direction_code', 
+				'properties_ftm_type_subject_code', 
+				'properties_ftm_type_validity_period', 
+				'properties_validity_period_type_date_start', 
+				'properties_validity_period_type_date_end', 
+				'properties_ftm_type_contents', 
+				'properties_ftm_type_source', 
+				'properties_ftm_type_reason_code', 
+				'properties_ftm_type_communication', 
+				'properties_communication_type_reporting_code', 
+				'properties_communication_type_communication_code', 
+				'properties_communication_type_number', 
+				'properties_communication_type_label', 
+				'properties_communication_type_remark', 
+				'properties_ftm_type_fairway_section', 
+				'properties_fairway_section_type_geo_object', 
+				'properties_geo_object_type_id', 
+				'properties_geo_object_type_name', 
+				'properties_geo_object_type_type_code', 
+				'properties_geo_object_type_position_code', 
+				'properties_geo_object_type_coordinate', 
+				'properties_coordinate_type_lat', 
+				'properties_coordinate_type_long', 
+				'properties_geo_object_type_fairway_name', 
+				'properties_fairway_section_type_limitation', 
+				'properties_limitation_type_limitation_period', 
+				'properties_limitation_period_type_date_start', 
+				'properties_limitation_period_type_date_end', 
+				'properties_limitation_period_type_time_start', 
+				'properties_limitation_period_type_time_end', 
+				'properties_limitation_period_type_interval_code', 
+				'properties_limitation_type_limitation_code', 
+				'properties_limitation_type_position_code', 
+				'properties_limitation_type_value', 
+				'properties_limitation_type_unit', 
+				'properties_limitation_type_reference_code', 
+				'properties_limitation_type_indication_code', 
+				'properties_limitation_type_target_group', 
+				'properties_ftm_type_object', 
+				'properties_object_type_geo_object', 
+				'properties_object_type_limitation', 
+				'properties_RIS_Message_Type_wrm', 
+				'properties_wrm_type_internal_id', 
+				'properties_wrm_type_nts_number', 
+				'properties_wrm_type_validity_period', 
+				'properties_wrm_type_geo_object', 
+				'properties_wrm_type_reference_code', 
+				'properties_wrm_type_measure', 
+				'properties_measure_type_predicted', 
+				'properties_measure_type_measure_code', 
+				'properties_measure_type_value', 
+				'properties_measure_type_value_min', 
+				'properties_measure_type_value_max', 
+				'properties_measure_type_unit', 
+				'properties_measure_type_barrage_code', 
+				'properties_measure_type_regime_code', 
+				'properties_measure_type_measuredate', 
+				'properties_measure_type_difference', 
+				'properties_difference_type_value_difference', 
+				'properties_difference_type_time_difference', 
+				'properties_RIS_Message_Type_icem', 
+				'properties_icem_type_internal_id', 
+				'properties_icem_type_nts_number', 
+				'properties_icem_type_validity_period', 
+				'properties_icem_type_fairway_section', 
+				'properties_icem_type_ice_condition', 
+				'properties_ice_condition_type_measuredate', 
+				'properties_ice_condition_type_ice_condition_code', 
+				'properties_ice_condition_type_ice_accessibility_code', 
+				'properties_ice_condition_type_ice_classification_code', 
+				'properties_ice_condition_type_ice_situation_code', 
+				'properties_RIS_Message_Type_werm', 
+				'properties_werm_type_internal_id', 
+				'properties_werm_type_nts_number', 
+				'properties_werm_type_validity_period', 
+				'properties_werm_type_fairway_section', 
+				'properties_fairway_section_werm_type_geo_object', 
+				'properties_werm_type_weather_report', 
+				'properties_weather_report_type_measuredate', 
+				'properties_weather_report_type_forecast', 
+				'properties_weather_report_type_weather_class_code', 
+				'properties_weather_report_type_weather_item', 
+				'properties_weather_item_type_weather_item_code', 
+				'properties_weather_item_type_value_min', 
+				'properties_weather_item_type_value_max', 
+				'properties_weather_item_type_value_gusts', 
+				'properties_weather_item_type_unit', 
+				'properties_weather_item_type_weather_category_code', 
+				'properties_weather_item_type_direction_code_min', 
+				'properties_weather_item_type_direction_code_max');
+var facetsBoxes= new Array('facets_identification_type_internal_id', 
+				'facets_identification_type_from', 
+				'facets_identification_type_originator', 
+				'facets_identification_type_country_code', 
+				'facets_identification_type_language_code', 
+				'facets_identification_type_district', 
+				'facets_ftm_type_internal_id', 
+				'facets_nts_number_type_organisation', 
+				'facets_nts_number_type_year', 
+				'facets_nts_number_type_number', 
+				'facets_nts_number_type_serial_number', 
+				'facets_target_group_type_target_group_code', 
+				'facets_target_group_type_direction_code', 
+				'facets_ftm_type_subject_code', 
+				'facets_ftm_type_contents', 
+				'facets_ftm_type_source', 
+				'facets_ftm_type_reason_code', 
+				'facets_communication_type_reporting_code', 
+				'facets_communication_type_communication_code', 
+				'facets_communication_type_number', 
+				'facets_communication_type_label', 
+				'facets_communication_type_remark', 
+				'facets_geo_object_type_id', 
+				'facets_geo_object_type_name', 
+				'facets_geo_object_type_type_code', 
+				'facets_geo_object_type_position_code', 
+				'facets_coordinate_type_lat', 
+				'facets_coordinate_type_long', 
+				'facets_geo_object_type_fairway_name', 
+				'facets_limitation_period_type_interval_code', 
+				'facets_limitation_type_limitation_code', 
+				'facets_limitation_type_position_code', 
+				'facets_limitation_type_unit', 
+				'facets_limitation_type_reference_code', 
+				'facets_limitation_type_indication_code', 
+				'facets_wrm_type_internal_id', 
+				'facets_wrm_type_reference_code', 
+				'facets_measure_type_measure_code', 
+				'facets_measure_type_unit', 
+				'facets_measure_type_barrage_code', 
+				'facets_measure_type_regime_code', 
+				'facets_icem_type_internal_id', 
+				'facets_ice_condition_type_ice_condition_code', 
+				'facets_ice_condition_type_ice_accessibility_code', 
+				'facets_ice_condition_type_ice_classification_code', 
+				'facets_ice_condition_type_ice_situation_code', 
+				'facets_werm_type_internal_id', 
+				'facets_weather_report_type_weather_class_code', 
+				'facets_weather_item_type_weather_item_code', 
+				'facets_weather_item_type_unit', 
+				'facets_weather_item_type_weather_category_code', 
+				'facets_weather_item_type_direction_code_min', 
+				'facets_weather_item_type_direction_code_max', 
+				'facets_internal_id_type', 
+				'facets_country_code_enum', 
+				'facets_language_code_enum', 
+				'facets_target_group_code_enum', 
+				'facets_direction_code_enum', 
+				'facets_subject_code_enum', 
+				'facets_reason_code_enum', 
+				'facets_reporting_code_enum', 
+				'facets_communication_code_enum', 
+				'facets_isrs_code_type', 
+				'facets_type_code_enum', 
+				'facets_position_code_enum', 
+				'facets_interval_code_enum', 
+				'facets_limitation_code_enum', 
+				'facets_unit_enum', 
+				'facets_reference_code_enum', 
+				'facets_indication_code_enum', 
+				'facets_measure_code_enum', 
+				'facets_barrage_code_enum', 
+				'facets_regime_code_enum', 
+				'facets_ice_condition_code_enum', 
+				'facets_ice_accessibility_code_enum', 
+				'facets_ice_classification_code_enum', 
+				'facets_ice_situation_code_enum', 
+				'facets_weather_class_code_enum', 
+				'facets_weather_item_code_enum', 
+				'facets_weather_category_code_enum', 
+				'facets_weather_direction_code_enum');
+var usedByBoxes= new Array('usedBy_RIS_Message_Type', 
+				'usedBy_identification_type', 
+				'usedBy_internal_id_type', 
+				'usedBy_country_code_enum', 
+				'usedBy_language_code_enum', 
+				'usedBy_ftm_type', 
+				'usedBy_nts_number_type', 
+				'usedBy_target_group_type', 
+				'usedBy_target_group_code_enum', 
+				'usedBy_direction_code_enum', 
+				'usedBy_subject_code_enum', 
+				'usedBy_validity_period_type', 
+				'usedBy_reason_code_enum', 
+				'usedBy_communication_type', 
+				'usedBy_reporting_code_enum', 
+				'usedBy_communication_code_enum', 
+				'usedBy_fairway_section_type', 
+				'usedBy_geo_object_type', 
+				'usedBy_isrs_code_type', 
+				'usedBy_type_code_enum', 
+				'usedBy_position_code_enum', 
+				'usedBy_coordinate_type', 
+				'usedBy_limitation_type', 
+				'usedBy_limitation_period_type', 
+				'usedBy_interval_code_enum', 
+				'usedBy_limitation_code_enum', 
+				'usedBy_unit_enum', 
+				'usedBy_reference_code_enum', 
+				'usedBy_indication_code_enum', 
+				'usedBy_object_type', 
+				'usedBy_wrm_type', 
+				'usedBy_measure_type', 
+				'usedBy_measure_code_enum', 
+				'usedBy_barrage_code_enum', 
+				'usedBy_regime_code_enum', 
+				'usedBy_difference_type', 
+				'usedBy_icem_type', 
+				'usedBy_ice_condition_type', 
+				'usedBy_ice_condition_code_enum', 
+				'usedBy_ice_accessibility_code_enum', 
+				'usedBy_ice_classification_code_enum', 
+				'usedBy_ice_situation_code_enum', 
+				'usedBy_werm_type', 
+				'usedBy_fairway_section_werm_type', 
+				'usedBy_weather_report_type', 
+				'usedBy_weather_class_code_enum', 
+				'usedBy_weather_item_type', 
+				'usedBy_weather_item_code_enum', 
+				'usedBy_weather_category_code_enum', 
+				'usedBy_weather_direction_code_enum');
+var sourceBoxes= new Array('source_RIS_Message', 
+				'source_RIS_Message_Type_identification', 
+				'source_identification_type_internal_id', 
+				'source_identification_type_from', 
+				'source_identification_type_originator', 
+				'source_identification_type_country_code', 
+				'source_identification_type_language_code', 
+				'source_identification_type_district', 
+				'source_identification_type_date_issue', 
+				'source_RIS_Message_Type_ftm', 
+				'source_ftm_type_internal_id', 
+				'source_ftm_type_nts_number', 
+				'source_nts_number_type_organisation', 
+				'source_nts_number_type_year', 
+				'source_nts_number_type_number', 
+				'source_nts_number_type_serial_number', 
+				'source_ftm_type_target_group', 
+				'source_target_group_type_target_group_code', 
+				'source_target_group_type_direction_code', 
+				'source_ftm_type_subject_code', 
+				'source_ftm_type_validity_period', 
+				'source_validity_period_type_date_start', 
+				'source_validity_period_type_date_end', 
+				'source_ftm_type_contents', 
+				'source_ftm_type_source', 
+				'source_ftm_type_reason_code', 
+				'source_ftm_type_communication', 
+				'source_communication_type_reporting_code', 
+				'source_communication_type_communication_code', 
+				'source_communication_type_number', 
+				'source_communication_type_label', 
+				'source_communication_type_remark', 
+				'source_ftm_type_fairway_section', 
+				'source_fairway_section_type_geo_object', 
+				'source_geo_object_type_id', 
+				'source_geo_object_type_name', 
+				'source_geo_object_type_type_code', 
+				'source_geo_object_type_position_code', 
+				'source_geo_object_type_coordinate', 
+				'source_coordinate_type_lat', 
+				'source_coordinate_type_long', 
+				'source_geo_object_type_fairway_name', 
+				'source_fairway_section_type_limitation', 
+				'source_limitation_type_limitation_period', 
+				'source_limitation_period_type_date_start', 
+				'source_limitation_period_type_date_end', 
+				'source_limitation_period_type_time_start', 
+				'source_limitation_period_type_time_end', 
+				'source_limitation_period_type_interval_code', 
+				'source_limitation_type_limitation_code', 
+				'source_limitation_type_position_code', 
+				'source_limitation_type_value', 
+				'source_limitation_type_unit', 
+				'source_limitation_type_reference_code', 
+				'source_limitation_type_indication_code', 
+				'source_limitation_type_target_group', 
+				'source_ftm_type_object', 
+				'source_object_type_geo_object', 
+				'source_object_type_limitation', 
+				'source_RIS_Message_Type_wrm', 
+				'source_wrm_type_internal_id', 
+				'source_wrm_type_nts_number', 
+				'source_wrm_type_validity_period', 
+				'source_wrm_type_geo_object', 
+				'source_wrm_type_reference_code', 
+				'source_wrm_type_measure', 
+				'source_measure_type_predicted', 
+				'source_measure_type_measure_code', 
+				'source_measure_type_value', 
+				'source_measure_type_value_min', 
+				'source_measure_type_value_max', 
+				'source_measure_type_unit', 
+				'source_measure_type_barrage_code', 
+				'source_measure_type_regime_code', 
+				'source_measure_type_measuredate', 
+				'source_measure_type_difference', 
+				'source_difference_type_value_difference', 
+				'source_difference_type_time_difference', 
+				'source_RIS_Message_Type_icem', 
+				'source_icem_type_internal_id', 
+				'source_icem_type_nts_number', 
+				'source_icem_type_validity_period', 
+				'source_icem_type_fairway_section', 
+				'source_icem_type_ice_condition', 
+				'source_ice_condition_type_measuredate', 
+				'source_ice_condition_type_ice_condition_code', 
+				'source_ice_condition_type_ice_accessibility_code', 
+				'source_ice_condition_type_ice_classification_code', 
+				'source_ice_condition_type_ice_situation_code', 
+				'source_RIS_Message_Type_werm', 
+				'source_werm_type_internal_id', 
+				'source_werm_type_nts_number', 
+				'source_werm_type_validity_period', 
+				'source_werm_type_fairway_section', 
+				'source_fairway_section_werm_type_geo_object', 
+				'source_werm_type_weather_report', 
+				'source_weather_report_type_measuredate', 
+				'source_weather_report_type_forecast', 
+				'source_weather_report_type_weather_class_code', 
+				'source_weather_report_type_weather_item', 
+				'source_weather_item_type_weather_item_code', 
+				'source_weather_item_type_value_min', 
+				'source_weather_item_type_value_max', 
+				'source_weather_item_type_value_gusts', 
+				'source_weather_item_type_unit', 
+				'source_weather_item_type_weather_category_code', 
+				'source_weather_item_type_direction_code_min', 
+				'source_weather_item_type_direction_code_max', 
+				'source_RIS_Message_Type', 
+				'source_identification_type', 
+				'source_internal_id_type', 
+				'source_country_code_enum', 
+				'source_language_code_enum', 
+				'source_ftm_type', 
+				'source_nts_number_type', 
+				'source_target_group_type', 
+				'source_target_group_code_enum', 
+				'source_direction_code_enum', 
+				'source_subject_code_enum', 
+				'source_validity_period_type', 
+				'source_reason_code_enum', 
+				'source_communication_type', 
+				'source_reporting_code_enum', 
+				'source_communication_code_enum', 
+				'source_fairway_section_type', 
+				'source_geo_object_type', 
+				'source_isrs_code_type', 
+				'source_type_code_enum', 
+				'source_position_code_enum', 
+				'source_coordinate_type', 
+				'source_limitation_type', 
+				'source_limitation_period_type', 
+				'source_interval_code_enum', 
+				'source_limitation_code_enum', 
+				'source_unit_enum', 
+				'source_reference_code_enum', 
+				'source_indication_code_enum', 
+				'source_object_type', 
+				'source_wrm_type', 
+				'source_measure_type', 
+				'source_measure_code_enum', 
+				'source_barrage_code_enum', 
+				'source_regime_code_enum', 
+				'source_difference_type', 
+				'source_icem_type', 
+				'source_ice_condition_type', 
+				'source_ice_condition_code_enum', 
+				'source_ice_accessibility_code_enum', 
+				'source_ice_classification_code_enum', 
+				'source_ice_situation_code_enum', 
+				'source_werm_type', 
+				'source_fairway_section_werm_type', 
+				'source_weather_report_type', 
+				'source_weather_class_code_enum', 
+				'source_weather_item_type', 
+				'source_weather_item_code_enum', 
+				'source_weather_category_code_enum', 
+				'source_weather_direction_code_enum');
+var instanceBoxes= new Array('instance_RIS_Message', 
+				'instance_RIS_Message_Type_identification', 
+				'instance_RIS_Message_Type_ftm', 
+				'instance_ftm_type_nts_number', 
+				'instance_ftm_type_target_group', 
+				'instance_ftm_type_validity_period', 
+				'instance_ftm_type_communication', 
+				'instance_ftm_type_fairway_section', 
+				'instance_fairway_section_type_geo_object', 
+				'instance_geo_object_type_coordinate', 
+				'instance_fairway_section_type_limitation', 
+				'instance_limitation_type_limitation_period', 
+				'instance_limitation_type_target_group', 
+				'instance_ftm_type_object', 
+				'instance_object_type_geo_object', 
+				'instance_object_type_limitation', 
+				'instance_RIS_Message_Type_wrm', 
+				'instance_wrm_type_nts_number', 
+				'instance_wrm_type_validity_period', 
+				'instance_wrm_type_geo_object', 
+				'instance_wrm_type_measure', 
+				'instance_measure_type_difference', 
+				'instance_RIS_Message_Type_icem', 
+				'instance_icem_type_nts_number', 
+				'instance_icem_type_validity_period', 
+				'instance_icem_type_fairway_section', 
+				'instance_icem_type_ice_condition', 
+				'instance_RIS_Message_Type_werm', 
+				'instance_werm_type_nts_number', 
+				'instance_werm_type_validity_period', 
+				'instance_werm_type_fairway_section', 
+				'instance_fairway_section_werm_type_geo_object', 
+				'instance_werm_type_weather_report', 
+				'instance_weather_report_type_weather_item');
+var diagramBoxes= new Array('diagram_RIS_Message', 
+				'diagram_RIS_Message_Type_identification', 
+				'diagram_identification_type_internal_id', 
+				'diagram_identification_type_from', 
+				'diagram_identification_type_originator', 
+				'diagram_identification_type_country_code', 
+				'diagram_identification_type_language_code', 
+				'diagram_identification_type_district', 
+				'diagram_identification_type_date_issue', 
+				'diagram_RIS_Message_Type_ftm', 
+				'diagram_ftm_type_internal_id', 
+				'diagram_ftm_type_nts_number', 
+				'diagram_nts_number_type_organisation', 
+				'diagram_nts_number_type_year', 
+				'diagram_nts_number_type_number', 
+				'diagram_nts_number_type_serial_number', 
+				'diagram_ftm_type_target_group', 
+				'diagram_target_group_type_target_group_code', 
+				'diagram_target_group_type_direction_code', 
+				'diagram_ftm_type_subject_code', 
+				'diagram_ftm_type_validity_period', 
+				'diagram_validity_period_type_date_start', 
+				'diagram_validity_period_type_date_end', 
+				'diagram_ftm_type_contents', 
+				'diagram_ftm_type_source', 
+				'diagram_ftm_type_reason_code', 
+				'diagram_ftm_type_communication', 
+				'diagram_communication_type_reporting_code', 
+				'diagram_communication_type_communication_code', 
+				'diagram_communication_type_number', 
+				'diagram_communication_type_label', 
+				'diagram_communication_type_remark', 
+				'diagram_ftm_type_fairway_section', 
+				'diagram_fairway_section_type_geo_object', 
+				'diagram_geo_object_type_id', 
+				'diagram_geo_object_type_name', 
+				'diagram_geo_object_type_type_code', 
+				'diagram_geo_object_type_position_code', 
+				'diagram_geo_object_type_coordinate', 
+				'diagram_coordinate_type_lat', 
+				'diagram_coordinate_type_long', 
+				'diagram_geo_object_type_fairway_name', 
+				'diagram_fairway_section_type_limitation', 
+				'diagram_limitation_type_limitation_period', 
+				'diagram_limitation_period_type_date_start', 
+				'diagram_limitation_period_type_date_end', 
+				'diagram_limitation_period_type_time_start', 
+				'diagram_limitation_period_type_time_end', 
+				'diagram_limitation_period_type_interval_code', 
+				'diagram_limitation_type_limitation_code', 
+				'diagram_limitation_type_position_code', 
+				'diagram_limitation_type_value', 
+				'diagram_limitation_type_unit', 
+				'diagram_limitation_type_reference_code', 
+				'diagram_limitation_type_indication_code', 
+				'diagram_limitation_type_target_group', 
+				'diagram_ftm_type_object', 
+				'diagram_object_type_geo_object', 
+				'diagram_object_type_limitation', 
+				'diagram_RIS_Message_Type_wrm', 
+				'diagram_wrm_type_internal_id', 
+				'diagram_wrm_type_nts_number', 
+				'diagram_wrm_type_validity_period', 
+				'diagram_wrm_type_geo_object', 
+				'diagram_wrm_type_reference_code', 
+				'diagram_wrm_type_measure', 
+				'diagram_measure_type_predicted', 
+				'diagram_measure_type_measure_code', 
+				'diagram_measure_type_value', 
+				'diagram_measure_type_value_min', 
+				'diagram_measure_type_value_max', 
+				'diagram_measure_type_unit', 
+				'diagram_measure_type_barrage_code', 
+				'diagram_measure_type_regime_code', 
+				'diagram_measure_type_measuredate', 
+				'diagram_measure_type_difference', 
+				'diagram_difference_type_value_difference', 
+				'diagram_difference_type_time_difference', 
+				'diagram_RIS_Message_Type_icem', 
+				'diagram_icem_type_internal_id', 
+				'diagram_icem_type_nts_number', 
+				'diagram_icem_type_validity_period', 
+				'diagram_icem_type_fairway_section', 
+				'diagram_icem_type_ice_condition', 
+				'diagram_ice_condition_type_measuredate', 
+				'diagram_ice_condition_type_ice_condition_code', 
+				'diagram_ice_condition_type_ice_accessibility_code', 
+				'diagram_ice_condition_type_ice_classification_code', 
+				'diagram_ice_condition_type_ice_situation_code', 
+				'diagram_RIS_Message_Type_werm', 
+				'diagram_werm_type_internal_id', 
+				'diagram_werm_type_nts_number', 
+				'diagram_werm_type_validity_period', 
+				'diagram_werm_type_fairway_section', 
+				'diagram_fairway_section_werm_type_geo_object', 
+				'diagram_werm_type_weather_report', 
+				'diagram_weather_report_type_measuredate', 
+				'diagram_weather_report_type_forecast', 
+				'diagram_weather_report_type_weather_class_code', 
+				'diagram_weather_report_type_weather_item', 
+				'diagram_weather_item_type_weather_item_code', 
+				'diagram_weather_item_type_value_min', 
+				'diagram_weather_item_type_value_max', 
+				'diagram_weather_item_type_value_gusts', 
+				'diagram_weather_item_type_unit', 
+				'diagram_weather_item_type_weather_category_code', 
+				'diagram_weather_item_type_direction_code_min', 
+				'diagram_weather_item_type_direction_code_max', 
+				'diagram_RIS_Message_Type', 
+				'diagram_identification_type', 
+				'diagram_internal_id_type', 
+				'diagram_country_code_enum', 
+				'diagram_language_code_enum', 
+				'diagram_ftm_type', 
+				'diagram_nts_number_type', 
+				'diagram_target_group_type', 
+				'diagram_target_group_code_enum', 
+				'diagram_direction_code_enum', 
+				'diagram_subject_code_enum', 
+				'diagram_validity_period_type', 
+				'diagram_reason_code_enum', 
+				'diagram_communication_type', 
+				'diagram_reporting_code_enum', 
+				'diagram_communication_code_enum', 
+				'diagram_fairway_section_type', 
+				'diagram_geo_object_type', 
+				'diagram_isrs_code_type', 
+				'diagram_type_code_enum', 
+				'diagram_position_code_enum', 
+				'diagram_coordinate_type', 
+				'diagram_limitation_type', 
+				'diagram_limitation_period_type', 
+				'diagram_interval_code_enum', 
+				'diagram_limitation_code_enum', 
+				'diagram_unit_enum', 
+				'diagram_reference_code_enum', 
+				'diagram_indication_code_enum', 
+				'diagram_object_type', 
+				'diagram_wrm_type', 
+				'diagram_measure_type', 
+				'diagram_measure_code_enum', 
+				'diagram_barrage_code_enum', 
+				'diagram_regime_code_enum', 
+				'diagram_difference_type', 
+				'diagram_icem_type', 
+				'diagram_ice_condition_type', 
+				'diagram_ice_condition_code_enum', 
+				'diagram_ice_accessibility_code_enum', 
+				'diagram_ice_classification_code_enum', 
+				'diagram_ice_situation_code_enum', 
+				'diagram_werm_type', 
+				'diagram_fairway_section_werm_type', 
+				'diagram_weather_report_type', 
+				'diagram_weather_class_code_enum', 
+				'diagram_weather_item_type', 
+				'diagram_weather_item_code_enum', 
+				'diagram_weather_category_code_enum', 
+				'diagram_weather_direction_code_enum');
+var annotationBoxes= new Array('annotations_RIS_Message', 
+				'annotations_RIS_Message_Type_identification', 
+				'annotations_identification_type_internal_id', 
+				'annotations_identification_type_from', 
+				'annotations_identification_type_originator', 
+				'annotations_identification_type_country_code', 
+				'annotations_identification_type_language_code', 
+				'annotations_identification_type_district', 
+				'annotations_identification_type_date_issue', 
+				'annotations_RIS_Message_Type_ftm', 
+				'annotations_ftm_type_internal_id', 
+				'annotations_ftm_type_nts_number', 
+				'annotations_nts_number_type_organisation', 
+				'annotations_nts_number_type_year', 
+				'annotations_nts_number_type_number', 
+				'annotations_nts_number_type_serial_number', 
+				'annotations_ftm_type_target_group', 
+				'annotations_target_group_type_target_group_code', 
+				'annotations_target_group_type_direction_code', 
+				'annotations_ftm_type_subject_code', 
+				'annotations_ftm_type_validity_period', 
+				'annotations_validity_period_type_date_start', 
+				'annotations_validity_period_type_date_end', 
+				'annotations_ftm_type_contents', 
+				'annotations_ftm_type_source', 
+				'annotations_ftm_type_reason_code', 
+				'annotations_ftm_type_communication', 
+				'annotations_communication_type_reporting_code', 
+				'annotations_communication_type_communication_code', 
+				'annotations_communication_type_number', 
+				'annotations_communication_type_label', 
+				'annotations_communication_type_remark', 
+				'annotations_ftm_type_fairway_section', 
+				'annotations_fairway_section_type_geo_object', 
+				'annotations_geo_object_type_id', 
+				'annotations_geo_object_type_name', 
+				'annotations_geo_object_type_type_code', 
+				'annotations_geo_object_type_position_code', 
+				'annotations_geo_object_type_coordinate', 
+				'annotations_geo_object_type_fairway_name', 
+				'annotations_fairway_section_type_limitation', 
+				'annotations_limitation_type_limitation_period', 
+				'annotations_limitation_period_type_date_start', 
+				'annotations_limitation_period_type_date_end', 
+				'annotations_limitation_period_type_time_start', 
+				'annotations_limitation_period_type_time_end', 
+				'annotations_limitation_period_type_interval_code', 
+				'annotations_limitation_type_limitation_code', 
+				'annotations_limitation_type_position_code', 
+				'annotations_limitation_type_value', 
+				'annotations_limitation_type_unit', 
+				'annotations_limitation_type_reference_code', 
+				'annotations_limitation_type_indication_code', 
+				'annotations_limitation_type_target_group', 
+				'annotations_ftm_type_object', 
+				'annotations_object_type_geo_object', 
+				'annotations_object_type_limitation', 
+				'annotations_RIS_Message_Type_wrm', 
+				'annotations_wrm_type_internal_id', 
+				'annotations_wrm_type_nts_number', 
+				'annotations_wrm_type_validity_period', 
+				'annotations_wrm_type_geo_object', 
+				'annotations_wrm_type_reference_code', 
+				'annotations_wrm_type_measure', 
+				'annotations_measure_type_predicted', 
+				'annotations_measure_type_measure_code', 
+				'annotations_measure_type_value', 
+				'annotations_measure_type_value_min', 
+				'annotations_measure_type_value_max', 
+				'annotations_measure_type_unit', 
+				'annotations_measure_type_barrage_code', 
+				'annotations_measure_type_regime_code', 
+				'annotations_measure_type_measuredate', 
+				'annotations_measure_type_difference', 
+				'annotations_difference_type_value_difference', 
+				'annotations_difference_type_time_difference', 
+				'annotations_RIS_Message_Type_icem', 
+				'annotations_icem_type_internal_id', 
+				'annotations_icem_type_nts_number', 
+				'annotations_icem_type_validity_period', 
+				'annotations_icem_type_fairway_section', 
+				'annotations_icem_type_ice_condition', 
+				'annotations_ice_condition_type_measuredate', 
+				'annotations_ice_condition_type_ice_condition_code', 
+				'annotations_ice_condition_type_ice_accessibility_code', 
+				'annotations_ice_condition_type_ice_classification_code', 
+				'annotations_ice_condition_type_ice_situation_code', 
+				'annotations_RIS_Message_Type_werm', 
+				'annotations_werm_type_internal_id', 
+				'annotations_werm_type_nts_number', 
+				'annotations_werm_type_validity_period', 
+				'annotations_werm_type_fairway_section', 
+				'annotations_fairway_section_werm_type_geo_object', 
+				'annotations_werm_type_weather_report', 
+				'annotations_weather_report_type_measuredate', 
+				'annotations_weather_report_type_forecast', 
+				'annotations_weather_report_type_weather_class_code', 
+				'annotations_weather_report_type_weather_item', 
+				'annotations_weather_item_type_weather_item_code', 
+				'annotations_weather_item_type_value_min', 
+				'annotations_weather_item_type_value_max', 
+				'annotations_weather_item_type_value_gusts', 
+				'annotations_weather_item_type_unit', 
+				'annotations_weather_item_type_weather_category_code', 
+				'annotations_weather_item_type_direction_code_min', 
+				'annotations_weather_item_type_direction_code_max', 
+				'annotations_internal_id_type', 
+				'annotations_isrs_code_type');
+var modelBoxes= new Array('model_RIS_Message', 
+				'model_RIS_Message_Type_identification', 
+				'model_RIS_Message_Type_ftm', 
+				'model_ftm_type_nts_number', 
+				'model_ftm_type_target_group', 
+				'model_ftm_type_validity_period', 
+				'model_ftm_type_communication', 
+				'model_ftm_type_fairway_section', 
+				'model_fairway_section_type_geo_object', 
+				'model_geo_object_type_coordinate', 
+				'model_fairway_section_type_limitation', 
+				'model_limitation_type_limitation_period', 
+				'model_limitation_type_target_group', 
+				'model_ftm_type_object', 
+				'model_object_type_geo_object', 
+				'model_object_type_limitation', 
+				'model_RIS_Message_Type_wrm', 
+				'model_wrm_type_nts_number', 
+				'model_wrm_type_validity_period', 
+				'model_wrm_type_geo_object', 
+				'model_wrm_type_measure', 
+				'model_measure_type_difference', 
+				'model_RIS_Message_Type_icem', 
+				'model_icem_type_nts_number', 
+				'model_icem_type_validity_period', 
+				'model_icem_type_fairway_section', 
+				'model_icem_type_ice_condition', 
+				'model_RIS_Message_Type_werm', 
+				'model_werm_type_nts_number', 
+				'model_werm_type_validity_period', 
+				'model_werm_type_fairway_section', 
+				'model_fairway_section_werm_type_geo_object', 
+				'model_werm_type_weather_report', 
+				'model_weather_report_type_weather_item', 
+				'model_RIS_Message_Type', 
+				'model_identification_type', 
+				'model_ftm_type', 
+				'model_nts_number_type', 
+				'model_target_group_type', 
+				'model_validity_period_type', 
+				'model_communication_type', 
+				'model_fairway_section_type', 
+				'model_geo_object_type', 
+				'model_coordinate_type', 
+				'model_limitation_type', 
+				'model_limitation_period_type', 
+				'model_object_type', 
+				'model_wrm_type', 
+				'model_measure_type', 
+				'model_difference_type', 
+				'model_icem_type', 
+				'model_ice_condition_type', 
+				'model_werm_type', 
+				'model_fairway_section_werm_type', 
+				'model_weather_report_type', 
+				'model_weather_item_type');
+
+      
+        var button_prefix = 'button_';
+        
+        /**
+        * Returns an element in the current HTML document.
+        *
+        * @param elementID Identifier of HTML element
+        * @return               HTML element object
+        */
+        function getElementObject(elementID) {
+            var elemObj = null;
+            if (document.getElementById) {
+                elemObj = document.getElementById(elementID);
+            }
+            return elemObj;
+        }
+        
+        /**
+        * Switches the state of a collapseable box, e.g.
+        * if it's opened, it'll be closed, and vice versa.
+        *
+        * @param boxID Identifier of box
+        */
+        function switchState(boxID) {
+            var boxObj = getElementObject(boxID);
+            var buttonObj = getElementObject(button_prefix + boxID);
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else if (boxObj.style.display == "none") {
+                // Box is closed, so open it
+                openBox(boxObj, buttonObj);
+            } else if (boxObj.style.display == "block") {
+                // Box is opened, so close it
+                closeBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+        * Opens a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function openBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "block";
+                
+                // Change text of button
+                if (boxObj.style.display == "block") {
+                    buttonObj.src = "img/btM.gif";
+                }
+            }
+        }
+        
+        /**
+        * Closes a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function closeBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "none";
+                
+                // Change text of button
+                if (boxObj.style.display == "none") {
+                    buttonObj.src = "img/btP.gif";
+                }
+            }
+        }
+    
+       function switchStateForAll(buttonObj, boxList) {
+            if (buttonObj == null) {
+                // button not found
+            } else if (buttonObj.value == "+") {
+                // Expand all
+                expandAll(boxList);
+                buttonObj.value = "-";
+            } else if (buttonObj.value == "-") {
+                // Collapse all
+                collapseAll(boxList);
+                buttonObj.value = "+";
+            }
+        }
+        
+        /**
+        * Closes all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function collapseAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                closeBox(boxObj, buttonObj);
+            }
+        }
+            
+        /**
+        * Open all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function expandAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                openBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+         * Update the message presented in the title of the html page.
+         * - If the documentation was splited by namespace we present something like: "Documentation for namespace 'ns'"
+         * - If the documentation was splited by location we present somehing like: "Documentation for 'Schema.xsd'"
+         * - If no split we always present: "Documentation for 'MainSchema.xsd'"
+         */
+        function updatePageTitle(message) {
+            top.document.title = message;
+        }
+        
+          
+                    
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function findAndFloat(id, x_displacement, y_displacement){
+
+            var element = getElementObject(id);            
+            
+            window[id + "_obj"] = element;
+            
+            if(document.layers) {
+               element.style = element;
+            }
+            
+            element.current_y = y_displacement;      
+            element.first_time = true;
+         
+            element.floatElement = function(){
+               // It may be closed by an user action.
+                
+               // Target X and Y coordinates.
+               var x, y;
+               
+               var myWidth = 0, myHeight = 0;
+               if( typeof( window.innerWidth ) == 'number' ) {
+                  //Non-IE
+                  myWidth = window.innerWidth;
+                  myHeight = window.innerHeight;
+               } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+                  //IE 6+ in 'standards compliant mode'
+                  myWidth = document.documentElement.clientWidth;
+                  myHeight = document.documentElement.clientHeight;
+               } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+                  //IE 4 compatible
+                  myWidth = document.body.clientWidth;
+                  myHeight = document.body.clientHeight;
+               }
+               
+               
+               x = myWidth - x_displacement;
+               
+               var ns = (navigator.appName.indexOf("Netscape") != -1);               
+               y = ns ? pageYOffset : document.documentElement && document.documentElement.scrollTop ? 
+                  document.documentElement.scrollTop : document.body.scrollTop;               
+               y = y + y_displacement;               
+               
+               // The current y is the current coordinate of the floating element.
+               // This should be at the limit the y target coordinate.
+               this.current_y += (y - this.current_y)/1.25;
+               
+               // Add the pixels constant after the values
+               // and move the element.
+               var px = document.layers ? "" : "px";
+               this.style.left =  x + px;
+               this.style.top =  this.current_y + px;
+                              
+               setTimeout(this.id + "_obj.floatElement()", 100);
+            }
+            
+            element.floatElement();
+            return element;
+          }
+
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function selectTOCGroupBy(id, isChunked, indexFileLocation, indexFileNamespace, indexFileComponent){
+
+            if (!isChunked) {
+             var selectIds = new Array('toc_group_by_namespace', 'toc_group_by_location', 'toc_group_by_component_type');
+             // Make all the tabs invisible.
+               for (i = 0; i < 3; i++){
+                  var tab = getElementObject(selectIds[i]);
+                  tab.style.display = 'none';
+               }
+               var selTab = getElementObject(id);
+               selTab.style.display = 'block';
+            } else {
+             if (id == 'toc_group_by_namespace') {
+               parent.indexFrame.location = indexFileNamespace;
+             } else  if (id == 'toc_group_by_location') {
+               parent.indexFrame.location = indexFileLocation;
+             } else  if (id == 'toc_group_by_component_type') {
+              parent.indexFrame.location = indexFileComponent;
+             }
+            }
+         }
+          
+
+    
+                        //--></script></head>
+   <body>
+      <h2><a id="INDEX">Table of Contents</a></h2>
+      <div class="toc">
+         <form action="none">
+            <div><span> Group by: <select id="selectTOC" onchange="selectTOCGroupBy(this.options[this.selectedIndex].value, false, '.html', 'ns.html', 'comp.html');">
+                     <option value="toc_group_by_namespace" selected="selected">Namespace</option>
+                     <option value="toc_group_by_location">Location</option>
+                     <option value="toc_group_by_component_type">Component Type</option></select></span></div>
+         </form>
+         <div class="level1" id="toc_group_by_namespace" style="display:block">
+            <div>
+               <div class="level2">
+                  <p><input id="button_boxIdNamespace1" type="image" value="-" src="img/btM.gif" onclick="switchState('boxIdNamespace1');" class="control" /><span class="indexGroupTitle">http://www.ris.eu/nts/4.0.4.0</span></p>
+                  <div id="boxIdNamespace1" style="display:block">
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_boxIdNamespace1Element" type="image" value="-" src="img/btM.gif" onclick="switchState('boxIdNamespace1Element');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Elements</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="boxIdNamespace1Element" class="componentGroup" style="display:block">
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#RIS_Message" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:RIS_Message</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_boxIdNamespace1Complex_Type" type="image" value="-" src="img/btM.gif" onclick="switchState('boxIdNamespace1Complex_Type');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Complex Types</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="boxIdNamespace1Complex_Type" class="componentGroup" style="display:block">
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#RIS_Message_Type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:RIS_Message_Type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#communication_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:communication_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#coordinate_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:coordinate_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#difference_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:difference_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#fairway_section_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:fairway_section_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#fairway_section_werm_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:fairway_section_werm_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#ftm_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:ftm_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#geo_object_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:geo_object_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#ice_condition_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:ice_condition_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#icem_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:icem_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#identification_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:identification_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#limitation_period_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:limitation_period_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#limitation_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:limitation_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#measure_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:measure_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#nts_number_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:nts_number_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#object_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:object_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#target_group_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:target_group_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#validity_period_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:validity_period_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#weather_item_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:weather_item_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#weather_report_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:weather_report_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#werm_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:werm_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#wrm_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:wrm_type</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_boxIdNamespace1Simple_Type" type="image" value="-" src="img/btM.gif" onclick="switchState('boxIdNamespace1Simple_Type');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Simple Types</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="boxIdNamespace1Simple_Type" class="componentGroup" style="display:block">
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#barrage_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:barrage_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#communication_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:communication_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#country_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:country_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#direction_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:direction_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#ice_accessibility_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:ice_accessibility_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#ice_classification_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:ice_classification_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#ice_condition_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:ice_condition_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#ice_situation_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:ice_situation_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#indication_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:indication_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#internal_id_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:internal_id_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#interval_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:interval_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#isrs_code_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:isrs_code_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#language_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:language_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#limitation_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:limitation_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#measure_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:measure_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#position_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:position_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#reason_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:reason_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#reference_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:reference_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#regime_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:regime_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#reporting_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:reporting_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#subject_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:subject_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#target_group_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:target_group_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#type_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:type_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#unit_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:unit_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#weather_category_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:weather_category_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#weather_class_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:weather_class_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#weather_direction_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:weather_direction_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#weather_item_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:weather_item_code_enum</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div style="clear:left"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="level1" id="toc_group_by_component_type" style="display:none">
+            <div>
+               <div class="horizontalLayout">
+                  <table class="rt">
+                     <tr>
+                        <td class="rt_cornerTopLeft"></td>
+                        <td class="rt_lineTop"></td>
+                        <td class="rt_cornerTopRight"></td>
+                     </tr>
+                     <tr>
+                        <td class="rt_lineLeft"></td>
+                        <td class="rt_content">
+                           <table class="componentGroup">
+                              <tbody>
+                                 <tr>
+                                    <td class="componentGroup"><input id="button_Element" type="image" value="-" src="img/btM.gif" onclick="switchState('Element');" class="control" /></td>
+                                    <td class="componentGroup">
+                                       <div class="componentGroupTitle">Elements</div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="componentGroup"></td>
+                                    <td class="componentGroup">
+                                       <div id="Element" class="componentGroup" style="display:block">
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#RIS_Message" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:RIS_Message</a></b></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td class="rt_lineRight"></td>
+                     </tr>
+                     <tr>
+                        <td class="rt_cornerBottomLeft"></td>
+                        <td class="rt_lineBottom"></td>
+                        <td class="rt_cornerBottomRight"></td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="horizontalLayout">
+                  <table class="rt">
+                     <tr>
+                        <td class="rt_cornerTopLeft"></td>
+                        <td class="rt_lineTop"></td>
+                        <td class="rt_cornerTopRight"></td>
+                     </tr>
+                     <tr>
+                        <td class="rt_lineLeft"></td>
+                        <td class="rt_content">
+                           <table class="componentGroup">
+                              <tbody>
+                                 <tr>
+                                    <td class="componentGroup"><input id="button_Complex_Type" type="image" value="-" src="img/btM.gif" onclick="switchState('Complex_Type');" class="control" /></td>
+                                    <td class="componentGroup">
+                                       <div class="componentGroupTitle">Complex Types</div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="componentGroup"></td>
+                                    <td class="componentGroup">
+                                       <div id="Complex_Type" class="componentGroup" style="display:block">
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#RIS_Message_Type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:RIS_Message_Type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#communication_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:communication_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#coordinate_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:coordinate_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#difference_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:difference_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#fairway_section_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:fairway_section_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#fairway_section_werm_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:fairway_section_werm_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#ftm_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:ftm_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#geo_object_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:geo_object_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#ice_condition_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:ice_condition_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#icem_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:icem_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#identification_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:identification_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#limitation_period_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:limitation_period_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#limitation_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:limitation_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#measure_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:measure_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#nts_number_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:nts_number_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#object_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:object_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#target_group_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:target_group_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#validity_period_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:validity_period_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#weather_item_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:weather_item_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#weather_report_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:weather_report_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#werm_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:werm_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#wrm_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:wrm_type</a></b></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td class="rt_lineRight"></td>
+                     </tr>
+                     <tr>
+                        <td class="rt_cornerBottomLeft"></td>
+                        <td class="rt_lineBottom"></td>
+                        <td class="rt_cornerBottomRight"></td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="horizontalLayout">
+                  <table class="rt">
+                     <tr>
+                        <td class="rt_cornerTopLeft"></td>
+                        <td class="rt_lineTop"></td>
+                        <td class="rt_cornerTopRight"></td>
+                     </tr>
+                     <tr>
+                        <td class="rt_lineLeft"></td>
+                        <td class="rt_content">
+                           <table class="componentGroup">
+                              <tbody>
+                                 <tr>
+                                    <td class="componentGroup"><input id="button_Simple_Type" type="image" value="-" src="img/btM.gif" onclick="switchState('Simple_Type');" class="control" /></td>
+                                    <td class="componentGroup">
+                                       <div class="componentGroupTitle">Simple Types</div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="componentGroup"></td>
+                                    <td class="componentGroup">
+                                       <div id="Simple_Type" class="componentGroup" style="display:block">
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#barrage_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:barrage_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#communication_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:communication_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#country_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:country_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#direction_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:direction_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#ice_accessibility_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:ice_accessibility_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#ice_classification_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:ice_classification_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#ice_condition_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:ice_condition_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#ice_situation_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:ice_situation_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#indication_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:indication_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#internal_id_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:internal_id_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#interval_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:interval_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#isrs_code_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:isrs_code_type</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#language_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:language_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#limitation_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:limitation_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#measure_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:measure_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#position_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:position_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#reason_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:reason_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#reference_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:reference_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#regime_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:regime_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#reporting_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:reporting_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#subject_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:subject_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#target_group_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:target_group_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#type_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:type_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#unit_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:unit_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#weather_category_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:weather_category_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#weather_class_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:weather_class_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#weather_direction_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:weather_direction_code_enum</a></b></div>
+                                          <div><b><a href="NtS_XSD_V.4.0.4.0.html#weather_item_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:weather_item_code_enum</a></b></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td class="rt_lineRight"></td>
+                     </tr>
+                     <tr>
+                        <td class="rt_cornerBottomLeft"></td>
+                        <td class="rt_lineBottom"></td>
+                        <td class="rt_cornerBottomRight"></td>
+                     </tr>
+                  </table>
+               </div>
+               <div style="clear:left"></div>
+            </div>
+         </div>
+         <div class="level1" id="toc_group_by_location" style="display:none">
+            <div>
+               <div class="level2">
+                  <p><input id="button_gr_NtS_XSD_V.4.0.4.0.xsd" type="image" value="-" src="img/btM.gif" onclick="switchState('gr_NtS_XSD_V.4.0.4.0.xsd');" class="control" /><span class="indexGroupTitle">NtS_XSD_V.4.0.4.0.xsd</span></p>
+                  <div id="gr_NtS_XSD_V.4.0.4.0.xsd" style="display:block">
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_NtS_XSD_V.4.0.4.0.xsdElement" type="image" value="-" src="img/btM.gif" onclick="switchState('gr_NtS_XSD_V.4.0.4.0.xsdElement');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Elements</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_NtS_XSD_V.4.0.4.0.xsdElement" class="componentGroup" style="display:block">
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#RIS_Message" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:RIS_Message</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_NtS_XSD_V.4.0.4.0.xsdComplex_Type" type="image" value="-" src="img/btM.gif" onclick="switchState('gr_NtS_XSD_V.4.0.4.0.xsdComplex_Type');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Complex Types</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_NtS_XSD_V.4.0.4.0.xsdComplex_Type" class="componentGroup" style="display:block">
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#RIS_Message_Type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:RIS_Message_Type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#communication_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:communication_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#coordinate_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:coordinate_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#difference_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:difference_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#fairway_section_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:fairway_section_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#fairway_section_werm_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:fairway_section_werm_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#ftm_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:ftm_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#geo_object_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:geo_object_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#ice_condition_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:ice_condition_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#icem_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:icem_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#identification_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:identification_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#limitation_period_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:limitation_period_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#limitation_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:limitation_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#measure_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:measure_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#nts_number_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:nts_number_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#object_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:object_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#target_group_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:target_group_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#validity_period_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:validity_period_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#weather_item_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:weather_item_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#weather_report_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:weather_report_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#werm_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:werm_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#wrm_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:wrm_type</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_NtS_XSD_V.4.0.4.0.xsdSimple_Type" type="image" value="-" src="img/btM.gif" onclick="switchState('gr_NtS_XSD_V.4.0.4.0.xsdSimple_Type');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Simple Types</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_NtS_XSD_V.4.0.4.0.xsdSimple_Type" class="componentGroup" style="display:block">
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#barrage_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:barrage_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#communication_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:communication_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#country_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:country_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#direction_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:direction_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#ice_accessibility_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:ice_accessibility_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#ice_classification_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:ice_classification_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#ice_condition_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:ice_condition_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#ice_situation_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:ice_situation_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#indication_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:indication_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#internal_id_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:internal_id_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#interval_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:interval_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#isrs_code_type" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:isrs_code_type</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#language_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:language_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#limitation_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:limitation_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#measure_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:measure_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#position_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:position_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#reason_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:reason_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#reference_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:reference_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#regime_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:regime_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#reporting_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:reporting_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#subject_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:subject_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#target_group_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:target_group_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#type_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:type_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#unit_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:unit_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#weather_category_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:weather_category_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#weather_class_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:weather_class_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#weather_direction_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:weather_direction_code_enum</a></b></div>
+                                                <div><b><a href="NtS_XSD_V.4.0.4.0.html#weather_item_code_enum" target="_self" title="http://www.ris.eu/nts/4.0.4.0">nts:weather_item_code_enum</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div style="clear:left"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer">
+         <hr />
+         <div align="center">XML Schema documentation generated by <a href="http://www.oxygenxml.com" target="_parent"><span class="oXygenLogo"><span class="redX">&lt;</span>o<span class="redX">X</span>ygen<span class="redX">/&gt;</span></span></a><sup>®</sup> XML Editor Trial Edition.
+         </div>
+      </div>
+   </body>
+</html>
