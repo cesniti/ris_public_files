@@ -18,7 +18,7 @@ RIS Index Encoding Guide Annex 1 Frequently Asked Questions
 
 **Table of Contents**:
 
- - [Q1: Can you provide more information about the UN Recommendations?](#markdown-header-Q1:-Can-you-provide-more-information-about-the-UN-Recommendations?)
+ - [Q1: Can you provide more information about the UN Recommendations?](#q1-can-you-provide-more-information-about-the-un-recommendations)
  - Q2: What are the key priorities of the Joint Task Force for the RIS Index?
  - Q3: What is the commonly agreed encoding for waterway gauges? 
  - Q4: Could you provide a clear definition of a “waterway section” and a “junction” and how they are utilised in the RIS Index?
