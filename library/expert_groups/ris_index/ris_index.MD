@@ -7,23 +7,7 @@
 <a href="/expert_groups/joint_task_force" target="_blank">Joint Task Force on the RIS Index</a>  
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 <a href="http://www.unece.org/cefact/locode/service/location.html" target="_blank">http://www.unece.org/cefact/locode/service/location.html</a>  
-  
   
 <a href="https://webgate.ec.europa.eu/RIS/EUERDMS_WEB/user/home/" target="_blank">European Reference Data Management System (ERDMS)</a>__  
   
@@ -33,16 +17,9 @@ The following information is available for download:
 
 RIS Index Encoding Guide including the structure of the RIS Index as well as provisions for encoding of waterway objects within the RIS Index.__  
   
-  
-  
-  
-
-
 *   [RIS Index Encoding Guide 2.0 and RIS Index template](/docs/File/426/2015_12_15_ris_index_encoding_guide_v2p0.zip)
 
 <li><a href="/docs/File/426/2015_12_15_ris_index_encoding_guide_v2p0.zip">RIS Index Encoding Guide 2.0 and RIS Index template</a></li>[RIS Index Encoding Guide 2.0 and RIS Index template](/docs/File/426/2015_12_15_ris_index_encoding_guide_v2p0.zip)  
-  
-
 
 *   [Austria](/docs/File/630/at_ris_index_austria_2019_04_24_v3_8.zip)
 *   [Belgium](/docs/File/630/be_ris_index.zip)
