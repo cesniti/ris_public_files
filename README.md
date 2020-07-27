@@ -4,116 +4,68 @@ The architecture of the www.ris.eu is presented here in the Master branch of the
 
 The new set up of the files and website structure.
 The content docs/File structure has been maintained to avoid duplication and simplify the usage of file links. 
+The content (all files individually) of the whole website is time-stamped you can find the history of all changes / update here https://github.com/cesniti/ris_public_files/commits/master
 
-The Goal is to obtain the following tree of information in the dedicated page for CESNI/TI : 
+The current tree of the content is : 
 
 	.
-	├── CESNI/TI								# Wordpress page dedicated to CESNI/TI (under activities/)
+	├── Subsite Temporary working groups					# Sub website dedicated to working groups ie. ris.cesni.eu
+		├── home
+		├── RIS												# Definition of RIS / RIS objectives / Services / operational perspective
+			├── ecdis 										# Group definition / mandate / Standard editions
+			├── ecdis download area							# ECDIS DOCUMENTATION
+			├── eri											# Group definition / mandate / Standard editions
+			├── eri download								# ERI DOCUMENTATION
+			├── nts											# Group definition / mandate / Standard editions
+			├── nts download 								# NtS DOCUMENTATION
+			├── vtt											# Group definition / mandate / Standard editions
+			├── vtt download area  							# VTT DOCUMENTATION
+			└── reference data 								# On going
+		├── _assets
+			├── ERI-ERINOT									# ERINOT xsd file as asset
+			├── ERI-ERIVOY									# ERIVOY xsd file as asset
+			├── ERI-PAXLST									# PAXLST xsd file as asset
+			├── NtS-MS										# NtS web service definition
+			├── NtS_XSD										# NtS XSD files
+			├── NtS_NtS_XML_Schema_Definition_XSD			# NtS Schema in an excel file
+			└── NtS_NtS_web_service_specification_WSDL		# NtS the web service specification
+		├── docs
+			├── File										# Inherited files are stored in this folder for download
+			└── Image										# All image stored in this folder are related (previous website)
+		├── css												# web css files
+		├── images											# Images related to current template
+		└── scripts											# Script related to current template
+
+
+# how to download a local version of the website on my desktop?
+- Download the newest version of github desktop on your computer https://desktop.github.com/
+- Install the software 
+- clone the repository (CTRL+SHIFT+O)
+![](images/admin/clone_repo.png)
+
+# how to update the website with the content of github ? 
+**FOR CESNI secretartiat administrator**: Login to the shell (using ssh / putty) of the website and execute the following command :
+
+```console
+cd www
+git pull
+```
+
+# the structure will contain submodule that the Temporary working group can update themselves :
+- creation of cesniti twg repositories 
+- list repository here 
+- modify the git file to allow an update
+
+Temporary working group ERI 
+
+# Usefull
+https://stackoverflow.com/questions/7813030/how-can-i-have-linked-dependencies-in-a-git-repo
+
+# link to the dedicated website cesni/ti
+
+	├── CESNI/TI											# Wordpress page dedicated to CESNI/TI (under activities/)
 		├── Mission
 		├── RIS Directive 
 		├── Work programme
-		└── Site Temporary working group		# Abstract work programme TI-1 to TI-4
-	├── Subsite Temporary working groups		# Sub website dedicated to working groups ie. ris.cesni.eu
-		├── home
-		├── RIS									# Definition of RIS / RIS objectives / Services / operational perspective
-			├── ecdis 							# Group definition / mandate / Standard editions
-			├── ecdis download area				# ECDIS DOCUMENTATION
-			├── eri								# Group definition / mandate / Standard editions
-			├── eri download					# ERI DOCUMENTATION
-			├── nts								# Group definition / mandate / Standard editions
-			├── nts download 					# NtS DOCUMENTATION
-			├── vtt								# Group definition / mandate / Standard editions
-			├── vtt download area  				# VTT DOCUMENTATION
-			└── reference data 
-		├── docs
-			├── File								# All the files are stored in this folder for download
-			└── Image								# All image stored in this folder are related to the previous website
-		├── css										# Presentation files
-		├── images									# Images related to template
-		└── scripts									# Script related to template
-
-The previous permalinks architecture is the following the tree : 
-
-	.
-	├── background							# Background information on EU
-	|	└── european_union__eu_
-	|		└── eu_support_programmes        
-	├── contact_us                    			# contact form (not in use)				
-	├── docs
-	|	├── File								# all the files are stored in this folder for download
-	|	└── Image
-	├── events									# list of past relevant events to RIS
-	├── expert_groups
-	|	├── ecdis
-	|	├── eri
-	|	├── introduction
-	|	├── joint_task_force
-	|	├── nts
-	|	└── vtt
-	├── general
-	|	├── contact_us
-	|	└── european_union__eu_
-	|		├── eu_involvement
-	|		└── eu_support_programmes
-	|	└── parties_involved
-	|		├── business
-	|		├── eu_member_states
-	|		├── eu_organisations
-	|		├── european_river_commissions
-	|		├── expert_groups
-	|		└── other_international_organisations
-	|	└── what_is_ris_
-	|		├── ais
-	|		├── description
-	|		├── electronic_navig_charts__enc_
-	|		├── electronic_reporting
-	|		├── history
-	|		└── notice_to_skippers__nts_
-	├── home                     				# starting page
-	├── library                    				# 
-	|	└── expert_groups
-	|		└── ecdis
-	|			├── general_ecdis
-	|			├── inland_ecdis_2_0
-	|			├── inland_ecdis_2_1
-	|			├── inland_ecdis_2_2
-	|			├── inland_ecdis_2_3
-	|			├── inland_ecdis_2_4
-	|			└── water_level_information
-	|		└── eri
-	|			├── eri_documents
-	|			├── general_eri
-	|			├── official_standards
-	|			└── reference_data
-	|		└── nts
-	|			├── general_nts
-	|			├── guides
-	|			├── implementation_status
-	|			├── nts_version_1x
-	|			├── nts_version_2_0
-	|			├── nts_version_2_0
-	|			├── nts_version_3_0
-	|			├── nts_version_4_0
-	|			└── reference_data
-	|		└── ris_index
-	|			└── ris_index
-	|		└── vtt
-	|			├── asm
-	|			├── aton
-	|			├── general_vtt
-	|			├── standards
-	|				├── old_standards
-	|					├── vtt_edition_1_0
-	|					└── vtt_edition_1_01
-	|				└── vtt_edition_1_2
-	|			└── visualisation
-	├── news                   					# list of past relevant news broadcasted on the RIS website
-	├── projects								# list of past relevant projects listed on the RIS website
-	├── services
-	|	├── european_hull_data_base__ehdb_
-	|	├── european_reference_data_management_system__erdms_
-	|	├── maintenance_of_inland_enc__electronic_navigational_charts__register_and_the_digital_parts_of_the_inland_enc_standard
-	|	└── services_at_european_level
-	├── submit_your_project
-
+		└── Site Temporary working group					# Abstract work programme TI-1 to TI-4
 
