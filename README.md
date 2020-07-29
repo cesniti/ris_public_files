@@ -1,26 +1,24 @@
-# RIS public / members website
+# River information Service (RIS) public website
 
-The architecture of the www.ris.eu is presented here in the Master branch of the projet. The file have been extracted from the current web site in order to facilitate the transfer of the most important file to the new architecture.
+The architecture of the www.ris.eu is presented as a continuous improvement projet (open). 
+The files have been extracted from the previous web site (CMS based). 
+The objective is to transfer of all important files to the new architecture in a harmonised and understood manner.
 
-The new set up of the files and website structure.
-The content docs/File structure has been maintained to avoid duplication and simplify the usage of file links. 
-The content (all files individually) of the whole website is time-stamped you can find the history of all changes / update here https://github.com/cesniti/ris_public_files/commits/master
-
-The current tree of the content is : 
+The current tree of the content is displayed below : 
 
 	.
 	├── Subsite Temporary working groups					# Sub website dedicated to working groups ie. ris.cesni.eu
-		├── home
-		├── RIS												# Definition of RIS / RIS objectives / Services / operational perspective
-			├── ecdis 										# Group definition / mandate / Standard editions
-			├── ecdis download area							# ECDIS DOCUMENTATION
-			├── eri											# Group definition / mandate / Standard editions
-			├── eri download								# ERI DOCUMENTATION
-			├── nts											# Group definition / mandate / Standard editions
-			├── nts download 								# NtS DOCUMENTATION
-			├── vtt											# Group definition / mandate / Standard editions
-			├── vtt download area  							# VTT DOCUMENTATION
-			└── reference data 								# On going
+		├── index.html 	(introduction)
+		├── 30-en.html 	(RIS)							
+		├── 31-en.html 	(CESNI-TI RIS | Inland ECDIS)	
+		├── 312-en.html (CESNI-TI RIS | INLAND ECDIS DOCUMENTATION)							
+		├── 32-en.html 	(CESNI-TI RIS | ELECTRONIC SHIP REPORTING ERI)
+		├── 322-en.html (CESNI-TI RIS | ELECTRONIC SHIP REPORTING ERI DOCUMENTATION)
+		├── 33-en.html 	(CESNI-TI RIS | NOTICES TO SKIPPERS NtS)
+		├── 332-en.html (CESNI-TI RIS | NOTICE TO SKIPPERS NTS DOCUMENTATION)
+		├── 34-en.html 	(CESNI-TI RIS | VESSEL TRACKING AND TRACING VTT)
+		├── 342-en.html (CESNI-TI RIS | VESSEL TRACKING AND TRACING VTT DOCUMENTATION)
+		└── reference data [ToDO](https://github.com/cesniti/ris_public_files/projects/1)
 		├── _assets
 			├── ERI-ERINOT									# ERINOT xsd file as asset
 			├── ERI-ERIVOY									# ERIVOY xsd file as asset
@@ -36,22 +34,34 @@ The current tree of the content is :
 		├── images											# Images related to current template
 		└── scripts											# Script related to current template
 
+The new architecture simplify the references to files (the architecture is not depending on a CMS database).
+The new set up of the files and website structure.
+The content docs/File structure has been maintained to avoid duplication and simplify the usage of file links. 
+The content (all files individually) of the whole website is time-stamped you can find the history of all changes / update here https://github.com/cesniti/ris_public_files/commits/master
 
-# how to download a local version of the website on my desktop?
+## html files 
+
+## assets
+The assets are files which are needed for external use (such as webservices).
+All assets are identified within a folder and a sub folder with its version.
+Inside a version there could have different output of the same file XSD + html view (for the record).
+
+
+# How to download a local version of the website on my desktop?
 - Download the newest version of github desktop on your computer https://desktop.github.com/
 - Install the software 
 - clone the repository (CTRL+SHIFT+O)
 ![](images/admin/clone_repo.png)
 
-# how to update the website with the content of github ? 
-**FOR CESNI secretartiat administrator**: Login to the shell (using ssh / putty) of the website and execute the following command :
+# How to update the website with the content of github ? 
+**FOR CESNI secretariat**: Login to the shell (using ssh / putty) of the website and execute the following commands :
 
 ```console
 cd www
 git pull
 ```
 
-# the structure will contain submodule that the Temporary working group can update themselves :
+# The structure will contain submodule that the Temporary working group can update themselves :
 - creation of cesniti twg repositories 
 - list repository here 
 - modify the git file to allow an update
