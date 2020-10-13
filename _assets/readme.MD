@@ -1,4 +1,4 @@
-> do not move this directory 
+> do not move this directory or directory inside of this directory
 
 # Files as assets for machine to machine messaging
 
