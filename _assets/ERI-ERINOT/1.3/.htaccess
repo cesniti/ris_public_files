@@ -1,1 +1,3 @@
+Options +Indexes
+IndexOptions +FancyIndexing
 Redirect \_assets\ERI-ERINOT\1.3 \_assets\ERI-ERINOT\1.3\ERINOT.html
