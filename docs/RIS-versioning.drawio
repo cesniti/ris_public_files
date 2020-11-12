@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-12T14:11:01.153Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.193 Safari/537.36" etag="I-gTawnlwe8fhcnLgKjS" version="13.9.6" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-12T14:15:51.283Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.193 Safari/537.36" etag="8kkVEUgINmnlnUlNFZxd" version="13.9.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="981" dy="550" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -19,7 +19,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="CESNI ES-RIS year/edition&lt;br&gt;Contains &lt;b&gt;released editions&lt;/b&gt;&amp;nbsp;in each part of the ES-RIS&amp;nbsp;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;arcSize=36;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="120" y="60" width="440" height="70" as="geometry" />
+          <mxGeometry x="118" y="60" width="440" height="70" as="geometry" />
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-4" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="3O-Bd3IR3qAcZB0B3nBF-4" edge="1">
           <mxGeometry y="10" relative="1" as="geometry">
@@ -71,7 +71,7 @@
         <mxCell id="3O-Bd3IR3qAcZB0B3nBF-17" value="Is CR final ?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="414" y="486" width="141.9" height="129" as="geometry" />
         </mxCell>
-        <mxCell id="3O-Bd3IR3qAcZB0B3nBF-22" value="Pull request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=block;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3O-Bd3IR3qAcZB0B3nBF-19" target="3O-Bd3IR3qAcZB0B3nBF-4" edge="1">
+        <mxCell id="3O-Bd3IR3qAcZB0B3nBF-22" value="Pull" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=block;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3O-Bd3IR3qAcZB0B3nBF-19" target="3O-Bd3IR3qAcZB0B3nBF-4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="620" y="409" />
@@ -111,12 +111,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="IWQyijTSUNjK0W8A2P1U-12" value="CR proposal by delegation&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="188" y="266" width="120" height="60" as="geometry" />
+          <mxGeometry x="188" y="286" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="IWQyijTSUNjK0W8A2P1U-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=15;endArrow=block;endFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IWQyijTSUNjK0W8A2P1U-18" target="3O-Bd3IR3qAcZB0B3nBF-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="IWQyijTSUNjK0W8A2P1U-18" value="Approval of CR by TWG&lt;br&gt;document the changes in readme.MD" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="IWQyijTSUNjK0W8A2P1U-18" value="Approval of CR by TWG&lt;br&gt;document the changes in the readme&amp;nbsp;of the edition" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="355.95" y="645" width="258" height="73" as="geometry" />
         </mxCell>
       </root>
