@@ -11,6 +11,23 @@ body {
 img {
    	border: 0px;
 	}
+
+li {
+	line-height: 1.6em;
+}
+ul {
+	list-style-type: disc;
+}
+ul ul {
+	list-style-type: circle;
+} 
+.list-group li {
+    list-style-type: circle;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 /*//////////////////////////////////////////////////*/
 #header {
 	width: 100%;
@@ -91,42 +108,56 @@ img {
 /*//////////////////////////////////////////////////////////////////////////
 				              Bloc Gauche
 //////////////////////////////////////////////////////////////////////////*/
-#container_left {
-    float: left;
-    width: 170px;
-	
-	}
-#menu {
-	width: 250px;
+
+.menu-group {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: .5em;
+    width: 16em;
 	margin: 10px 0px 0px 0px;
 	font-size: 14px;
-	color:#242424;
+	float:left;
 }
-#menu ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+
+.menu-group li {
+    border-top: 1px solid #ccc;
+    padding: .5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-#menu li a {
-	height: 30px;
-	voice-family: "\"}\""; 
-	voice-family: inherit;
+
+.menu-group li:first-child {
+    border-top: 0;
+}
+
+.menu-group .badge {
+    background-color: darkblue;
+    color: #fff;
+    font-weight: bold;
+    font-size: 80%;
+    border-radius: 10em;
+    min-width: 1.5em;
+    padding: .25em;
+    text-align: center
+}
+
+.menu-group li a {
 	text-decoration: none;
-	border-bottom:1px solid rgba(255,255,255,0.1);
 }
-#menu li a:link, #menu li a:visited {
+.menu-group li a {
 	color: #fff;
 	font-weight:300;
 	display: block;
-	padding: 4px 0 0 10px;
 }
 
-#menu li a:hover {
+.menu-group li a:hover {
 	color:#00afeb;
-	padding: 4px 0 0 10px;
 }
 
-#menu li a.on {
+.menu-group li a.on {
 	color:#00afeb;
 }
 
@@ -158,7 +189,8 @@ img {
 }
 #content h4
 { 
-	margin-top: 6px;
+	margin-top: 20px;
+    margin-bottom: 12px;
 	font-weight:300;
 	color:#005aab;
 	font-size:18px;
@@ -167,7 +199,8 @@ img {
 }
 #content h5
 { 
-	margin-top: 6px;
+	margin-top: 20px;
+    margin-bottom: 6px;
 	font-weight:300;
 	color:#005aab;
 	font-size:14px;
@@ -307,9 +340,6 @@ img {
 	color: #005aab;
 	font-size:11px;
 	text-align: justify;
-}
-#content ul p, a {
-  list-style: none;
 }
 
 #content ul li::before a {
