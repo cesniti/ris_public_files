@@ -1,4 +1,20 @@
+---
+title:  'Definitions'
+subtitle: "extracted from "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019R0838&from=EN#d1e32-65-1"
+lang: en-GB
+author:
+- European commission | RIS Expert Group VTT
 
+description: |
+    This is a long
+    description.
+
+    It consists of two paragraphs
+...
+
+---
+
+---
 Automatic Identification System (AIS)
 
 : Definition source VTT 
