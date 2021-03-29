@@ -35,7 +35,7 @@
       Removed OFS and ERN obsolete
 -->
 <!-- ============================================================================================== -->
-<xs:schema targetNamespace="https://ris.cesni.eu/_assets/ERI-ERIVOY/1.0/" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="https://ris.cesni.eu/_assets/ERI-ERIVOY/1.0/" version="1.0">
+<xs:schema targetNamespace="http://www.risexpertgroups.org/IFTSAI1.0/xsd/0.5" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.risexpertgroups.org/IFTSAI1.0/xsd/0.5">
 	<xs:element name="ERIVOY">
 		<xs:annotation>
 			<xs:documentation>ERI Voyage bases the EDIFACT IFTSAI 1.0</xs:documentation>
