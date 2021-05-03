@@ -1,0 +1,25 @@
+In the NtS XSD 4.0.4.0 an error in the regex of the ISRS Location Code (NtS XSD validation) was detected and fixed. The limitation_code_enum maxLength was corrected to be in line with the allowed enumerations. Further explanation is given in TWG CESNI/TI/NtS/CR200 (see document: cesnitints20_CR200en_Correction_of_NtS_XSD_4.0.4.0_validation_Hotfix_v1.docx).
+
+The NtS XSD 4.0.4.0 has bee updated in this package. Please replace the XSD in your implementation in case of validation errors / use this XSD for new implementations.
+
+The following changes have been made:
+
+<!-- Release notes: V.4.0.4.0 02/2021 HOTFIX
+    
+Correction of regex in ISRS Location Code restrictions (pattern value was amended). The locode can contain alphanumeric characters.
+      <xs:simpleType name="isrs_code_type">
+      <xs:annotation>
+        <xs:documentation>ISRS location code, unique identification of the geo object as defined in RIS Index encoding guide</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+        <xs:length value="20"/>
+        <xs:pattern value="[A-Z]{2}[A-Z2-9]{3}[A-Z0-9]{5}[A-Z0-9]{5}[0-9]{5}" />
+      </xs:restriction>
+      </xs:simpleType>
+  
+ Correction of inconsistency in XSD - change maxLength of limitation_code_enum from 6 to 10
+    	<xs:simpleType name="limitation_code_enum">
+		    <xs:restriction base="xs:string">
+			  <xs:maxLength value="10"/>
+  
+-->
