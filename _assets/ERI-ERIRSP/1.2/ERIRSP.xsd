@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ===========================Change Log========================================================= -->
+<!-- ERINOT is the XML Response message based on the Aperak 98B edifact msg. -->
+<!-- -->
+<!-- Journaal, Releasenotes: -->
+<!-- -->
+<!-- v0.0 RS  	2003: Initial version  -->
+<!-- v1.0 PO,BB   jan 2007: Updated for ERIRSP1.2 (APERAK) msg  -->
+<!--				Added: MessageReceiverAddress by <PartyFunction> new enum type -->
+<!--				Added: <NameAddress\PartyId> (to be inline with ERINOT) -->
+<!--				Added: <NameAddress\InvoiceNumber> (to be inline with ERINOT) -->
+<!--				Added: <NamesAddresses\Contact> group (to be inline with ERINOT) -->
+<!--				Added: complextype: "ContactType" with <ContactInformation>, <CommsContact> (inline with ERINOT) -->
+<!--  			Added <Contact\CommsContact> max occurance 3 => 4 (TE, EM, EI, FX) -->
+<!-- 				Added TargerNameSpave -->
+<!--  			Added <MessageId\CommonDenominator> to group several ERI msgs -->
+<!--       			Changed : The type of GenerationDateTime is changed into Datetime type -->
+<!--				Changed: Messagenr and MessageRefNr increased to 35, conform EDIFACT -->
+<!--				Changed: <NamesAdresses> max occ 1 => 3 (MS, MR, CG) -->
+<!-- ============================================================================================== -->
+<xs:schema targetNamespace="http://www.risexpertgroups.org/ERIRSP1.2" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.risexpertgroups.org/ERIRSP1.2" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="ERIRSP">
+		<xs:annotation>
+			<xs:documentation>ERI Response Message</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="MessageId" type="MessageIdType"/>
+				<xs:element name="EDIMapping">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Syntax" type="xs:string"/>
+							<xs:element name="SyntaxVersion" type="xs:string"/>
+							<xs:element name="MessageType" type="xs:string"/>
+							<xs:element name="MessageVersion" type="xs:string"/>
+							<xs:element name="MessageRelease" type="xs:string"/>
+							<xs:element name="MessageControllingAgency" type="xs:string"/>
+							<xs:element name="AssociationAssignedCode" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="MessageDateTime" type="xs:dateTime" minOccurs="0"/>
+				<xs:element name="MessageRef" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="35"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="TransportRef" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="35"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="ErrorInformation" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ErrorCode">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="8"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="ErrorDescription" maxOccurs="5">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="70"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="NamesAddresses" maxOccurs="3">
+					<xs:annotation>
+						<xs:documentation>At least the Sender must be specified</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="NameAddress" type="NameAddressType"/>
+							<xs:element name="Contact" type="ContactType" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="VersionMajor" type="xs:integer" use="required"/>
+			<xs:attribute name="VersionMinor" type="xs:integer" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="MessageIdType">
+		<xs:sequence>
+			<xs:element name="SenderId">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="25"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ReceiverId">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="25"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GenerationDateTime" type="xs:dateTime"/>
+			<xs:element name="AckRequest" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TestIndicator" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MessageType">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+						<xs:enumeration value="VES"/>
+						<xs:enumeration value="CAR"/>
+						<xs:enumeration value="PAS"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MessageNo">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="35"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MessageFunction">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:enumeration value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CommonDenominator" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>RefNo to group several msgs of same journey</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="35"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ResponseType">
+				<xs:annotation>
+					<xs:documentation>Approval or Rejection</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="2"/>
+						<xs:enumeration value="AP"/>
+						<xs:enumeration value="RE"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="NameAddressType">
+		<xs:sequence>
+			<xs:element name="PartyFunction">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+						<xs:enumeration value="MS"/>
+						<xs:enumeration value="MR"/>
+						<xs:enumeration value="CG"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PartyId" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="35"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PartyName">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="35"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Street" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="35"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="City" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="35"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PostalCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Country" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="2"/>
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="InvoiceNumber" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Admin reference number of party</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="35"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ContactType">
+		<xs:sequence>
+			<xs:element name="ContactInformation" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="35"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CommsContact" type="CommsContactType" minOccurs="0" maxOccurs="4"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CommsContactType">
+		<xs:sequence>
+			<xs:element name="CommsNo">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="70"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CommsChannel">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+						<xs:enumeration value="TE"/>
+						<xs:enumeration value="FX"/>
+						<xs:enumeration value="EM"/>
+						<xs:enumeration value="EI"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
