@@ -60,17 +60,17 @@
 						<xs:sequence>
 							<xs:element name="Syntax" type="xs:string">
 								<xs:annotation>
-									<xs:documentation>‘UNOA’ Controlling agency level A</xs:documentation>
+									<xs:documentation>'UNOA' Controlling agency level A</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							<xs:element name="SyntaxVersion" type="xs:string">
 								<xs:annotation>
-									<xs:documentation>‘2’</xs:documentation>
+									<xs:documentation>'2'</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							<xs:element name="MessageType" type="xs:string">
 								<xs:annotation>
-									<xs:documentation>‘IFTDGN’, message type</xs:documentation>
+									<xs:documentation>'IFTDGN', message type</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							<xs:element name="MessageVersion" type="xs:string">
@@ -81,17 +81,17 @@
 							</xs:element>
 							<xs:element name="MessageRelease" type="xs:string">
 								<xs:annotation>
-									<xs:documentation>‘98B’, Message Releae</xs:documentation>
+									<xs:documentation>'98B', Message Releae</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							<xs:element name="MessageControllingAgency" type="xs:string">
 								<xs:annotation>
-									<xs:documentation>‘UN’</xs:documentation>
+									<xs:documentation>'UN'</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							<xs:element name="AssociationAssignedCode" type="xs:string">
 								<xs:annotation>
-									<xs:documentation>‘ERI13’, ERI Version 1.3</xs:documentation>
+									<xs:documentation>'ERI13', ERI Version 1.3</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 						</xs:sequence>
@@ -179,6 +179,32 @@
 						</xs:restriction>
 					</xs:simpleType>
 				</xs:element>
+				<xs:element name="CancellationInfo" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CancelReason">
+								<xs:annotation>
+									<xs:documentation>'CAM': mistake in notification, 'CAO': transport does not take place, 'CAV': the main transport destination has changed, 'CHD': the time of arrival has changed</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="CAM"/>
+										<xs:enumeration value="CAO"/>
+										<xs:enumeration value="CAV"/>
+										<xs:enumeration value="CHD"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CancelText" maxOccurs="5">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="70"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
 				<xs:element name="Transport">
 					<xs:annotation>
 						<xs:documentation>DETAILS OF TRANSPORT</xs:documentation>
@@ -200,8 +226,8 @@
 										</xs:element>
 										<xs:element name="TransportMode">
 											<xs:annotation>
-												<xs:documentation>'8’ for Inland water transport, 
-‘1’ for maritime transport </xs:documentation>
+												<xs:documentation>'8' for Inland water transport, 
+'1' for maritime transport </xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
@@ -387,8 +413,8 @@
 										</xs:element>
 										<xs:element name="EquipmentType">
 											<xs:annotation>
-												<xs:documentation>‘BRY’ for vessel participating in the propulsion
-‘BRN’ for vessel not participating in the propulsion
+												<xs:documentation>'BRY' for vessel participating in the propulsion
+'BRN' for vessel not participating in the propulsion
 </xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
@@ -424,9 +450,9 @@
 									<xs:sequence>
 										<xs:element name="ContRange">
 											<xs:annotation>
-												<xs:documentation>‘RNG20’ for containers having a length between 20 and 29 feet
-‘RNG30’ for containers having a length between 30 and 39 feet
-‘RNG40’ for containers having a length of 40 feet or more</xs:documentation>
+												<xs:documentation>'RNG20' for containers having a length between 20 and 29 feet
+'RNG30' for containers having a length between 30 and 39 feet
+'RNG40' for containers having a length of 40 feet or more</xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
@@ -451,9 +477,9 @@
 										<xs:element name="ContStatus">
 											<xs:annotation>
 												<xs:documentation>Container status:
-‘5’ for loaded,
-‘4’ for empty,
-‘6’ for no volume available</xs:documentation>
+'5' for loaded,
+'4' for empty,
+'6' for no volume available</xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
@@ -522,7 +548,7 @@
 										</xs:element>
 										<xs:element name="CargoHandling" type="HandlingType" default="T" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Default ‘T’
+												<xs:documentation>Default 'T'
 T = Transit
 LLO = Loading
 LDI = Unloading
@@ -549,6 +575,9 @@ TSP = Transit in the same port</xs:documentation>
 																	</xs:simpleType>
 																</xs:element>
 																<xs:element name="NumberOfPackages" minOccurs="0">
+																	<xs:annotation>
+																		<xs:documentation>Number of inner packages related to type of packages. For containers and tanks the default value is '1'</xs:documentation>
+																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:integer">
 																			<xs:maxInclusive value="99999999"/>
@@ -564,8 +593,8 @@ TSP = Transit in the same port</xs:documentation>
 																			<xs:element name="TypeOfGood">
 																				<xs:annotation>
 																					<xs:documentation>type of good: 
-‘D’ for Dangerous
-‘N’ for Non-dangerous</xs:documentation>
+'D' for Dangerous
+'N' for Non-dangerous</xs:documentation>
 																				</xs:annotation>
 																				<xs:simpleType>
 																					<xs:restriction base="xs:string">
@@ -674,13 +703,13 @@ TSP = Transit in the same port</xs:documentation>
 																					<xs:sequence>
 																						<xs:element name="Regulation">
 																							<xs:annotation>
-																								<xs:documentation>ANR for inland vessels (UNECE ADN Code) 
-‘IMD’ for sea going vessels (IMO IMDG code)</xs:documentation>
+																								<xs:documentation>ADN for inland vessels (UNECE ADN Code) 
+'IMD' for sea going vessels (IMO IMDG code)</xs:documentation>
 																							</xs:annotation>
 																							<xs:simpleType>
 																								<xs:restriction base="xs:string">
 																									<xs:length value="3"/>
-																									<xs:enumeration value="ANR"/>
+																									<xs:enumeration value="ADN"/>
 																									<xs:enumeration value="IMD"/>
 																								</xs:restriction>
 																							</xs:simpleType>
@@ -719,8 +748,8 @@ TSP = Transit in the same port</xs:documentation>
 																						</xs:element>
 																						<xs:element name="FlashpointUnit" minOccurs="0">
 																							<xs:annotation>
-																								<xs:documentation>‘CEL’ for Celsius
-‘FAH’ for Fahrenheit</xs:documentation>
+																								<xs:documentation>'CEL' for Celsius
+'FAH' for Fahrenheit</xs:documentation>
 																							</xs:annotation>
 																							<xs:simpleType>
 																								<xs:restriction base="xs:string">
@@ -733,9 +762,9 @@ TSP = Transit in the same port</xs:documentation>
 																						<xs:element name="PackingGroup" minOccurs="0">
 																							<xs:annotation>
 																								<xs:documentation>Packing group (column 4)
-‘1’ for great danger
-‘2’ for medium danger
-‘3’ for minor danger
+'1' for great danger
+'2' for medium danger
+'3' for minor danger
 Empty if not available</xs:documentation>
 																							</xs:annotation>
 																							<xs:simpleType>
@@ -806,7 +835,7 @@ Proper shipping name, supplemented as necessary with the correct technical name,
 																			</xs:element>
 																			<xs:element name="LimitedQuantity" type="xs:boolean" default="0">
 																				<xs:annotation>
-																					<xs:documentation>‘TLQ’ Transport of dangerous goods in limited quantities</xs:documentation>
+																					<xs:documentation>'TLQ' Transport of dangerous goods in limited quantities</xs:documentation>
 																				</xs:annotation>
 																			</xs:element>
 																		</xs:sequence>
@@ -898,7 +927,7 @@ Proper shipping name, supplemented as necessary with the correct technical name,
 			</xs:element>
 			<xs:element name="TestIndicator" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>‘1’ = The interchange relates to a test message</xs:documentation>
+					<xs:documentation>'1' = The interchange relates to a test message</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -909,9 +938,9 @@ Proper shipping name, supplemented as necessary with the correct technical name,
 			</xs:element>
 			<xs:element name="MessageType">
 				<xs:annotation>
-					<xs:documentation>‘VES’, from vessel to RIS authority message
-‘CAR’, from carrier to RIS authority message
-‘PAS’, passage report from RIS authority to RIS authority (also see section 0)</xs:documentation>
+					<xs:documentation>'VES', from vessel to RIS authority message
+'CAR', from carrier to RIS authority message
+'PAS', passage report from RIS authority to RIS authority (also see section 0)</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -935,12 +964,12 @@ Proper shipping name, supplemented as necessary with the correct technical name,
 			<xs:element name="MessageFunction">
 				<xs:annotation>
 					<xs:documentation>Function of message:
-‘1’ = cancellation message
-‘9’ = new message, (original)
-‘5’ = modification message
-‘22’ = Final transmission (End of voyage)
-‘150’ = Interruption of voyage
-‘151’ = Restart of voyage</xs:documentation>
+'1' = cancellation message
+'9' = new message, (original)
+'5' = modification message
+'22' = Final transmission (End of voyage)
+'150' = Interruption of voyage
+'151' = Restart of voyage</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:integer">
@@ -955,7 +984,7 @@ Proper shipping name, supplemented as necessary with the correct technical name,
 			</xs:element>
 			<xs:element name="CommonDenominator" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>RefNo to group several msgs of same journey</xs:documentation>
+					<xs:documentation>RefNo to group several messages of same journey (Common Access Reference)</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -980,14 +1009,12 @@ Proper shipping name, supplemented as necessary with the correct technical name,
 			</xs:element>
 			<xs:element name="VesselIdType">
 				<xs:annotation>
-					<xs:documentation>IMO’ for an IMO-number,
-‘ENI’ for a unique European vessel identification number</xs:documentation>
+					<xs:documentation>IMO' for an IMO-number,
+'ENI' for a unique European vessel identification number</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
 						<xs:length value="3"/>
-						<xs:enumeration value="OFS"/>
-						<xs:enumeration value="ERN"/>
 						<xs:enumeration value="IMO"/>
 						<xs:enumeration value="ENI"/>
 					</xs:restriction>
@@ -1064,11 +1091,11 @@ Proper shipping name, supplemented as necessary with the correct technical name,
 			<xs:element name="PartyFunction">
 				<xs:annotation>
 					<xs:documentation>Party qualifier
-‘MS’ for message sender
-‘MR’ for message receiver
-‘CG’ for agent/invoice address
-‘SF’ for sender address (cargo),
-‘ST’ for destination address (cargo)</xs:documentation>
+'MS' for message sender
+'MR' for message receiver
+'CG' for agent/invoice address
+'SF' for sender address (cargo),
+'ST' for destination address (cargo)</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -1153,10 +1180,10 @@ Proper shipping name, supplemented as necessary with the correct technical name,
 			</xs:element>
 			<xs:element name="CommsChannel">
 				<xs:annotation>
-					<xs:documentation>‘TE’ for telephone number
-‘FX’ for fax number
-‘EM’ for email address
-‘EI’ for EDI mailbox number
+					<xs:documentation>'TE' for telephone number
+'FX' for fax number
+'EM' for email address
+'EI' for EDI mailbox number
 (EDI number or email address</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
@@ -1211,7 +1238,7 @@ Proper shipping name, supplemented as necessary with the correct technical name,
 			</xs:element>
 			<xs:element name="Tonnage">
 				<xs:annotation>
-					<xs:documentation>Maximum capacity of in metric tonnes</xs:documentation>
+					<xs:documentation>Maximum capacity in metric tonnes</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:integer">
@@ -1263,7 +1290,7 @@ Proper shipping name, supplemented as necessary with the correct technical name,
 		<xs:sequence>
 			<xs:element name="ContainerIdentificationCode">
 				<xs:annotation>
-					<xs:documentation>For containers the Container identification code shall be used(owner code, identifier, serial number. check digit). For liquid bulk, use code ‘NA’
+					<xs:documentation>For containers the Container identification code shall be used(owner code, identifier, serial number. check digit). For liquid bulk, use code 'NA'
 </xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
@@ -1285,7 +1312,7 @@ Proper shipping name, supplemented as necessary with the correct technical name,
 			</xs:element>
 			<xs:element name="StowageLocation" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>For containers ‘BBBRRTT’ for bay/row/tier
+					<xs:documentation>For containers 'BBBRRTT' for bay/row/tier
 (In accordance with ISO 9711-1 (1990))
 For tanks:
 LLnn where
