@@ -1,16 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- ============================================================================================== -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		   xmlns="https://ris.cesni.eu/_assets/ERI-PAXLST/1.4" targetNamespace="https://ris.cesni.eu/_assets/ERI-PAXLST/1.4"
-		   elementFormDefault="qualified" attributeFormDefault="unqualified"
-		   version="1.4">
+<xs:schema	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns="https://ris.cesni.eu/_assets/ERI-PAXLST/1.3"
+	targetNamespace="https://ris.cesni.eu/_assets/ERI-PAXLST/1.3"
+	elementFormDefault="qualified" attributeFormDefault="unqualified"
+	version="1.3">
 	<xs:element name="Person">
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="PersonType">
 					<xs:annotation>
-						<xs:documentation>‘FM’ for crew member
-‘FL’ for passenger
-‘BV’ for stowaway persons</xs:documentation>
+						<xs:documentation>'FM' for crew member
+'FL' for passenger
+'BV' for stowaway persons</xs:documentation>
 					</xs:annotation>
 					<xs:simpleType>
 						<xs:restriction base="xs:string">
@@ -180,13 +182,11 @@ e.g. Chief officer</xs:documentation>
 				</xs:element>
 				<xs:element name="CrewEffects" minOccurs="0">
 					<xs:annotation>
-						<xs:documentation>Effects ineligible for relief from customs duties and taxes or subject to prohibitions or restrictions
-</xs:documentation>
+						<xs:documentation>Effects ineligible for relief from customs duties and taxes or subject to prohibitions or restrictions</xs:documentation>
 					</xs:annotation>
 					<xs:simpleType>
 						<xs:restriction base="xs:string">
 							<xs:maxLength value="512"/>
-							<xs:minLength value="3"/>
 						</xs:restriction>
 					</xs:simpleType>
 				</xs:element>
@@ -199,12 +199,12 @@ e.g. Chief officer</xs:documentation>
 				<xs:element name="IdentityDocType">
 					<xs:annotation>
 						<xs:documentation>Document type:
-‘39’ Passport
-‘36’ Identity card
-‘SMB’ Seaman's book
-‘40’ Driving licence (national)
-‘41’ Driving licence (international)
-‘483’ Visa</xs:documentation>
+'39' Passport
+'36' Identity card
+'SMB' Seaman's book
+'40' Driving licence (national)
+'41' Driving licence (international)
+'483' Visa</xs:documentation>
 					</xs:annotation>
 					<xs:simpleType>
 						<xs:restriction base="xs:string">
@@ -394,7 +394,7 @@ e.g. Chief officer</xs:documentation>
 											</xs:element>
 											<xs:element name="IssuingAuthorityENI">
 												<xs:annotation>
-													<xs:documentation>If the nationality of the means of transport is not known the 3 digit code of the competent authority which issued the European Vessel Identification Number should be used.</xs:documentation>
+													<xs:documentation>If the nationality of the means of transport is not known the 3 digit code of the country of the inspection body that issued the last vessel certificate should be used.</xs:documentation>
 												</xs:annotation>
 												<xs:simpleType>
 													<xs:restriction base="xs:string">

@@ -1,52 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSpy v2011 rel. 3 sp1 (http://www.altova.com) by peter (peter) -->
-<!-- edited with XMLSPY v2004 rel. 4 U (http://www.xmlspy.com) by J. van Gils (Ministerie van Verkeer en Waterstaat) -->
-<!-- ============================================================================================== -->
-<!-- ERINOT is the XML Voy&Cargo Notification message based on the IFTDGN98B PROT1.0 edifact msg. -->
-<!-- -->
-<!-- Journaal, Releasenotes: -->
-<!-- -->
-<!-- v0.0 RS  	2003: Initial version for IFTDGN95A and 98B  -->
-<!-- v3.3 PO  	2005: 1st official version for IVS90, CBS, ENIGMA etc  -->
-<!-- v2.4 PO,BB   jan 2007: Updated for ERINOT 1.2 (IFTDGN 98B) msg  -->
-<!-- 				Deleted: <DangerousGoodsInfo\SplitGoodsPlacement> (redundant) group already in SplitGoodsPlacement-->
-<!-- 				Deleted: <DangerousGoodsInfo\NetWeight> weights already available SplitGoodsPlacement -->
-<!-- 				Added: <SplitGoodsPlacement\NetWeight> -->
-<!-- 				Added: <SplitGoodsPlacement\Volume> -->
-<!-- 				Added: <ContainerStowage\NetWeight> -->
-<!-- 				Added: <ContainerStowage\Volume> -->
-<!-- 				Added: <SafetyExplanation\Passengers> -->
-<!-- 				Changed: <GoodsItem\GoodSplitGoodsPlacements> repeats 0..99 -> 1..99 -->
-<!--              		Changed: Oversea is made conditionale-->
-<!--				Changed: Messagenr and MessageRefNr increased to 35, conform EDIFACT -->
-<!--              		Changed: Seq in <SafetyExplanation> Signalling -->
-<!-- v2.4b PO,BB   jan 2008: Some Corrections for ERINOT 1.2 (IFTDGN) msg  -->
-<!-- 				Added: <ERINOT\MessageReceiverAddress> -->
-<!--   			Added : ENI to VesselTypeID -->
-<!--  			Added TargetNameSpace -->
-<!--  			Added <MessageId\CommonDenominator> to group several ERI msgs -->
-<!--  			Added Several (informational) annotions in XSD -->
-<!--  			Changed <Contact\CommsContact> max occurance 3 => 4 (TE, EM, EI, FX) -->
-<!--  			Renamed XSD file from ERINOT4.0_SRS1_2 to "ERINOT_SRS_V1_2" to be inline with ERINOT versionnr-->
-<!-- V2.4c      PFO decrease the field length of terminal en fairwau id accroding the ERINOT 1.2 message  -->
-<!-- V2.4d      PFO adjustment to AdditionalClassification, the limitation length(7) has been determined in line with the ERINOT 1.2 specification CR ERI 08-->
-<!-- V2.4e      PFO The element 'VoyageNo' has been changed into conditional in accordance with the EDIFACT specification of the ERINOT 1.2 specification CR ERI 11 -->
-<!-- V2.4f      PFO Exclude MessageType enumerations POS and VER from the de facto ERINOT standard (ERINOT 1.2e.xsd)CR ERI 14 -->
-<!-- V2.4G     PFO The length of NSTR code has been changed  from fixed length 6 to minlength 2 and maxlength 6 CR ERI 15 -->
-<!-- V2.4H     PFO Container Type has been made Mandatory CR ERI 17 -->
-<!-- 2018 version is an initial version based on the proposed update of the technical regulation.(lnegte tonnage) -->
-
-<!-- Edition 1.3(.0) : new release 
-		no change request related 
-			update of namespace URI https://ris.cesni.eu/_assets/ERI-ERINOT/1.3 (doesn't contain XSD file name)
-			include the version of the schema (1.3)
-		10th November 2020 Jean-Noel Schilling - CESNI Secretariat 
--->
-<!-- ============================================================================================== -->
-<xs:schema 	xmlns="https://ris.cesni.eu/_assets/ERI-ERINOT/1.3" targetNamespace="https://ris.cesni.eu/_assets/ERI-ERINOT/1.3" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.3">
+<!-- ================================================================================================= -->
+<!-- ERINOT is the XML Voyage & Cargo Notification message based on the IFTDGN98B PROT1.0 edifact msg. -->
+<!-- ================================================================================================= -->
+<xs:schema	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	   	xmlns="https://ris.cesni.eu/_assets/ERI-ERINOT/1.3"
+	   	targetNamespace="https://ris.cesni.eu/_assets/ERI-ERINOT/1.3"
+	   	elementFormDefault="qualified" attributeFormDefault="unqualified"
+	   	version="1.3">
 	<xs:element name="ERINOT">
 		<xs:annotation>
-			<xs:documentation>ERI Notification Message bases the EDIFACT ERINOT 1.3 (EU Regulation 2019/1744)</xs:documentation>
+			<xs:documentation>ERI Notification Message bases the EDIFACT ERINOT 1.3</xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
@@ -75,8 +38,7 @@
 							</xs:element>
 							<xs:element name="MessageVersion" type="xs:string">
 								<xs:annotation>
-									<xs:documentation>'D', Message version number
-</xs:documentation>
+									<xs:documentation>'D', Message version number</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							<xs:element name="MessageRelease" type="xs:string">
@@ -414,8 +376,7 @@
 										<xs:element name="EquipmentType">
 											<xs:annotation>
 												<xs:documentation>'BRY' for vessel participating in the propulsion
-'BRN' for vessel not participating in the propulsion
-</xs:documentation>
+'BRN' for vessel not participating in the propulsion</xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
@@ -676,7 +637,7 @@ TSP = Transit in the same port</xs:documentation>
 																			</xs:element>
 																			<xs:element name="HSCode" type="HSCodeType" minOccurs="0">
 																				<xs:annotation>
-																					<xs:documentation>HS code of the non-dangerous cargo,</xs:documentation>
+																					<xs:documentation>HS code of the non-dangerous cargo</xs:documentation>
 																				</xs:annotation>
 																			</xs:element>
 																			<xs:element name="GoodsFreeRemark" minOccurs="0">
@@ -1290,8 +1251,7 @@ Proper shipping name, supplemented as necessary with the correct technical name,
 		<xs:sequence>
 			<xs:element name="ContainerIdentificationCode">
 				<xs:annotation>
-					<xs:documentation>For containers the Container identification code shall be used(owner code, identifier, serial number. check digit). For liquid bulk, use code 'NA'
-</xs:documentation>
+					<xs:documentation>For containers the Container identification code shall be used(owner code, identifier, serial number. check digit). For liquid bulk, use code 'NA'</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:string">

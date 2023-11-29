@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+	xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+	xmlns:nts="https://ris.cesni.eu/_assets/NtS_XSD/5.0.5.0"
+	xmlns:tns="https://ris.cesni.eu/_assets/NtS_MS/3.0.5.0"
+	targetNamespace="https://ris.cesni.eu/_assets/NtS_MS/3.0.5.0"
+	name="NtS-Message-Service">
+  <!--
+    ==========================
+    = specification of types =
+    ==========================
+  -->
+  <wsdl:types>
+    <!--
+      ========================
+      = xml-schema for types =
+      ========================
+    -->
+    <xs:schema targetNamespace="https://ris.cesni.eu/_assets/NtS_MS/3.0.5.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:nts="https://ris.cesni.eu/_assets/NtS_XSD/5.0.5.0" xmlns:nts-ms="https://ris.cesni.eu/_assets/NtS_MS/3.0.5.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0.5.0">
+      <!-- import NtS schema -->
+      <xs:import namespace="https://ris.cesni.eu/_assets/NtS_XSD/5.0.5.0" schemaLocation="https://ris.cesni.eu/_assets/NtS_XSD/5.0.5.0/NtS_XSD_V.5.0.5.0.xsd"/>
+      <!-- query with filters, parameters according to the NtS standard -->
+      <xs:element name="get_messages_query">
+        <xs:complexType>
+          <xs:sequence>
+            <!-- type of message (FTM, WRM, ICEM, WERM) -->
+            <xs:element name="message_type" type="nts-ms:message_type_type"/>
+            <!-- country code of publishing party -->
+            <xs:element name="country_code" type="nts:country_code_enum" minOccurs="0" maxOccurs="1"/>
+            <!-- time of validity -->
+            <xs:element name="validity_period" type="nts:validity_period_type" minOccurs="0"/>
+            <!-- date of publication of the notice -->
+            <xs:element name="dates_issue" type="nts-ms:date_pair" minOccurs="0" maxOccurs="unbounded"/>
+            <!-- optional parameter for paging mechanism -->
+            <xs:element name="paging_request" type="nts-ms:paging_request_type" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <!-- result to query - can contain
+                - "nts:RIS_MessageType", arbitrary number, defined in the NtS-xsd
+                - "nts-ms:error_code_type", arbitrary number, defined in this schema
+                - "nts-ms:paging_result_type", optional, defined in this schema -->
+      <xs:element name="get_messages_result">
+        <xs:complexType>
+		        <xs:sequence>
+                <xs:element name="result_message" type="nts:RIS_Message_Type" minOccurs="0" maxOccurs="unbounded"/>
+			          <xs:element name="result_error" type="nts-ms:error_type" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="paging_result" type="nts-ms:paging_result_type" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <!-- type definitions used in request -->      
+      <xs:simpleType name="message_type_type">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="FTM"/>
+          <xs:enumeration value="WRM"/>
+          <xs:enumeration value="ICEM"/>
+          <xs:enumeration value="WERM"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:complexType name="date_pair">
+        <xs:sequence>
+          <xs:element name="date_start" type="xs:dateTime"/>
+          <xs:element name="date_end" type="xs:dateTime" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="paging_request_type">
+        <xs:sequence>
+          <xs:element name="offset" type="xs:nonNegativeInteger"/>
+          <xs:element name="limit" type="xs:nonNegativeInteger"/>
+          <xs:element name="total_count" type="xs:boolean"/>
+        </xs:sequence>
+      </xs:complexType>
+      <!-- type definitions used in response -->
+      <xs:complexType name="error_type">
+	      <xs:sequence>
+		      <xs:element name="error_code" type="nts-ms:error_code_type"/>
+		      <xs:element name="error_description" type="xs:string"/>
+	      </xs:sequence>
+      </xs:complexType>
+      <xs:simpleType name="error_code_type">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="e010">
+			<xs:annotation>
+				<xs:documentation>Description: message type not supported, Explanation: web service does not support the requested message type</xs:documentation>
+			</xs:annotation>
+		  </xs:enumeration>
+          <xs:enumeration value="e030">
+			<xs:annotation>
+				<xs:documentation>Description: paging parameters inconsistent with messages, Explanation: parameters for paging mechanism do not fit the available messages, e.g. Offset >= Total Count</xs:documentation>
+			</xs:annotation>
+		  </xs:enumeration>
+          <xs:enumeration value="e100">
+			<xs:annotation>
+				<xs:documentation>Description: syntax error in request, Explanation: request violates the schema for requests</xs:documentation>
+			</xs:annotation>
+		  </xs:enumeration>
+          <xs:enumeration value="e110">
+			<xs:annotation>
+				<xs:documentation>Description: incorrect message type, Explanation: given message type is not known</xs:documentation>
+			</xs:annotation>
+		  </xs:enumeration>
+          <xs:enumeration value="e120">
+			<xs:annotation>
+				<xs:documentation>Description: incorrect type-specific parameters, Explanation: type-specific parameters are erroneous</xs:documentation>
+			</xs:annotation>
+		  </xs:enumeration>
+          <xs:enumeration value="e130">
+			<xs:annotation>
+				<xs:documentation>Description: incorrect paging parameters, Explanation: given parameters for the paging mechanism are erroneous</xs:documentation>
+			</xs:annotation>
+		  </xs:enumeration>
+          <xs:enumeration value="e200">
+			<xs:annotation>
+				<xs:documentation>Description: operation not known, Explanation: the requested operation is unknown</xs:documentation>
+			</xs:annotation>
+		  </xs:enumeration>
+          <xs:enumeration value="e300">
+			<xs:annotation>
+				<xs:documentation>Description: data source unavailable, Explanation: data source of the web service for the NtS data is temporarily unavailable</xs:documentation>
+			</xs:annotation>
+		  </xs:enumeration>
+		  <xs:enumeration value="e310">
+			<xs:annotation>
+				<xs:documentation>Description: too many results for request, Explanation: server is unable to handle number of results</xs:documentation>
+			</xs:annotation>
+		  </xs:enumeration>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:complexType name="paging_result_type">
+        <xs:sequence>
+          <xs:element name="offset" type="xs:nonNegativeInteger"/>
+          <xs:element name="count" type="xs:nonNegativeInteger"/>
+          <xs:element name="total_count" type="xs:nonNegativeInteger" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="get_messages_request">
+    <wsdl:part name="parameters" element="tns:get_messages_query"/>
+  </wsdl:message>
+  <wsdl:message name="get_messages_response">
+    <wsdl:part name="parameters" element="tns:get_messages_result"/>
+  </wsdl:message>
+  <wsdl:portType name="NtS_message_service">
+    <wsdl:operation name="get_messages">
+      <wsdl:input message="tns:get_messages_request"/>
+      <wsdl:output message="tns:get_messages_response"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NtS_message_service_soap_binding" type="tns:NtS_message_service">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="get_messages">
+      <soap:operation soapAction="get_messages"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="NtS_message_service_service">
+    <wsdl:port name="NtS_message_service" binding="tns:NtS_message_service_soap_binding">
+      <soap:address location="http://nts-ms.example.org/NtS_message_service"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
