@@ -9,7 +9,7 @@
 	   	version="1.3">
 	<xs:element name="ERINOT">
 		<xs:annotation>
-			<xs:documentation>ERI Notification Message bases the EDIFACT ERINOT 1.3</xs:documentation>
+			<xs:documentation>ERI Notification Message bases the EDIFACT  ERINOT 1.3</xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
