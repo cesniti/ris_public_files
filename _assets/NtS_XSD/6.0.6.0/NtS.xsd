@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		xmlns:nts="https://ris.cesni.eu/_assets/NtS_XSD/6.0.6.0" 
+		targetNamespace="https://ris.cesni.eu/_assets/NtS_XSD/6.0.6.0" 
+		elementFormDefault="qualified" 
+		attributeFormDefault="unqualified" 
+		version="6.0.6.0">
+	<!--
+	===========================================
+	= definition of main element RIS_Message  =
+	= and corresponding type RIS_Message_Type =
+	===========================================
+	-->
+	<xs:element name="RIS_Message" type="nts:RIS_Message_Type">
+		<xs:annotation>
+			<xs:documentation>River Information Service Message</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="RIS_Message_Type">
+		<xs:sequence>
+			<xs:element name="identification" type="nts:identification_type">
+				<xs:annotation>
+					<xs:documentation>Identification section</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:choice>
+				<xs:annotation>
+					<xs:documentation>One msg contains one of these sections</xs:documentation>
+				</xs:annotation>
+				<xs:element name="ftm" type="nts:ftm_type" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Fairway and traffic related section</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="wrm" type="nts:wrm_type" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Water related section</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="werm" type="nts:werm_type" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Weather related section</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<!--
+	==========================================
+	= definition of identification_type,     =
+	= used in definition of RIS_Message_Type =
+	==========================================
+	-->
+	<xs:complexType name="identification_type">
+		<xs:sequence>
+			<xs:element name="internal_id" type="nts:internal_id_type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Internal ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="from">
+				<xs:annotation>
+					<xs:documentation>Sender (System) of the message</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="publisher">
+				<xs:annotation>
+					<xs:documentation>Publisher (organisation) of the message</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="source" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The organisation/department providing the information published in the message</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+					<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="country_code" type="nts:country_code_enum">
+				<xs:annotation>
+					<xs:documentation>Country where message is valid</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="language_code" type="nts:language_code_enum">
+				<xs:annotation>
+					<xs:documentation>Original language used in the textual info (contents)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="district" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>District / Region within the specified country, where the message is applicable</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="date_issue" type="xs:dateTime">
+				<xs:annotation>
+					<xs:documentation>Date and time of publication including time zone</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!--
+	===================================================
+	= types used in definition of identification_type =
+	===================================================
+	-->
+	<xs:simpleType name="country_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:length value="2"/>
+			<xs:enumeration value="AT"/>
+			<xs:enumeration value="BE"/>
+			<xs:enumeration value="BG"/>
+			<xs:enumeration value="CH"/>
+			<xs:enumeration value="CY"/>
+			<xs:enumeration value="CZ"/>
+			<xs:enumeration value="DE"/>
+			<xs:enumeration value="DK"/>
+			<xs:enumeration value="EE"/>
+			<xs:enumeration value="ES"/>
+			<xs:enumeration value="FI"/>
+			<xs:enumeration value="FR"/>
+			<xs:enumeration value="GB"/>
+			<xs:enumeration value="GR"/>
+			<xs:enumeration value="HR"/>
+			<xs:enumeration value="HU"/>
+			<xs:enumeration value="IE"/>
+			<xs:enumeration value="IT"/>
+			<xs:enumeration value="LT"/>
+			<xs:enumeration value="LU"/>
+			<xs:enumeration value="LV"/>
+			<xs:enumeration value="MD"/>
+			<xs:enumeration value="ME"/>
+			<xs:enumeration value="MT"/>
+			<xs:enumeration value="NL"/>
+			<xs:enumeration value="PL"/>
+			<xs:enumeration value="PT"/>
+			<xs:enumeration value="RO"/>
+			<xs:enumeration value="RS"/>
+			<xs:enumeration value="SE"/>
+			<xs:enumeration value="SI"/>
+			<xs:enumeration value="SK"/>
+			<xs:enumeration value="RU"/>
+			<xs:enumeration value="UA"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="language_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="2"/>
+			<xs:enumeration value="DE"/>
+			<xs:enumeration value="EN"/>
+			<xs:enumeration value="FR"/>
+			<xs:enumeration value="NL"/>
+			<xs:enumeration value="SK"/>
+			<xs:enumeration value="HU"/>
+			<xs:enumeration value="HR"/>
+			<xs:enumeration value="SR"/>
+			<xs:enumeration value="BG"/>
+			<xs:enumeration value="RO"/>
+			<xs:enumeration value="RU"/>
+			<xs:enumeration value="CS"/>
+			<xs:enumeration value="PL"/>
+			<xs:enumeration value="PT"/>
+			<xs:enumeration value="ES"/>
+			<xs:enumeration value="SV"/>
+			<xs:enumeration value="FI"/>
+			<xs:enumeration value="DA"/>
+			<xs:enumeration value="ET"/>
+			<xs:enumeration value="LV"/>
+			<xs:enumeration value="LT"/>
+			<xs:enumeration value="IT"/>
+			<xs:enumeration value="MT"/>
+			<xs:enumeration value="EL"/>
+			<xs:enumeration value="SL"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--
+	==========================================
+	= definition of ftm_type,                =
+	= used in definition of RIS_Message_Type =
+	==========================================
+	-->
+	<xs:complexType name="ftm_type">
+		<xs:sequence>
+			<xs:element name="internal_id" type="nts:internal_id_type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Internal ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nts_number" type="nts:nts_number_type">
+				<xs:annotation>
+					<xs:documentation>NtS Number</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="target_group" type="nts:target_group_type" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Target group information</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="subject_code" type="nts:subject_code_enum">
+				<xs:annotation>
+					<xs:documentation>Subject code must contain one of the following: Announcement (ANNOUN), Warning (WARNIN) or Information service (INFSER). More information on the use of codes can be found in the NtS Encoding Guide.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="notice_withdrawn" type="xs:boolean" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Notice Withdrawn flag set to "1" when the message is Withdrawn. The subject code of previous version must remain the same.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="validity_period" type="nts:validity_period_type">
+				<xs:annotation>
+					<xs:documentation>Overall period of validity</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="contents" type="nts:multilanguage2200_type" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Additional information in specified language</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="reason_code" type="nts:reason_code_enum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Reason / justification of the notice</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="communication" type="nts:communication_type" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Communication channel information</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ftm_limitation_group" type="nts:ftm_limitation_group_type" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>FTM limitation group must contain at least one network_part or object</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!--
+	========================================
+	= types used in definition of ftm_type =
+	========================================
+	-->
+	<xs:simpleType name="subject_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="3"/>
+			<xs:maxLength value="6"/>
+			<xs:enumeration value="ANNOUN"/>
+			<xs:enumeration value="WARNIN"/>
+			<xs:enumeration value="INFSER"/>
+			<!--obsolete values due to CR198 but still valid for backwards compatibility -->
+			<xs:enumeration value="CANCEL"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="reason_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="3"/>
+			<xs:maxLength value="6"/>
+			<xs:enumeration value="EVENT"/>
+			<xs:enumeration value="WORK"/>
+			<xs:enumeration value="DREDGE"/>
+			<xs:enumeration value="EXERC"/>
+			<xs:enumeration value="HIGWAT"/>
+			<xs:enumeration value="HIWAI"/>
+			<xs:enumeration value="HIWAII"/>
+			<xs:enumeration value="LOWWAT"/>
+			<xs:enumeration value="SHALLO"/>
+			<xs:enumeration value="CALAMI"/>
+			<xs:enumeration value="LAUNCH"/>
+			<xs:enumeration value="DECLEV"/>
+			<xs:enumeration value="FLOMEA"/>
+			<xs:enumeration value="BLDWRK"/>
+			<xs:enumeration value="REPAIR"/>
+			<xs:enumeration value="INSPEC"/>
+			<xs:enumeration value="FIRWRK"/>
+			<xs:enumeration value="LIMITA"/>
+			<xs:enumeration value="CHGFWY"/>
+			<xs:enumeration value="CONSTR"/>
+			<xs:enumeration value="DIVING"/>
+			<xs:enumeration value="SPECTR"/>
+			<xs:enumeration value="EXT"/>
+			<xs:enumeration value="MIN"/>
+			<xs:enumeration value="SOUND"/>
+			<xs:enumeration value="STRIKE"/>
+			<xs:enumeration value="FLOMAT"/>
+			<xs:enumeration value="EXPLOS"/>
+			<xs:enumeration value="ICE"/>
+			<xs:enumeration value="OBSTAC"/>
+			<xs:enumeration value="CHGMAR"/>
+			<xs:enumeration value="DAMMAR"/>
+			<xs:enumeration value="FALMAT"/>
+			<xs:enumeration value="MISECH"/>
+			<xs:enumeration value="HEARIS"/>
+			<xs:enumeration value="HIGVOL"/>
+			<xs:enumeration value="ECDISU"/>
+			<xs:enumeration value="LOCRUL"/>
+			<xs:enumeration value="NEWOBJ"/>
+			<xs:enumeration value="OBUNWA"/>
+			<xs:enumeration value="VHFCOV"/>
+			<xs:enumeration value="REMOBJ"/>
+			<xs:enumeration value="LEVRIS"/>
+			<xs:enumeration value="SPCMAR"/>
+			<xs:enumeration value="WERMCO"/>
+			<!--obsolete values due to CR196 but still valid for backwards compatibility -->
+			<xs:enumeration value="OTHER"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="communication_type">
+		<xs:sequence>
+			<xs:element name="reporting_code" type="nts:reporting_code_enum">
+				<xs:annotation>
+					<xs:documentation>Reporting regime (information, or duty to report)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="communication_code" type="nts:communication_code_enum">
+				<xs:annotation>
+					<xs:documentation>Communication code (telephone, VHF etc.)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="communication_means" type="nts:communication_means_type" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Detailed communication channel information - number, label and remark</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="communication_means_type">
+		<xs:sequence>
+			<xs:element name="number" type="nts:multilanguage2000_type" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Telephone, VHF number (including callsign), e-mail address, URL or teletext</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="label" type="nts:multilanguage256_type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Name of the attachment or additional information</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="remark" type="nts:multilanguage256_type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Additional remarks concerning the communication</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="reporting_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="3"/>
+			<xs:enumeration value="INF"/>
+			<xs:enumeration value="ADD"/>
+			<xs:enumeration value="REG"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="communication_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="3"/>
+			<xs:enumeration value="TE"/>
+			<xs:enumeration value="AP"/>
+			<xs:enumeration value="EM"/>
+			<xs:enumeration value="AH"/>
+			<xs:enumeration value="TT"/>
+			<xs:enumeration value="FX"/>
+			<xs:enumeration value="LS"/>
+			<xs:enumeration value="FS"/>
+			<xs:enumeration value="SO"/>
+			<xs:enumeration value="EI"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--
+	==========================================
+	= definition of wrm_type,                =
+	= used in definition of RIS_Message_Type =
+	==========================================
+	-->
+	<xs:complexType name="wrm_type">
+		<xs:sequence>
+			<xs:element name="internal_id" type="nts:internal_id_type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Internal ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nts_number" type="nts:nts_number_type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>NtS Number</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="validity_period" type="nts:validity_period_type">
+				<xs:annotation>
+					<xs:documentation>Overall period of validity</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="network_part" type="nts:geo_network_type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>An unambiguous part on the network delimited by two points - message must contain at least one network part or object</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="object" type="nts:geo_object_type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Object section - message must contain at least one network part or object</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="reference_code" type="nts:reference_code_enum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Value reference (measurement reference)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="measure" type="nts:measure_type" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Measurements (real measurements or forecasts)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!--
+	========================================
+	= types used in definition of wrm_type =
+	========================================
+	-->
+	<xs:complexType name="measure_type">
+		<xs:sequence>
+			<xs:element name="forecast" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>Forecast (true) or real measurement (false)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="measure_code" type="nts:measure_code_enum">
+				<xs:annotation>
+					<xs:documentation>Kind of water related information</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="value" type="xs:float" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Forecast or real measured value</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="value_min" type="xs:float" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Lowest value of confidence interval</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="value_max" type="xs:float" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Highest value of confidence interval</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="unit" type="nts:unit_enum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Unit of the water related value (cm, m3/s, h, km/h, kW, m/s, mm/h, °C)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="barrage_code" type="nts:barrage_code_enum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Barrage status</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="regime_code" type="nts:regime_code_enum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Regime applicable</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="measuredate" type="xs:dateTime">
+				<xs:annotation>
+					<xs:documentation>Date and Time of forecast or measurement value including time zone</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="difference" type="nts:difference_type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Difference with comparative value</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="measure_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="3"/>
+			<xs:enumeration value="DIS"/>
+			<xs:enumeration value="REG"/>
+			<xs:enumeration value="BAR"/>
+			<xs:enumeration value="VER"/>
+			<xs:enumeration value="LSD"/>
+			<xs:enumeration value="WAL"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="barrage_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="3"/>
+			<xs:enumeration value="CLD"/>
+			<xs:enumeration value="OPG"/>
+			<xs:enumeration value="CLG"/>
+			<xs:enumeration value="OPD"/>
+			<xs:enumeration value="OPN"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="regime_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="2"/>
+			<xs:enumeration value="NO"/>
+			<xs:enumeration value="HI"/>
+			<xs:enumeration value="II"/>
+			<xs:enumeration value="I"/>
+			<xs:enumeration value="NN"/>
+			<xs:enumeration value="LO"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="difference_type">
+		<xs:sequence>
+			<xs:element name="value_difference" type="xs:float">
+				<xs:annotation>
+					<xs:documentation>Difference with comparative value</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="time_difference" type="xs:duration">
+				<xs:annotation>
+					<xs:documentation>Time difference with measuredata of comparative measurement</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!--
+	=========================================
+	= types used in definition of icem_type =
+	=========================================
+	-->
+	<xs:complexType name="ice_condition_type">
+		<xs:sequence>
+			<xs:element name="ice_code_general" type="nts:ice_code_general_enum">
+				<xs:annotation>
+					<xs:documentation>General Ice Code, to indicate the impact because of ice</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ice_code_detail" type="nts:ice_code_detail_enum" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Additional, detailed ice codes</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="ice_code_general_enum">
+		<xs:restriction base="xs:string">
+		<xs:maxLength value="1"/>
+		<xs:enumeration value="A"/>
+		<xs:enumeration value="B"/>
+		<xs:enumeration value="C"/>
+		<xs:enumeration value="D"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ice_code_detail_enum">
+		<xs:restriction base="xs:string">
+		<xs:maxLength value="1"/>
+		<xs:enumeration value="A"/>
+		<xs:enumeration value="B"/>
+		<xs:enumeration value="C"/>
+		<xs:enumeration value="D"/>
+		<xs:enumeration value="E"/>
+		<xs:enumeration value="F"/>
+		<xs:enumeration value="G"/>
+		<xs:enumeration value="H"/>
+		<xs:enumeration value="I"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--
+	===========================================
+	= definition of werm_type,                =
+	= used in definition of RIS_Message_Type  =
+	===========================================
+	-->
+	<xs:complexType name="werm_type">
+		<xs:sequence>
+			<xs:element name="internal_id" type="nts:internal_id_type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Internal ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nts_number" type="nts:nts_number_type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>NtS Number</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="validity_period" type="nts:validity_period_type">
+				<xs:annotation>
+					<xs:documentation>Overall period of validity</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="network_part" type="nts:geo_network_type">
+				<xs:annotation>
+					<xs:documentation>An unambiguous part on the network delimited by two points</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="weather_report" type="nts:weather_report_type" maxOccurs="2">
+				<xs:annotation>
+					<xs:documentation>Actual or Forecast report sections</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!--
+	=========================================
+	= types used in definition of werm_type =
+	=========================================
+	-->
+	<xs:complexType name="weather_report_type">
+		<xs:sequence>
+			<xs:element name="measuredate" type="xs:dateTime">
+				<xs:annotation>
+					<xs:documentation>Date and time of forecast or measurement value including timezone</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="forecast" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>Forecast (true) OR Actual report (false)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="weather_class_code" type="nts:weather_class_code_enum" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Classification of weather report</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="weather_item" type="nts:weather_item_type" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Weather items</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="weather_class_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="6"/>
+			<xs:enumeration value="CLR"/>
+			<xs:enumeration value="CLDY"/>
+			<xs:enumeration value="OCST"/>
+			<xs:enumeration value="DZZL"/>
+			<xs:enumeration value="RAIN"/>
+			<xs:enumeration value="LRAIN"/>
+			<xs:enumeration value="ORAIN"/>
+			<xs:enumeration value="HRAIN"/>
+			<xs:enumeration value="SLEET"/>
+			<xs:enumeration value="SNOW"/>
+			<xs:enumeration value="SNFALL"/>
+			<xs:enumeration value="HAIL"/>
+			<xs:enumeration value="SHWRS"/>
+			<xs:enumeration value="THSTRM"/>
+			<xs:enumeration value="HAZY"/>
+			<xs:enumeration value="FOG"/>
+			<xs:enumeration value="FOGPAT"/>
+			<xs:enumeration value="GALE"/>
+			<xs:enumeration value="STRM"/>
+			<xs:enumeration value="HURRC"/>
+			<xs:enumeration value="FZRA"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="weather_item_type">
+		<xs:sequence>
+			<xs:element name="weather_item_code" type="nts:weather_item_code_enum">
+				<xs:annotation>
+					<xs:documentation>Weather item type (Wind, Wave etc)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="value_min" type="xs:float">
+				<xs:annotation>
+					<xs:documentation>Actual or Minimum value</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="value_max" type="xs:float" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Maximum value</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="value_gusts" type="xs:float" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Gusts value (Wind)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="unit" type="nts:unit_enum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Unit of the value (cm, m3/s, h, km/h, kW, m/s, mm/h, °C)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="weather_category_code" type="nts:weather_category_code_enum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Classification of wind report</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="direction_code_min" type="nts:weather_direction_code_enum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Direction of wind or wave</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="direction_code_max" type="nts:weather_direction_code_enum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Direction of wind or wave</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="weather_item_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="2"/>
+			<xs:enumeration value="WI"/>
+			<xs:enumeration value="WA"/>
+			<xs:enumeration value="FG"/>
+			<xs:enumeration value="RN"/>
+			<xs:enumeration value="SN"/>
+			<xs:enumeration value="AT"/>
+			<xs:enumeration value="WT"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="weather_category_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="2"/>
+			<xs:enumeration value="0"/>
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+			<xs:enumeration value="3"/>
+			<xs:enumeration value="4"/>
+			<xs:enumeration value="5"/>
+			<xs:enumeration value="6"/>
+			<xs:enumeration value="7"/>
+			<xs:enumeration value="8"/>
+			<xs:enumeration value="9"/>
+			<xs:enumeration value="10"/>
+			<xs:enumeration value="11"/>
+			<xs:enumeration value="12"/>
+			<xs:enumeration value="13"/>
+			<xs:enumeration value="14"/>
+			<xs:enumeration value="15"/>
+			<xs:enumeration value="16"/>
+			<xs:enumeration value="17"/>
+			<xs:enumeration value="18"/>
+			<xs:enumeration value="19"/>
+			<xs:enumeration value="20"/>
+			<xs:enumeration value="21"/>
+			<xs:enumeration value="22"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="weather_direction_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="3"/>
+			<xs:enumeration value="N"/>
+			<xs:enumeration value="NE"/>
+			<xs:enumeration value="E"/>
+			<xs:enumeration value="SE"/>
+			<xs:enumeration value="S"/>
+			<xs:enumeration value="SW"/>
+			<xs:enumeration value="W"/>
+			<xs:enumeration value="NW"/>
+			<xs:enumeration value="WRB"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--
+	=====================================
+	= types used in several definitions =
+	=====================================
+	-->
+	<xs:simpleType name="internal_id_type">
+		<xs:annotation>
+			<xs:documentation>Internal ID - best practice: global unique identifier</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="64"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="nts_number_type">
+		<xs:sequence>
+			<xs:element name="organisation">
+				<xs:annotation>
+					<xs:documentation>Name of the publishing organisation (NtS Provider)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="year">
+				<xs:annotation>
+					<xs:documentation>Year of first issuing of the notice</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:gYear">
+						<xs:minInclusive value="1900"/>
+						<xs:maxInclusive value="9999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="number">
+				<xs:annotation>
+					<xs:documentation>Number of the notice (per year, starting with: 1, 0 shall not be used for published notices)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="00000000"/>
+						<xs:maxInclusive value="99999999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="serial_number">
+				<xs:annotation>
+					<xs:documentation>Serial number of notice (replacements and withdrawals), original notice: 0</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="00"/>
+						<xs:maxInclusive value="99"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="validity_period_type">
+		<xs:sequence>
+			<xs:element name="date_start" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Start date of validity period including time zone</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="date_end" type="xs:date" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>End date of validity period including time zone</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ftm_limitation_group_type">
+		<xs:sequence>
+			<xs:element name="network_part" type="nts:geo_network_type" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>An unambiguous part on the network delimited by two points</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="object" type="nts:geo_object_type" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Object section</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="limitation_group" type="nts:limitation_group_type" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Group of limitations and periods for Fairways and Objects</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="limitation_group_type">
+		<xs:sequence>
+			<xs:annotation>
+				<xs:documentation>Group of limitations and periods</xs:documentation>
+			</xs:annotation>
+			<xs:element name="limitation" type="nts:limitation_type" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Fairway section or object limitations</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="limitation_period" type="nts:limitation_period_type" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Limitation periods / intervals</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="geo_network_type">
+		<xs:sequence>
+			<xs:element name="geo_location_from" type="nts:network_point_location_type">
+				<xs:annotation>
+					<xs:documentation>Type of geographical object - start of network part</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="geo_location_to" type="nts:network_point_location_type" >
+				<xs:annotation>
+					<xs:documentation>Type of geographical object - end of network part</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="fairway_name" type="nts:multilanguage256_type" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Waterway name - optional in different languages</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="route_name" type="nts:multilanguage256_type" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Route name - optional in different languages</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="type_code" type="nts:type_code_enum">
+				<xs:annotation>
+					<xs:documentation>Type of geographical object</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="geographic_impact" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Geographical impact via coordinates in WKT (Well-Known-Text) format</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="geo_object_type">
+		<xs:sequence>
+			<xs:element name="geo_location" type="nts:object_location_type">
+				<xs:annotation>
+					<xs:documentation>Type of geographical object</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="position_code" type="nts:position_code_enum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Describes the position related to the fairway</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="fairway_name" type="nts:multilanguage256_type" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Waterway name - optional in different languages</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="route_name" type="nts:multilanguage256_type" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Route name - optional in different languages</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="geographic_impact" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Geographical impact via coordinates in WKT (Well-Known-Text) format</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="network_point_location_type">
+		<xs:sequence>
+			<xs:element name="location" type ="nts:location_type" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Detailed information of geographical object - extracted from RIS Index</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="localisation_name" type ="nts:localisation_name_type" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Local and translated localisation names of the geographical object</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="object_location_type">
+		<xs:sequence>
+			<xs:element name="location" type ="nts:location_type" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Detailed informtion of geographical object - extracted from RIS Index</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="localisation_name" type ="nts:localisation_name_type" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Local and translated localisation names of the geographical object</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="location_type">
+		<xs:sequence>
+		<xs:element name="ris_id" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>RIS_ID (UUID Identifier) of the location in RIS.net</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"/>	
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="isrs_code" type="nts:isrs_code_type">
+				<xs:annotation>
+					<xs:documentation>ISRS Location Code of the network part or object</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="type_code" type="nts:type_code_enum">
+				<xs:annotation>
+					<xs:documentation>Type of geographical object</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="un_locode">
+				<xs:annotation>
+					<xs:documentation>UN Locode of geographical object - extracted from RIS Index</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="fairway_section_code">
+				<xs:annotation>
+					<xs:documentation>Fairway section of geographical object - extracted from RIS Index</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="object_reference_code">
+				<xs:annotation>
+					<xs:documentation>Object code of geographical object - extracted from RIS Index</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="fairway_hectometre">
+				<xs:annotation>
+					<xs:documentation>Fairway hectometre of geographical object - extracted from RIS Index</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="coordinate" type="nts:coordinate_type">
+				<xs:annotation>
+					<xs:documentation>Coordinate</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="localisation_name_type">
+		<xs:sequence>
+			<xs:element name="un_location_name" type ="nts:multilanguage256_type" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>UN Location name of geographical object - optional in different languages</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="object_name" type ="nts:multilanguage256_type" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Object name of geographical object - optional in different languages</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="isrs_code_type">
+		<xs:annotation>
+			<xs:documentation>ISRS Location Code, unique identification of the geo object as defined in RIS Index encoding guide</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:length value="20"/>
+			<xs:pattern value="[A-Z]{2}[A-Z2-9]{3}[A-Z0-9]{5}[A-Z0-9]{5}[0-9]{5}" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="multilanguage256_type">
+		<xs:simpleContent>
+			<xs:extension base="nts:string_256">
+				<xs:attribute name="language" type="nts:language_code_enum" use="optional" />
+		<xs:attribute name="automated_translation" type="xs:boolean" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="multilanguage2000_type">
+		<xs:simpleContent>
+			<xs:extension base="nts:string_2000">
+				<xs:attribute name="language" type="nts:language_code_enum" use="optional" />
+		<xs:attribute name="automated_translation" type="xs:boolean" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>	
+	<xs:complexType name="multilanguage2200_type">
+		<xs:simpleContent>
+			<xs:extension base="nts:string_2200">
+				<xs:attribute name="language" type="nts:language_code_enum" use="optional" />
+		<xs:attribute name="automated_translation" type="xs:boolean" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:simpleType name="string_256">	
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="256"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string_2200">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="2200"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="type_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="3"/>
+			<xs:enumeration value="RIV"/>
+			<xs:enumeration value="CAN"/>
+			<xs:enumeration value="LAK"/>
+			<xs:enumeration value="FWY"/>
+			<xs:enumeration value="LCK"/>
+			<xs:enumeration value="BRI"/>
+			<xs:enumeration value="RMP"/>
+			<xs:enumeration value="BAR"/>
+			<xs:enumeration value="BNK"/>
+			<xs:enumeration value="GAU"/>
+			<xs:enumeration value="BUO"/>
+			<xs:enumeration value="BEA"/>
+			<xs:enumeration value="ANC"/>
+			<xs:enumeration value="BER"/>
+			<xs:enumeration value="MOO"/>
+			<xs:enumeration value="TER"/>
+			<xs:enumeration value="HAR"/>
+			<xs:enumeration value="FDO"/>
+			<xs:enumeration value="CAB"/>
+			<xs:enumeration value="FER"/>
+			<xs:enumeration value="PIP"/>
+			<xs:enumeration value="PPO"/>
+			<xs:enumeration value="HFA"/>
+			<xs:enumeration value="HMO"/>
+			<xs:enumeration value="SHY"/>
+			<xs:enumeration value="REF"/>
+			<xs:enumeration value="MAR"/>
+			<xs:enumeration value="LIG"/>
+			<xs:enumeration value="SIG"/>
+			<xs:enumeration value="TUR"/>
+			<xs:enumeration value="CBR"/>
+			<xs:enumeration value="TUN"/>
+			<xs:enumeration value="BCO"/>
+			<xs:enumeration value="REP"/>
+			<xs:enumeration value="FLO"/>
+			<xs:enumeration value="SLI"/>
+			<xs:enumeration value="DUK"/>
+			<xs:enumeration value="VTC"/>
+			<xs:enumeration value="RES"/>
+			<xs:enumeration value="LKB"/>
+			<xs:enumeration value="BRO"/>
+			<xs:enumeration value="BNS"/>
+			<xs:enumeration value="DMR"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="coordinate_type">
+		<xs:sequence>
+			<xs:element name="lat">
+				<xs:annotation>
+					<xs:documentation>Latitude, encoded according to WGS 1984 (EPSG:4326) and presented in degrees with six decimals [d]d.dddddd (latitude)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:float"> 
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="long">
+				<xs:annotation>
+					<xs:documentation>Longitude, encoded according to WGS 1984 (EPSG:4326) and presented in degrees with six decimals [d][d]d.dddddd (longitude)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:float">
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="limitation_type">
+		<xs:sequence>
+			<xs:element name="limitation_code" type="nts:limitation_code_enum">
+				<xs:annotation>
+					<xs:documentation>Kind of limitation</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="position_code" type="nts:position_code_enum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Describes the position of the limitation related to the fairway</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="value" type="nts:value_type" minOccurs="0" maxOccurs="4">
+				<xs:annotation>
+					<xs:documentation>Value of limitation (i.e.	max draught)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="unit" type="nts:unit_enum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Unit of the value of the limitation (cm, m3/s, h, km/h, kW, m/s, mm/h, °C)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="reference_code" type="nts:reference_code_enum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Value reference</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="indication_code" type="nts:indication_code_enum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Minimum or maximum or reduced by</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="target_group" type="nts:target_group_type" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Target group information</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		<xs:element name="ice_condition" type="nts:ice_condition_type" minOccurs="0">
+			<xs:annotation>
+				<xs:documentation>Ice conditions</xs:documentation>
+			</xs:annotation>
+		</xs:element>
+	</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="value_type">
+		<xs:annotation>
+			<xs:documentation>Value of the limitation, with optional dimension type to indicate the size of a vessel/convoy</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="xs:float">
+				<xs:attribute name="dimension_type" type="nts:dimension_type_code_enum" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="limitation_period_type">
+		<xs:sequence>
+			<xs:element name="calendar" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>iCalendar with limitation period definition</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="withdrawn_time" type="xs:dateTime" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Date and time of withdrawal including time zone</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="end_time_estimated" type="xs:boolean" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The end time of the limitation period is estimated</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+		<xs:simpleType name="limitation_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="10"/>
+			<xs:enumeration value="OBSTRU"/>
+			<xs:enumeration value="PAROBS"/>
+			<xs:enumeration value="DELAY"/>
+			<xs:enumeration value="VESLEN"/>
+			<xs:enumeration value="VESHEI"/>
+			<xs:enumeration value="VESBRE"/>
+			<xs:enumeration value="VESDRA"/>
+			<xs:enumeration value="AVALEN"/>
+			<xs:enumeration value="CLEHEI"/>
+			<xs:enumeration value="CLEWID"/>
+			<xs:enumeration value="AVADEP"/>
+			<xs:enumeration value="NOMOOR"/>
+			<xs:enumeration value="SERVIC"/>
+			<xs:enumeration value="NOSERV"/>
+			<xs:enumeration value="SPEED"/>
+			<xs:enumeration value="WAVWAS"/>
+			<xs:enumeration value="PASSIN"/>
+			<xs:enumeration value="ANCHOR"/>
+			<xs:enumeration value="OVRTAK"/>
+			<xs:enumeration value="MINPWR"/>
+			<xs:enumeration value="ALTER"/>
+			<xs:enumeration value="CAUTIO"/>
+			<xs:enumeration value="NOLIM"/>
+			<xs:enumeration value="TURNIN"/>
+			<xs:enumeration value="NOSHORE"/>
+			<xs:enumeration value="CONBRE"/>
+			<xs:enumeration value="CONLEN"/>
+			<xs:enumeration value="LEADEP"/>
+			<xs:enumeration value="NOBERT"/>
+			<xs:enumeration value="PERDIM" />
+			<xs:enumeration value="ALLDIR" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="position_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="2"/>
+			<xs:enumeration value="AL"/>
+			<xs:enumeration value="LE"/>
+			<xs:enumeration value="MI"/>
+			<xs:enumeration value="RI"/>
+			<xs:enumeration value="LB"/>
+			<xs:enumeration value="RB"/>
+			<xs:enumeration value="N"/>
+			<xs:enumeration value="NE"/>
+			<xs:enumeration value="E"/>
+			<xs:enumeration value="SE"/>
+			<xs:enumeration value="S"/>
+			<xs:enumeration value="SW"/>
+			<xs:enumeration value="W"/>
+			<xs:enumeration value="NW"/>
+			<xs:enumeration value="BI"/>
+			<xs:enumeration value="SM"/>
+			<xs:enumeration value="OL"/>
+			<xs:enumeration value="EW"/>
+			<xs:enumeration value="MP"/>
+			<xs:enumeration value="FP"/>
+			<xs:enumeration value="VA"/>
+			<xs:enumeration value="RY"/>
+			<xs:enumeration value="GY"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="reference_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="4"/>
+			<xs:enumeration value="NAP"/>
+			<xs:enumeration value="KP"/>
+			<xs:enumeration value="FZP"/>
+			<xs:enumeration value="ADR"/>
+			<xs:enumeration value="TAW"/>
+			<xs:enumeration value="PUL"/>
+			<xs:enumeration value="NGM"/>
+			<xs:enumeration value="ETRS"/>
+			<xs:enumeration value="POT"/>
+			<xs:enumeration value="LDC"/>
+			<xs:enumeration value="HDC"/>
+			<xs:enumeration value="ZPG"/>
+			<xs:enumeration value="GLW"/>
+			<xs:enumeration value="HSW"/>
+			<xs:enumeration value="LNW"/>
+			<xs:enumeration value="HNW"/>
+			<xs:enumeration value="IGN"/>
+			<xs:enumeration value="WGS"/>
+			<xs:enumeration value="RN"/>
+			<xs:enumeration value="HBO"/>
+			<xs:enumeration value="HCL"/>
+			<xs:enumeration value="LCL"/>
+			<xs:enumeration value="MTH"/>
+			<xs:enumeration value="MTL"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="indication_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="3"/>
+			<xs:enumeration value="MAX"/>
+			<xs:enumeration value="MIN"/>
+			<xs:enumeration value="RED"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="target_group_type">
+		<xs:sequence>
+			<xs:element name="target_group_code" type="nts:target_group_code_enum" default="ALL">
+				<xs:annotation>
+					<xs:documentation>Target group (vessel type)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="direction_code" type="nts:direction_code_enum" default="ALL">
+				<xs:annotation>
+					<xs:documentation>Upstream or downstream traffic, or both</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="target_group_code_enum">
+		<xs:annotation>
+			<xs:documentation>Values 'NNU' and 'WOC' are obsolete per CR-204.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="3"/>
+			<xs:enumeration value="ALL"/>
+			<xs:enumeration value="CDG"/>
+			<xs:enumeration value="COM"/>
+			<xs:enumeration value="PAX"/>
+			<xs:enumeration value="PLE"/>
+			<xs:enumeration value="CNV"/>
+			<xs:enumeration value="PUS"/>
+			<xs:enumeration value="LOA"/>
+			<xs:enumeration value="SMA"/>
+			<xs:enumeration value="CND"/>
+			<xs:enumeration value="MOV"/>
+			<xs:enumeration value="NMV"/>
+			<!-- obsolete values due to CR-204 but kept for backwards compatibility -->
+			<xs:enumeration value="NNU"/>
+			<xs:enumeration value="WOC"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="direction_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="3"/>
+			<xs:enumeration value="ALL"/>
+			<xs:enumeration value="UPS"/>
+			<xs:enumeration value="DWN"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="unit_enum">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="4"/>
+			<xs:enumeration value="cm"/>
+			<xs:enumeration value="m³/s"/>
+			<xs:enumeration value="h"/>
+			<xs:enumeration value="km/h"/>
+			<xs:enumeration value="kW"/>
+			<xs:enumeration value="m/s"/>
+			<xs:enumeration value="mm/h"/>
+			<xs:enumeration value="°C"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="dimension_type_code_enum">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="3"/>
+			<xs:enumeration value="LEN"/>
+			<xs:enumeration value="BRE"/>
+			<xs:enumeration value="HEI"/>
+			<xs:enumeration value="DRA"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

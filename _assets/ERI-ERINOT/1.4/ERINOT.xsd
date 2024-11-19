@@ -1,0 +1,1423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ==================================================== -->
+<!-- ERI Notification Message (ERINOT) as part of ES-RIS. -->
+<!-- ==================================================== -->
+<xs:schema 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		xmlns="https://ris.cesni.eu/_assets/ERI-ERINOT/1.4"
+		targetNamespace="https://ris.cesni.eu/_assets/ERI-ERINOT/1.4"
+		elementFormDefault="qualified"
+		attributeFormDefault="unqualified"
+		version="1.4">
+	<xs:element name="ERINOT">
+		<xs:annotation>
+			<xs:documentation>ERI Notification Message (ERINOT) version 1.4 as part of ES-RIS 2025/1</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="MessageId" type="MessageIdType">
+					<xs:annotation>
+						<xs:documentation>Message Information</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="EDIMapping">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Syntax" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>'UNOA' Controlling agency level A</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="SyntaxVersion" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>'2'</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="MessageType" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>'IFTDGN', message type</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="MessageVersion" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>'D', Message version number</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="MessageRelease" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>'98B', Message Release</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="MessageControllingAgency" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>'UN'</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="AssociationAssignedCode" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>'ERI14', ERI Version 1.4</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SafetyExplanation" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>To notify the number of persons on board and the number of blue cones for safety reasons</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Signalling" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Number of blue cones</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:length value="1"/>
+										<xs:enumeration value="0"/>
+										<xs:enumeration value="1"/>
+										<xs:enumeration value="2"/>
+										<xs:enumeration value="3"/>
+										<xs:enumeration value="B"/>
+										<xs:enumeration value="V"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="PersonsOnBoard">
+								<xs:annotation>
+									<xs:documentation>Total number of persons on board. Crew and Passengers.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:integer">
+										<xs:minInclusive value="0000"/>
+										<xs:maxInclusive value="9999"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="PassengersOnBoard" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Pax (incl Stowaways) on Board</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:integer">
+										<xs:minInclusive value="0000"/>
+										<xs:maxInclusive value="9999"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="EmergencyPhoneNumber" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Direct phone number for the vessel, to contact the captain/owner in case of an emergency, even if there is no one on board.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="17"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="PrivacyStatement" type="xs:boolean" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Indicate if this message may be forwarded to other authorities</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="MessageRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference number to previous message</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="35"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="TransportDocRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference number of the transport document</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="35"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="TestScenarioRef" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to a test scenario</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="35"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="CancellationInfo" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CancelReason">
+								<xs:annotation>
+									<xs:documentation>'CAM': mistake in notification, 'CAO': transport does not take place, 'CAV': the main transport destination has changed, 'CHD': the time of arrival has changed</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="CAM"/>
+										<xs:enumeration value="CAO"/>
+										<xs:enumeration value="CAV"/>
+										<xs:enumeration value="CHD"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CancelText" maxOccurs="5">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="70"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Transport">
+					<xs:annotation>
+						<xs:documentation>DETAILS OF TRANSPORT</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TransportDetails">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="VoyageNo" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Voyage number, defined by sender of the message</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="17"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="TransportMode">
+											<xs:annotation>
+												<xs:documentation>'8' for Inland water transport, '1' for maritime transport </xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:length value="1"/>
+													<xs:enumeration value="1"/>
+													<xs:enumeration value="8"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="TransportMeans">
+											<xs:annotation>
+												<xs:documentation>Code for ship and convoy types of means of transport from UN/CEFACT.</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="4"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="Vessel" type="VesselType"/>
+										<xs:element name="VesselName">
+											<xs:annotation>
+												<xs:documentation>Name of the ship</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="35"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="PreviousVesselName" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Previous name of the ship, if applicable</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="35"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="Nationality">
+											<xs:annotation>
+												<xs:documentation>Nationality of means of transport. If the nationality of the means of transport is not known, the 3-digit code of the country of the inspection body that issued the last vessel certificate shall be used.</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:minLength value="2"/>
+													<xs:maxLength value="3"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="PreviousNationality" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Previous nationality of means of transport (if applicable). If the previous nationality of the means of transport is not known, the 3-digit code of the country of the most recent inspection body that issued a certificate for this vessel, considering only the inspection bodies of a different country (than current "Nationality").</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:minLength value="2"/>
+													<xs:maxLength value="3"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="StageQualifier" type="xs:string" use="required" fixed="20"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="TransportDimensions" type="TransportDimensionsType">
+								<xs:annotation>
+									<xs:documentation>Dimensions of the transport</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="TransportReference" minOccurs="0" maxOccurs="3">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="RefQualifier">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:length value="3"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="RefNo">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="35"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="TransportLocations">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PortOfDeparture" type="LocationType">
+											<xs:annotation>
+												<xs:documentation>Port of departure, the port where the transport starts</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="PassagePoint" type="LocationType" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Passage point that has already been passed by the ship.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="NextPortOfCall" type="LocationType" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Next passage point</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="RoutePoints" minOccurs="0" maxOccurs="5">
+											<xs:annotation>
+												<xs:documentation>Further future passage points (information on intended route). At most five intermediate points on the route may be given. The order of passage shall be the order within the message.</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="RoutePoint" type="LocationType"/>
+													<xs:element name="RoutePointPassageTime" type="xs:dateTime" minOccurs="0"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="PortOfDestination" type="LocationType">
+											<xs:annotation>
+												<xs:documentation>Port of destination. This is the first port where the transport is bound.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="ETD" type="xs:dateTime" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Estimated Time of Departure </xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="PassageTime" type="xs:dateTime" minOccurs="0"/>
+										<xs:element name="ETA" type="xs:dateTime" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Estimated Time of Arrival</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="MessageSenderAddress">
+					<xs:annotation>
+						<xs:documentation>Name and address of message sender</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="NameAddress" type="NameAddressType"/>
+							<xs:element name="Contact" type="ContactType" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="MessageReceiverAddress" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="NameAddress" type="NameAddressType"/>
+							<xs:element name="Contact" type="ContactType" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AgentInvoiceAddress" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Agent, Invoice responsible</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="NameAddress" type="NameAddressType"/>
+							<xs:element name="Contact" type="ContactType" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Barges">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Barge" maxOccurs="15">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="BargeId" type="VesselType"/>
+										<xs:element name="BargeType">
+											<xs:annotation>
+												<xs:documentation>Code for ship and convoy types of means of transport</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="4"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="BargeName">
+											<xs:annotation>
+												<xs:documentation>Name of the barge or vessel</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="35"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="EquipmentType">
+											<xs:annotation>
+												<xs:documentation>'BRY' for vessel participating in the propulsion, 'BRN' for vessel not participating in the propulsion</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="3"/>
+													<xs:enumeration value="BRY"/>
+													<xs:enumeration value="BRN"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="BargeDimensions" type="TransportDimensionsType">
+											<xs:annotation>
+												<xs:documentation>Dimensions of this individual barge</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="TotalPower" type="xs:integer" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Total power (in kW) of the propulsion system (corresponding to field #28 of the model of inland navigation vessel certificate as described in ES-TRIN, Annex 3, Section I)</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="AlternativeFuelInstallation" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Indicator if there is a presence onboard of propulsion or auxiliary systems, which are intended to be used, with one of the following energy sources:
+													'LNG': Liquified Natural Gas,
+													'CNG': Compressed Natural Gas,
+													'MET': Methanol,
+													'CH2': Compressed Hydrogen,
+													'LH2': Liquified Hydrogen,
+													'BAT': Accumulators with a total capacity exceeding 500 kWh
+												</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="LNG" type="xs:boolean" default="0" />
+													<xs:element name="CNG" type="xs:boolean" default="0" />
+													<xs:element name="MET" type="xs:boolean" default="0" />
+													<xs:element name="CH2" type="xs:boolean" default="0" />
+													<xs:element name="LH2" type="xs:boolean" default="0" />
+													<xs:element name="BAT" type="xs:boolean" default="0" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ContainerMatrixes" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Container totals (20, 30, 40ft)</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ContainerMatrix" maxOccurs="9">
+								<xs:annotation>
+									<xs:documentation>Specification of the number of Containers</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ContRange">
+											<xs:annotation>
+												<xs:documentation>'RNG20' for containers having a length between 20 and 29 feet
+													'RNG30' for containers having a length between 30 and 39 feet
+													'RNG40' for containers having a length of 40 feet or more
+												</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="5"/>
+													<xs:enumeration value="RNG20"/>
+													<xs:enumeration value="RNG30"/>
+													<xs:enumeration value="RNG40"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="Number">
+											<xs:annotation>
+												<xs:documentation>Number of containers</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:integer">
+													<xs:maxInclusive value="9999"/>
+													<xs:minInclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="ContStatus">
+											<xs:annotation>
+												<xs:documentation>Container status: '5' for loaded, '4' for empty, '6' for no volume available</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:length value="1"/>
+													<xs:enumeration value="4"/>
+													<xs:enumeration value="5"/>
+													<xs:enumeration value="6"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Consignments" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Consignment (similar source/destination) specification of the transported cargo</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Consignment" maxOccurs="999">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="SequenceNo">
+											<xs:annotation>
+												<xs:documentation>Sequence number of the consignment. For modifications, the same sequence number is to be used</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:integer">
+													<xs:minInclusive value="1"/>
+													<xs:maxInclusive value="9999"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="DepartureTime" type="xs:dateTime" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Estimated departure time from the loading place</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="PortOfLoading" type="LocationType" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Specification of the loading place of the cargo</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="PortOfDischarge" type="LocationType" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Specification of the discharge place of the cargo</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="CargoReceiver" type="NameAddressType" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Cargo receiver</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="CargoSender" type="NameAddressType" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Cargo Sender</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="ArrivalTime" type="xs:dateTime" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Estimated arrival time at the discharge place</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="CargoHandling" type="HandlingType" default="T" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Default 'T'.  'T' = Transit,  'LLO' = Loading,  'LDI' = Unloading,  'TSP' = Transit in the same port</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="GoodsItems">
+											<xs:annotation>
+												<xs:documentation>GOODS ITEM DETAILS</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="GoodsItem" maxOccurs="99">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="GoodsItemNo">
+																	<xs:annotation>
+																		<xs:documentation>Sequence number of the good within a consignment. Unique within the CNI group</xs:documentation>
+																	</xs:annotation>
+																	<xs:simpleType>
+																		<xs:restriction base="xs:integer">
+																			<xs:maxInclusive value="99999"/>
+																		</xs:restriction>
+																	</xs:simpleType>
+																</xs:element>
+																<xs:element name="NumberOfPackages" minOccurs="0">
+																	<xs:annotation>
+																		<xs:documentation>Number of inner packages related to type of packages. For containers and tanks the default value is '1'</xs:documentation>
+																	</xs:annotation>
+																	<xs:simpleType>
+																		<xs:restriction base="xs:integer">
+																			<xs:maxInclusive value="99999999"/>
+																		</xs:restriction>
+																	</xs:simpleType>
+																</xs:element>
+																<xs:element name="AdditionalInfo" minOccurs="0">
+																	<xs:annotation>
+																		<xs:documentation>Extra goods information</xs:documentation>
+																	</xs:annotation>
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="TypeOfGood">
+																				<xs:annotation>
+																					<xs:documentation>type of good: 'D' for Dangerous, 'N' for Non-dangerous</xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:string">
+																						<xs:length value="1"/>
+																						<xs:enumeration value="D"/>
+																						<xs:enumeration value="N"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element name="HSCode" type="HSCodeType" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>No longer in use. Please use HSCode in GoodsDescription or DangerousGoodsInfo.</xs:documentation>
+																				</xs:annotation>
+																			</xs:element>
+																			<xs:element name="CustomsStatus" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>Customs status: 'C' = Union goods, 'F' = Union goods from non-fiscal area, 'N' = All other goods</xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:string">
+																						<xs:length value="1"/>
+																						<xs:enumeration value="C"/>
+																						<xs:enumeration value="F"/>
+																						<xs:enumeration value="N"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element name="CustomsRefNo" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>Customs document reference number (if any)</xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:string">
+																						<xs:maxLength value="35"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element name="Overseas" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>Overseas destination: 'Y' = with overseas destination, 'N' = without an overseas destination</xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:string">
+																						<xs:length value="1"/>
+																						<xs:enumeration value="Y"/>
+																						<xs:enumeration value="N"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="GoodsDescription" minOccurs="0">
+																	<xs:annotation>
+																		<xs:documentation>Non-dangerous goods info</xs:documentation>
+																	</xs:annotation>
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="GoodsName">
+																				<xs:annotation>
+																					<xs:documentation>Goods name of the non-dangerous cargo</xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:string">
+																						<xs:maxLength value="70"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element name="NSTCode" type="NSTCodeType" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>NST code of the non-dangerous cargo.</xs:documentation>
+																				</xs:annotation>
+																			</xs:element>
+																			<xs:element name="HSCode" type="HSCodeType" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>HS code of the non-dangerous cargo</xs:documentation>
+																				</xs:annotation>
+																			</xs:element>
+																			<xs:element name="TypeOfCargo" type="TypeOfCargoType" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>Simplified classification codes for types of cargo - UNECE Recommendation 21</xs:documentation>
+																				</xs:annotation>
+																			</xs:element>
+																			<xs:element name="GoodsFreeRemark" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>Additional goods description</xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:string">
+																						<xs:maxLength value="70"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="DangerousGoodsInfo" minOccurs="0">
+																	<xs:annotation>
+																		<xs:documentation>Either non-dangerous OR dangerous goods info must be specified</xs:documentation>
+																	</xs:annotation>
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="DangerousGoods">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="Regulation">
+																							<xs:annotation>
+																								<xs:documentation>ADN for inland vessels (UNECE ADN Code), 'IMD' for sea going vessels (IMO IMDG code)</xs:documentation>
+																							</xs:annotation>
+																							<xs:simpleType>
+																								<xs:restriction base="xs:string">
+																									<xs:length value="3"/>
+																									<xs:enumeration value="ADN"/>
+																									<xs:enumeration value="IMD"/>
+																								</xs:restriction>
+																							</xs:simpleType>
+																						</xs:element>
+																						<xs:element name="Classification">
+																							<xs:annotation>
+																								<xs:documentation>ADN Classification (Column 3b)</xs:documentation>
+																							</xs:annotation>
+																							<xs:simpleType>
+																								<xs:restriction base="xs:string">
+																									<xs:maxLength value="7"/>
+																								</xs:restriction>
+																							</xs:simpleType>
+																						</xs:element>
+																						<xs:element name="AdditionalClassification" minOccurs="0">
+																							<xs:simpleType>
+																								<xs:restriction base="xs:string">
+																									<xs:maxLength value="7"/>
+																								</xs:restriction>
+																							</xs:simpleType>
+																						</xs:element>
+																						<xs:element name="UNNumber">
+																							<xs:annotation>
+																								<xs:documentation>UN number or identification number (Column 1)</xs:documentation>
+																							</xs:annotation>
+																							<xs:simpleType>
+																								<xs:restriction base="xs:string">
+																									<xs:length value="4"/>
+																								</xs:restriction>
+																							</xs:simpleType>
+																						</xs:element>
+																						<xs:element name="Flashpoint" type="xs:float" minOccurs="0">
+																							<xs:annotation>
+																								<xs:documentation>Flashpoint of the good transported</xs:documentation>
+																							</xs:annotation>
+																						</xs:element>
+																						<xs:element name="FlashpointUnit" minOccurs="0">
+																							<xs:annotation>
+																								<xs:documentation>'CEL' for Celsius, 'FAH' for Fahrenheit</xs:documentation>
+																							</xs:annotation>
+																							<xs:simpleType>
+																								<xs:restriction base="xs:string">
+																									<xs:length value="3"/>
+																									<xs:enumeration value="CEL"/>
+																									<xs:enumeration value="FAH"/>
+																								</xs:restriction>
+																							</xs:simpleType>
+																						</xs:element>
+																						<xs:element name="PackingGroup" minOccurs="0">
+																							<xs:annotation>
+																								<xs:documentation>Packing group (column 4). '1' for great danger, '2' for medium danger, '3' for minor danger, Empty if not available</xs:documentation>
+																							</xs:annotation>
+																							<xs:simpleType>
+																								<xs:restriction base="xs:string">
+																									<xs:length value="1"/>
+																								</xs:restriction>
+																							</xs:simpleType>
+																						</xs:element>
+																						<xs:element name="EMSNumber" minOccurs="0">
+																							<xs:annotation>
+																								<xs:documentation>Emergency procedures</xs:documentation>
+																							</xs:annotation>
+																							<xs:simpleType>
+																								<xs:restriction base="xs:string">
+																									<xs:maxLength value="6"/>
+																								</xs:restriction>
+																							</xs:simpleType>
+																						</xs:element>
+																						<xs:element name="MFAGNumber" minOccurs="0">
+																							<xs:annotation>
+																								<xs:documentation>Medical first aid guide</xs:documentation>
+																							</xs:annotation>
+																							<xs:simpleType>
+																								<xs:restriction base="xs:string">
+																									<xs:maxLength value="4"/>
+																								</xs:restriction>
+																							</xs:simpleType>
+																						</xs:element>
+																						<xs:element name="HazardPlacard" minOccurs="0">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="HazardPlacardUpper" minOccurs="0">
+																										<xs:simpleType>
+																											<xs:restriction base="xs:string">
+																												<xs:maxLength value="4"/>
+																											</xs:restriction>
+																										</xs:simpleType>
+																									</xs:element>
+																									<xs:element name="HazardPlacardLower" minOccurs="0">
+																										<xs:simpleType>
+																											<xs:restriction base="xs:string">
+																												<xs:maxLength value="4"/>
+																											</xs:restriction>
+																										</xs:simpleType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element name="NSTCode" type="NSTCodeType" minOccurs="0">
+																							<xs:annotation>
+																								<xs:documentation>NST code of the dangerous cargo</xs:documentation>
+																							</xs:annotation>
+																						</xs:element>
+																						<xs:element name="HSCode" type="HSCodeType" minOccurs="0">
+																							<xs:annotation>
+																								<xs:documentation>HS code of the dangerous cargo</xs:documentation>
+																							</xs:annotation>
+																						</xs:element>
+																						<xs:element name="TypeOfCargo" type="TypeOfCargoType" minOccurs="0">
+																							<xs:annotation>
+																								<xs:documentation>Simplified classification codes for types of cargo - UNECE Recommendation 21</xs:documentation>
+																							</xs:annotation>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="TechnicalName">
+																				<xs:annotation>
+																					<xs:documentation>Correct Technical Name</xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:string">
+																						<xs:maxLength value="70"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element name="NetWeight" type="xs:integer"/>
+																			<xs:element name="ProperShippingName" type="xs:string">
+																				<xs:annotation>
+																					<xs:documentation>Name of dangerous good (proper shipping name). Proper shipping name, supplemented as necessary with the correct technical name, by which a dangerous substance or article may be correctly identified or which is sufficiently informative to permit identification by reference to generally available literature.</xs:documentation>
+																				</xs:annotation>
+																			</xs:element>
+																			<xs:element name="LimitedQuantity" type="xs:boolean" default="0">
+																				<xs:annotation>
+																					<xs:documentation>'TLQ' Transport of dangerous goods in limited quantities</xs:documentation>
+																				</xs:annotation>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="GoodSplitGoodsPlacements" maxOccurs="99">
+																	<xs:annotation>
+																		<xs:documentation>Good Stowagelocation info</xs:documentation>
+																	</xs:annotation>
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="SplitGoodsPlacement" type="SplitGoodsPlacementType">
+																				<xs:annotation>
+																					<xs:documentation>Vessel where goods are stowed</xs:documentation>
+																				</xs:annotation>
+																			</xs:element>
+																			<xs:element name="ContainerStowage" type="ContainerStowageType" minOccurs="0" maxOccurs="99">
+																				<xs:annotation>
+																					<xs:documentation>Also includes liquid bulk</xs:documentation>
+																				</xs:annotation>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="TypeOfPackages" minOccurs="0">
+																	<xs:annotation>
+																		<xs:documentation>Innnerpackage</xs:documentation>
+																	</xs:annotation>
+																	<xs:simpleType>
+																		<xs:restriction base="xs:string">
+																			<xs:length value="2"/>
+																		</xs:restriction>
+																	</xs:simpleType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="VersionMajor" type="xs:integer" use="required"/>
+			<xs:attribute name="VersionMinor" type="xs:integer" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="MessageIdType">
+		<xs:sequence>
+			<xs:element name="SenderId">
+				<xs:annotation>
+					<xs:documentation>Sender identification</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="25"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ReceiverId">
+				<xs:annotation>
+					<xs:documentation>Recipient identification</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="25"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GenerationDateTime" type="xs:dateTime">
+				<xs:annotation>
+					<xs:documentation>Generation Date-Time of the message</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AckRequest" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Acknowledgement request</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TestIndicator" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>'1' = The interchange relates to a test message</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MessageType">
+				<xs:annotation>
+					<xs:documentation>'VES': from vessel to RIS authority message, 'CAR': from carrier to RIS authority message, 'PAS': passage report from RIS authority to RIS authority (also see section 0)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+						<xs:enumeration value="VES"/>
+						<xs:enumeration value="CAR"/>
+						<xs:enumeration value="PAS"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MessageNo">
+				<xs:annotation>
+					<xs:documentation>Message reference number. This number shall be as unique as possible, both for sender and for receiver.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="35"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MessageFunction">
+				<xs:annotation>
+					<xs:documentation>Function of message. '1' = cancellation message, '9' = new message, (original), '5' = modification message, '22' = Final transmission (End of voyage), '150' = Interruption of voyage, '151' = Restart of voyage</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="5"/>
+						<xs:enumeration value="9"/>
+						<xs:enumeration value="22"/>
+						<xs:enumeration value="150"/>
+						<xs:enumeration value="151"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CommonDenominator">
+				<xs:annotation>
+					<xs:documentation>RefNo to group several msgs of same journey (including other types of ERI messages). Corresponds to common access reference</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="35"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="VesselType">
+		<xs:sequence>
+			<xs:element name="VesselId">
+				<xs:annotation>
+					<xs:documentation>Vessel number: 7 digits for IMO indication or 8 digits unique European vessel identification number (ENI)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="7"/>
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="VesselIdType">
+				<xs:annotation>
+					<xs:documentation>'IMO': IMO-number, 'ENI': unique European vessel identification number</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3"/>
+						<xs:enumeration value="IMO"/>
+						<xs:enumeration value="ENI"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MMSI" type="xs:integer" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>MMSI number of the vessel</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LocationType">
+		<xs:sequence>
+			<xs:element name="RisId" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>RIS_ID (GUID Identifier) of the location in RIS.net</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Locode">
+				<xs:annotation>
+					<xs:documentation>UNECE location code (Rec. 16)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LocationName" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Full name of the location</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="17"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ObjectCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Terminal code</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TerminalName" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Full name of the terminal.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="70"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FairwaySectionCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Fairway section code</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FairwayHectometre" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Fairway section hectometre</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="NameAddressType">
+		<xs:sequence>
+			<xs:element name="PartyFunction">
+				<xs:annotation>
+					<xs:documentation>Party qualifier. 'MS': message sender, 'MR': message receiver, 'CG': agent/invoice address, 'SF': sender address (cargo), 'ST': destination address (cargo)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+						<xs:enumeration value="MS"/>
+						<xs:enumeration value="MR"/>
+						<xs:enumeration value="CG"/>
+						<xs:enumeration value="SF"/>
+						<xs:enumeration value="ST"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PartyId" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Identification code.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="35"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PartyName">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="35"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Street" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="35"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="City" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="35"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PostalCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Country" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="2"/>
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="VATNumber" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Invoice, VAT or Admin reference number</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="35"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CommsContactType">
+		<xs:sequence>
+			<xs:element name="CommsNo">
+				<xs:annotation>
+					<xs:documentation>Communication number or E-mail address</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="70"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CommsChannel">
+				<xs:annotation>
+					<xs:documentation>'TE': telephone number, 'FX': fax number, 'EM': email address, 'EI': EDI mailbox number (EDI number or email address)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+						<xs:enumeration value="TE"/>
+						<xs:enumeration value="FX"/>
+						<xs:enumeration value="EM"/>
+						<xs:enumeration value="EI"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TransportDimensionsType">
+		<xs:annotation>
+			<xs:documentation>All dimensions are in cm</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Length">
+				<xs:annotation>
+					<xs:documentation>Total length in centimetres</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="99999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Width">
+				<xs:annotation>
+					<xs:documentation>Total width in centimetres</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="9999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Draught">
+				<xs:annotation>
+					<xs:documentation>Draught in centimetres</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="9999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Tonnage">
+				<xs:annotation>
+					<xs:documentation>Maximum capacity in metric tonnes</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="999999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Airdraft" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Height above the waterline in centimetres</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0000"/>
+						<xs:maxInclusive value="9999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SplitGoodsPlacementType">
+		<xs:sequence>
+			<xs:element name="Placement" type="VesselType"/>
+			<xs:element name="Weight" type="WeightType">
+				<xs:annotation>
+					<xs:documentation>Gross Weight (including weight packages)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NetWeight" type="xs:integer" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Weight of the cargo only</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Volume" type="VolumeType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The observed volume after adjustment for factors such as temperature or gravity</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="HSCodeType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="6"/>
+			<xs:maxLength value="10"/>
+		</xs:restriction>
+	</xs:simpleType>
+		<xs:simpleType name="TypeOfCargoType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"/>
+			<xs:maxLength value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="NSTCodeType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"/>
+			<xs:maxLength value="6"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="ContainerStowageType">
+		<xs:sequence>
+			<xs:element name="ContainerIdentificationCode">
+				<xs:annotation>
+					<xs:documentation>For containers the Container identification code shall be used (owner code, identifier, serial number. check digit). For liquid bulk, use code 'NA'.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="17"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ContainerType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Container type (ISO 6346 chapter 4 and annexes D and E).  If the container type is known, then this data shall be given.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+						<xs:minLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="StowageLocation" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>For containers 'BBBRRTT' for bay/row/tier (In accordance with ISO 9711-1 (1990)).
+						For tanks:
+						LLnn where
+						—
+						LL describes the location of the tank (PS for port side, SB for starboard, CC for Center side, CP for Center portside, CS for Center starboard (in case of 4-width configuration))
+						—
+						nn describes the sequence number of the tank, starting with 01 from front to nn to the back.
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="25"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Weight" type="WeightType">
+				<xs:annotation>
+					<xs:documentation>Gross Weight</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NetWeight" type="WeightType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Weigth of all cargo in the Container (Including innerpackages)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Volume" type="VolumeType" minOccurs="0"/>
+			<xs:element name="VerifiedGrossMass" type="WeightType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The verified gross mass of this container</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EstimatedGrossWeight" type="WeightType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The Estimated gross weight of this container</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="InertGas" type="xs:boolean" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>An inert gas is transported</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="WeightType">
+		<xs:annotation>
+			<xs:documentation>Weight is always given in kilogram</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="999999999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="ContactType">
+		<xs:sequence>
+			<xs:element name="ContactInformation" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>'ERI'</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="35"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CommsContact" type="CommsContactType" minOccurs="0" maxOccurs="4">
+				<xs:annotation>
+					<xs:documentation>Communication contact details </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="VolumeType">
+		<xs:restriction base="xs:integer">
+			<xs:maxInclusive value="999999999"/>
+			<xs:minInclusive value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="HandlingType">
+		<xs:annotation>
+			<xs:documentation>'T' = Transit, 'LLO' = Loading, 'LDI' = Unloading, 'TSP' = Transit in the same port</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="T"/>
+			<xs:enumeration value="LLO"/>
+			<xs:enumeration value="LDI"/>
+			<xs:enumeration value="TSP"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
